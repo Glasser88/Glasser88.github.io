@@ -1,0 +1,17 @@
+:local .About {
+  position: fixed;
+  top: 6.7em;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  .inside {
+    position: fixed;
+    top: 7.5em;
+    left: 6.7em;
+    right: 6.7em;
+    bottom: 6.7em;
+    background-color: #1c1c1c;
+  }
+
+}

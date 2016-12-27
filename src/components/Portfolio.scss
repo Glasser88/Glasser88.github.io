@@ -1,0 +1,160 @@
+:local .Portfolio {
+  position: fixed;
+  top: 6.7em;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  h3 {
+    font-family: 'Merriweather', serif;
+    color: #fff;
+    margin-left: 2em;
+    position: absolute;
+    top: -1.5em;
+  }
+
+  .inside {
+    position: fixed;
+    top: 10.5em;
+    left: 6.7em;
+    right: 6.7em;
+    bottom: 10.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .featureOne {
+    background-color: #1c1c1c;
+    height: 100%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+
+  .insideBorder {
+    border: 1px solid #272727;
+    width: 100%;
+    height: 100%;
+    margin-top: 2.5em;
+    margin-right: -2.5em;
+    margin-left: 2.5em;
+    position: relative;
+    display: flex;
+  }
+
+  .viewProject {
+    position: absolute;
+    bottom: -1.6em;
+    left: 3em;
+    padding: 1em;
+    border-radius: 1px;
+    background-color: #191919;
+    border: 1px solid #272727;
+    text-transform: uppercase;
+    color: #c9995b;
+    font-size: 0.9em;
+    &:hover {
+      background-color: #c9995b;
+      color: #191919;
+      border: 1px solid #272727;
+    }
+  }
+
+  .description {
+    width: 50%;
+    height: 100%;
+    margin-bottom: 4em;
+  }
+
+  .desTitle {
+    position: absolute;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+    left: 0em;
+    top: 5em;
+    transform: rotate(-90deg);
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .techTitle {
+    position: absolute;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+    font-family: 'Open Sans', sans-serif;
+    left: 3.5em;
+    top: 15em;
+  }
+
+  .desBlock {
+    position: absolute;
+    width: 40%;
+    left: 5em;
+    top: 1.5em;
+    color: #c3c3c3;
+    line-height: 25px;
+    font-size: 1.1em;
+    font-family: 'Merriweather', serif;
+  }
+
+  .techBlock {
+    position: absolute;
+    width: 40%;
+    left: 5em;
+    top: 14.5em;
+    color: #c3c3c3;
+    line-height: 25px;
+    font-size: 1.1em;
+    font-family: 'Merriweather', serif;
+  }
+
+  .screenshot {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .appImage {
+    margin-top: -2em;
+    background-image: url('../assets/images/minesweeper.png');
+    background-size: cover;
+    height: 22em;
+    width: 22em;
+  }
+
+  .react {
+    position: absolute;
+    background-image: url('../assets/images/react.png');
+    background-size: cover;
+    height: 4em;
+    width: 4em;
+    right: 1.5em;
+    top: 1.5em;
+    z-index: 100;
+  }
+
+  .angular {
+    position: absolute;
+    background-image: url('../assets/images/angular.png');
+    background-size: cover;
+    height: 7em;
+    width: 7em;
+    right: -1em;
+    top: -1em;
+  }
+
+  .featureTwo {
+    position: relative;
+    background-color: #1c1c1c;
+    width: 30%;
+  }
+
+  .featureThree {
+    position: relative;
+    background-color: #1c1c1c;
+    width: 30%;
+  }
+
+}

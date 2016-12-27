@@ -1,0 +1,55 @@
+:local .Topbar {
+  z-index: 9999;
+  border-radius: 0px !important;
+  background-color: #191919 !important;
+  border: none !important;
+  font-size: 1.1em;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+
+  .links {
+    margin-top: 1.26em;
+  }
+
+  .link {
+    color: #fff;
+    font-size: 1.1em;
+    &:hover {
+      text-decoration: none;
+      color: #c9995b;
+    }
+    &:active {
+      text-decoration: none;
+      color: #c9995b;
+    }
+    &:focus {
+      text-decoration: none;
+      color: #c9995b;
+      border-bottom: 1px solid #c9995b;
+    }
+  }
+
+  .brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.1em;
+  }
+
+  .logo {
+    font-weight: bold;
+    height: 3em;
+    width: 3em;
+    margin-right: 1em;
+    background-color: #c9995b;
+    color: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .name {
+    color: #fff;
+  }
+}
