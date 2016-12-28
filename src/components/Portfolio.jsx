@@ -2,7 +2,12 @@ import React, { Component } from 'react';
 
 import { Link } from 'react-router';
 
+import ProjectDetails from './ProjectDetails';
+
+import { PROJECTS } from '../constants/projects';
+
 import Button from 'react-bootstrap/lib/Button';
+import Glyphicon from 'react-bootstrap/lib/Glyphicon';
 
 import STYLES from './Portfolio.scss';
 
@@ -11,40 +16,69 @@ class Portfolio extends Component {
     super(props);
 
     this.state = {
-
+      project: null,
     };
+
+    this.setCurrentProject = this.setCurrentProject.bind(this);
+    this.returnToProjects = this.returnToProjects.bind(this);
   }
 
-  renderProject() {
-    
+  setCurrentProject(prop) {
+    this.setState({
+      project: prop,
+    })
+  }
+
+  returnToProjects() {
+    this.setState({
+      project: null,
+    })
+  }
+
+  renderProject(project) {
+    return (
+      <ProjectDetails
+        project={project}
+        goBack={this.returnToProjects}
+      />
+    );
+  }
+
+  renderListView() {
+    return (
+      <div className={STYLES.projectFolder}>
+        <div className={STYLES.projectTab}></div>
+        <div className={STYLES.tabName}>Projects</div>
+        { PROJECTS.map((project, i) => (
+          <div key={i} className={STYLES.projectBox}>
+            <div className={STYLES.open}>
+            <Glyphicon
+              onClick={this.setCurrentProject.bind(null, project)}
+              glyph='new-window'
+            />
+            </div>
+            <h2 onClick={this.setCurrentProject.bind(null, project)}>{project.name}</h2>
+            <hr className={STYLES.line} />
+            <div className={STYLES.details}>
+              <h5>Y. <span className={STYLES.bold}>{project.year}</span></h5>
+              <h5>T. <span className={STYLES.bold}>{project.mainTechnology}</span></h5>
+            </div>
+          </div>
+        ))}
+      </div>
+    );
   }
 
   render() {
+    const { project } = this.state;
 
     return (
       <div className={STYLES.Portfolio}>
-        <div className={STYLES.inside}>
-          <div className={STYLES.featureOne}>
-            <h3>Minesweeper</h3>
-            <div className={STYLES.insideBorder}>
-              <div className={STYLES.description}>
-                <div className={STYLES.desTitle}>DESCRIPTION</div>
-                <div className={STYLES.desBlock}>
-                  I decided to put a modern twist on a classic game and reconstruct Minesweeper with React and Redux.
-                </div>
-                <div className={STYLES.techTitle}>TECHNOLOGIES</div>
-                <div className={STYLES.techBlock}>
-                  React, Redux, Webpack, Immutable, ES6, Babel, React-Bootstrap, Sass
-                </div>
-              </div>
-              <div className={STYLES.screenshots}>
-                <div className={STYLES.screenTitle}>SCREENSHOTS</div>
-                <div className={STYLES.appImage}></div>
-                <div className={STYLES.appImage}></div>
-              </div>
-              <Button className={STYLES.viewProject}>View Project</Button>
-            </div>
-          </div>
+        <div>
+          { project === null && this.renderListView() }
+        </div>
+        <div>
+          { project !== null && this.renderProject(project) }
         </div>
       </div>
     );
