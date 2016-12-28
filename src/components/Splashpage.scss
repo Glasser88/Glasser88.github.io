@@ -1,13 +1,14 @@
 :local .Splashpage {
-  position: fixed;
-  top: 6.7em;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: 'Merriweather', serif;
 
   .text {
-    width: 70%;
+    margin-top: 5em;
+    width: 28em;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -15,20 +16,75 @@
 
   h1 {
     position: absolute;
-    text-align: center;
-    font-size: 6.5em;
+    font-size: 3.8em;
     color: #121212;
     font-weight: bold;
-    top: 1em;
-    left: 1em;
+    top: 0em;
+    left: 0.5em;
   }
   h2 {
     width: 80%;
-    top: 2.9em;
     position: absolute;
-    text-align: center;
-    font-size: 3.8em;
+    font-size: 1.8em;
+    top: 1.6em;
+    line-height: 35px;
+    left: 1em;
     color: #c9995b;
     text-align: left;
+  }
+
+  @media (min-width: 480px) {
+    .text {
+      margin-top: 5em;
+      width: 38em;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+    }
+    h1 {
+      position: absolute;
+      font-size: 4.8em;
+      color: #121212;
+      font-weight: bold;
+      top: 0em;
+      left: 0.4em;
+    }
+    h2 {
+      width: 90%;
+      position: absolute;
+      font-size: 2.5em;
+      top: 1.4em;
+      line-height: 50px;
+      left: 1em;
+      color: #c9995b;
+      text-align: left;
+    }
+  }
+
+  @media (min-width: 768px) {
+
+    .text {
+      margin-top: 10em;
+      width: 60em;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+    }
+
+    h1 {
+      position: absolute;
+      font-size: 6.5em;
+      top: 0em;
+      left: 1em;
+    }
+    h2 {
+      width: 80%;
+      position: absolute;
+      font-size: 3.8em;
+      line-height: 60px;
+      top: 1.3em;
+      left: 1em;
+      text-align: left;
+    }
   }
 }

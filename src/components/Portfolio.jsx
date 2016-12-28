@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import { Link } from 'react-router';
 
-import Carousel from 'react-bootstrap/lib/Carousel';
 import Button from 'react-bootstrap/lib/Button';
 
 import STYLES from './Portfolio.scss';
@@ -11,6 +10,13 @@ class Portfolio extends Component {
   constructor(props) {
     super(props);
 
+    this.state = {
+
+    };
+  }
+
+  renderProject() {
+    
   }
 
   render() {
@@ -31,15 +37,14 @@ class Portfolio extends Component {
                   React, Redux, Webpack, Immutable, ES6, Babel, React-Bootstrap, Sass
                 </div>
               </div>
-              <div className={STYLES.screenshot}>
+              <div className={STYLES.screenshots}>
+                <div className={STYLES.screenTitle}>SCREENSHOTS</div>
+                <div className={STYLES.appImage}></div>
                 <div className={STYLES.appImage}></div>
               </div>
               <Button className={STYLES.viewProject}>View Project</Button>
             </div>
           </div>
-
-
-
         </div>
       </div>
     );

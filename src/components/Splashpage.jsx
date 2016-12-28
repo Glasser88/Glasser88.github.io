@@ -16,7 +16,7 @@ class Splashpage extends Component {
     return (
       <div className={STYLES.Splashpage}>
         <div className={STYLES.text}>
-          <h1>Who is Trevor Glass</h1>
+          <h1>Trevor Glass</h1>
           <h2>Front End Developer, Entrepreneur, Author & former Professional Hockey Player.</h2>
         </div>
       </div>

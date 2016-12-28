@@ -11,7 +11,58 @@
     left: 6.7em;
     right: 6.7em;
     bottom: 6.7em;
-    background-color: #1c1c1c;
+    display: flex;
+  }
+
+  .hockey {
+    background-image: url('../assets/images/chiefs.png');
+    background-size: cover;
+    height: 100%;
+    width: 50em;
+    z-index: 9999;
+  }
+
+  .title {
+    color: #121212;
+    font-family: 'Merriweather', serif;
+    font-size: 4em;
+  }
+
+  .name {
+    color: #c0a062;
+    font-size: 4em;
+    margin-top: -0.8em;
+    margin-left: 1em;
+  }
+
+  .intro {
+    color: #c3c3c3;
+    font-family: 'Merriweather', serif;
+    font-size: 2em;
+    margin-top: 2em;
+    margin-left: 0.5em;
+  }
+
+  .pointOne {
+    color: #c3c3c3;
+    font-size: 1.6em;
+    margin-top: 2.5em;
+    margin-left: 0.5em;
+    font-family: 'Merriweather', serif;
+  }
+
+  .pointTwo {
+    color: #c3c3c3;
+    font-size: 1.6em;
+    margin-top: 2.5em;
+    margin-left: 0.5em;
+    font-family: 'Merriweather', serif;
+  }
+
+  .highlight {
+    color: #c0a062;
+    font-size: 1.5em;
+    font-family: 'Merriweather', serif;
   }
 
 }

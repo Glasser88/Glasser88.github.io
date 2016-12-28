@@ -1,10 +1,19 @@
 :local .Wrapper {
+  min-height: 47em;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #191919;
+  background-color: #161616;
+
+  @media (min-width: 480px) {
+    min-height: 40em;
+  }
+
+  @media (min-width: 768px) {
+    min-height: 50em;
+  }
 }
 
 .example-enter {
