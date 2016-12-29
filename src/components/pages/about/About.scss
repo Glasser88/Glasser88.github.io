@@ -1,6 +1,9 @@
 :local .About {
 
   font-family: 'Merriweather', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   .inside {
     height: 100%;
@@ -20,7 +23,13 @@
     transition: all 500ms ease;
   }
 
-  .title {
+  p {
+    position: absolute;
+    color: #c3c3c3;
+    font-size: 1.3em;
+  }
+
+  h2 {
     color: #121212;
     font-size: 3em;
     font-weight: bold;
@@ -28,7 +37,7 @@
     margin-bottom: 0;
   }
 
-  .name {
+  h3 {
     color: #c0a062;
     font-size: 2.7em;
     text-align: center;
@@ -40,121 +49,137 @@
     position: relative;
   }
 
-  .start {
-    position: absolute;
-    color: #c3c3c3;
-    font-size: 1.3em;
+  .one {
     top: 1em;
     right: 3.7em;
   }
 
-  .intro {
-    position: absolute;
-    color: #c3c3c3;
+  .two {
     width: 54%;
     top: 2.6em;
-    font-size: 1.3em;
     right: 2em;
     line-height: 30px;
   }
 
-  .always {
-    position: absolute;
-    color: #c3c3c3;
-    font-size: 1.3em;
+  .three {
     right: 1.8em;
     top: 6.03em;
   }
 
-  .pointOne {
-    position: absolute;
-    color: #c3c3c3;
-    font-size: 1.3em;
+  .four {
     left: 8.4em;
     top: 7.6em;
+    margin-right: 1em;
     line-height: 30px;
   }
 
-  .finish {
-    position: absolute;
+  .five {
     top: 14.3em;
     left: 5em;
-    color: #c3c3c3;
-    font-size: 1.3em;
+    line-height: 30px;
   }
 
   @media (min-width: 480px) {
+
+    .inside {
+      width: 34em;
+    }
+
     .hockey {
-      position: absolute;
-      background-image: url('../../../assets/images/chiefs.png');
-      background-size: cover;
       height: 25em;
       width: 25em;
-      left: 1.4em;
-      top: 7.8em;
+      left: 0em;
+      top: 9.6em;
       transition: all 500ms ease;
+    }
+
+    p {
+      font-size: 1.4em;
+    }
+
+    .story {
+      margin-top: 2em;
+    }
+
+    .one {
+      top: 0.5em;
+      right: 4em;
+    }
+
+    .two {
+      width: 56%;
+      top: 2.4em;
+      right: 0em;
+      line-height: 35px;
+    }
+
+    .three {
+      right: 1em;
+    }
+
+    .four {
+      left: 11em;
+      margin-right: 0;
+      line-height: 35px;
+    }
+
+    .five {
+      line-height: 35px;
+      top: 14.8em;
+      left: 8.5em;
+      margin-right: 1em;
     }
   }
 
   @media (min-width: 768px) {
+
     .inside {
-      position: fixed;
-      top: 7.5em;
-      left: 6.7em;
-      right: 6.7em;
-      bottom: 6.7em;
-      display: flex;
+      width: 38em;
     }
 
     .hockey {
-      background-image: url('../../../assets/images/chiefs.png');
-      background-size: cover;
-      height: 100%;
-      width: 50em;
-      z-index: 9999;
+      height: 32em;
+      width: 32em;
+      left: -4em;
+      top: 9.3em;
+      transition: all 500ms ease;
     }
 
-    .title {
-      color: #121212;
-      font-family: 'Merriweather', serif;
-      font-size: 4em;
+    h2 {
+      font-size: 3.2em;
     }
 
-    .name {
-      color: #c0a062;
-      font-size: 4em;
-      margin-top: -0.8em;
-      margin-left: 1em;
+    h3 {
+      font-size: 2.9em;
     }
 
-    .intro {
-      color: #c3c3c3;
-      font-family: 'Merriweather', serif;
-      font-size: 2em;
-      margin-top: 2em;
-      margin-left: 0.5em;
-    }
-
-    .pointOne {
-      color: #c3c3c3;
-      font-size: 1.6em;
-      margin-top: 2.5em;
-      margin-left: 0.5em;
-      font-family: 'Merriweather', serif;
-    }
-
-    .pointTwo {
-      color: #c3c3c3;
-      font-size: 1.6em;
-      margin-top: 2.5em;
-      margin-left: 0.5em;
-      font-family: 'Merriweather', serif;
-    }
-
-    .highlight {
-      color: #c0a062;
+    p {
       font-size: 1.5em;
-      font-family: 'Merriweather', serif;
+    }
+
+    .one {
+      top: 0.8em;
+    }
+
+    .two {
+      width: 53%;
+      line-height: 40px;
+    }
+
+    .three {
+      top: 6.5em;
+    }
+
+    .four {
+      line-height: 40px;
+      left: 12em;
+      top: 8em;
+    }
+
+    .five {
+      line-height: 40px;
+      left: 9.5em;
+      top: 15.5em;
     }
   }
 }
