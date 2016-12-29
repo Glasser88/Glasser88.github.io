@@ -151,22 +151,84 @@
     justify-content: flex-start;
   }
 
-  .appImage {
+  .minesweeperOne {
     background-image: url('../../../assets/images/minesweeper.png');
     background-size: cover;
     height: 7em;
     width: 7em;
     margin-right: 1em;
     cursor: pointer;
+    border-radius: 2px;
   }
 
-  .bigImage {
-    background-image: url('../../../assets/images/minesweeper.png');
+  .minesweeperTwo {
+    background-image: url('../../../assets/images/minesweeperTwo.png');
     background-size: cover;
     height: 7em;
     width: 7em;
     margin-right: 1em;
     cursor: pointer;
+    border-radius: 2px;
+  }
+
+  .blackjackOne {
+    background-image: url('../../../assets/images/blackjack.png');
+    background-size: cover;
+    height: 7em;
+    width: 7em;
+    margin-right: 1em;
+    cursor: pointer;
+    border-radius: 2px;
+  }
+
+  .blackjackTwo {
+    background-image: url('../../../assets/images/blackjackTwo.png');
+    background-size: cover;
+    height: 7em;
+    width: 7em;
+    margin-right: 1em;
+    cursor: pointer;
+    border-radius: 2px;
+  }
+
+  .earthquakeOne {
+    background-image: url('../../../assets/images/earthquake.png');
+    background-size: cover;
+    height: 7em;
+    width: 7em;
+    margin-right: 1em;
+    cursor: pointer;
+    border-radius: 2px;
+  }
+
+  .earthquakeTwo {
+    background-image: url('../../../assets/images/earthquakeTwo.png');
+    background-size: cover;
+    height: 7em;
+    width: 7em;
+    margin-right: 1em;
+    cursor: pointer;
+    border-radius: 2px;
+  }
+
+  .smallgameOne {
+    background-image: url('../../../assets/images/smallgame.png');
+    background-size: cover;
+    height: 7em;
+    width: 7em;
+    margin-right: 1em;
+    cursor: pointer;
+    border-radius: 2px;
+  }
+
+  .smallgameTwo {
+    background-image: url('../../../assets/images/smallgameTwo.png');
+    background-size: cover;
+    height: 7em;
+    width: 7em;
+    margin-right: 1em;
+    cursor: pointer;
+    border-radius: 2px;
   }
 
   .viewProject {
@@ -280,18 +342,60 @@
       left: -2em;
     }
 
-    .appImage {
+    .minesweeperOne {
       height: 10em;
       width: 10em;
       margin-top: 3em;
       margin-left: -2.2em;
     }
 
-    .bigImage {
+    .minesweeperTwo {
       height: 10em;
       width: 10em;
       margin-right: -3.6em;
       margin-top: 1em;
+    }
+
+    .blackjackOne {
+      height: 10em;
+      width: 10em;
+      margin-top: 3em;
+      margin-left: -2.2em;
+    }
+
+    .blackjackTwo {
+      height: 10em;
+      width: 10em;
+      margin-top: 3em;
+      margin-left: -2.2em;
+    }
+
+    .earthquakeOne {
+      height: 10em;
+      width: 10em;
+      margin-top: 3em;
+      margin-left: -2.2em;
+    }
+
+    .earthquakeTwo {
+      height: 10em;
+      width: 10em;
+      margin-top: 3em;
+      margin-left: -2.2em;
+    }
+
+    .smallgameOne {
+      height: 10em;
+      width: 10em;
+      margin-top: 3em;
+      margin-left: -2.2em;
+    }
+
+    .smallgameTwo {
+      height: 10em;
+      width: 10em;
+      margin-top: 3em;
+      margin-left: -2.2em;
     }
   }
 }

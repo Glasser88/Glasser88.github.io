@@ -17,18 +17,68 @@
     }
   }
 
-  .appImage {
+  .minesweeperOne {
     background-image: url('../../../assets/images/minesweeper.png');
     background-size: cover;
     height: 20em;
     width: 20em;
+    border-radius: 3px;
   }
 
-  .bigImage {
-    background-image: url('../../../assets/images/minesweeper.png');
+  .minesweeperTwo {
+    background-image: url('../../../assets/images/minesweeperTwo.png');
     background-size: cover;
     height: 20em;
     width: 20em;
+    border-radius: 3px;
+  }
+
+  .blackjackOne {
+    background-image: url('../../../assets/images/blackjack.png');
+    background-size: cover;
+    height: 20em;
+    width: 20em;
+    border-radius: 3px;
+  }
+
+  .blackjackTwo {
+    background-image: url('../../../assets/images/blackjackTwo.png');
+    background-size: cover;
+    height: 20em;
+    width: 20em;
+    border-radius: 3px;
+  }
+
+  .earthquakeOne {
+    background-image: url('../../../assets/images/earthquake.png');
+    background-size: cover;
+    height: 20em;
+    width: 20em;
+    border-radius: 3px;
+  }
+
+  .earthquakeTwo {
+    background-image: url('../../../assets/images/earthquakeTwo.png');
+    background-size: cover;
+    height: 20em;
+    width: 20em;
+    border-radius: 3px;
+  }
+
+  .smallgameOne {
+    background-image: url('../../../assets/images/smallgame.png');
+    background-size: cover;
+    height: 20em;
+    width: 20em;
+    border-radius: 3px;
+  }
+
+  .smallgameTwo {
+    background-image: url('../../../assets/images/smallgameTwo.png');
+    background-size: cover;
+    height: 20em;
+    width: 20em;
+    border-radius: 3px;
   }
 }
 
