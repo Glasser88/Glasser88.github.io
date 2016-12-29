@@ -2,8 +2,6 @@ import React, { Component, PropTypes } from 'react';
 
 import { Link } from 'react-router';
 
-import Topbar from './shared/Topbar';
-
 import STYLES from './Splashpage.scss';
 
 class Splashpage extends Component {

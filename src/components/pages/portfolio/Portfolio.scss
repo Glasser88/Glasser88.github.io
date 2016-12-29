@@ -55,7 +55,7 @@
     width: 100%;
     background-color: #0d0d0d;
     margin-bottom: 0.8em;
-    height: 13em;
+    height: 13.5em;
     font-family: 'Merriweather', serif;
   }
 
@@ -100,6 +100,7 @@
 
   @media (min-width: 768px) {
     .projectFolder {
+      width: 85%;
       margin-top: 8em;
     }
 

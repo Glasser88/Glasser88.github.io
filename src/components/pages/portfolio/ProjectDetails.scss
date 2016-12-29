@@ -117,11 +117,21 @@
   }
 
   .appImage {
-    background-image: url('../assets/images/minesweeper.png');
+    background-image: url('../../../assets/images/minesweeper.png');
     background-size: cover;
     height: 7em;
     width: 7em;
     margin-right: 1em;
+    cursor: pointer;
+  }
+
+  .bigImage {
+    background-image: url('../../../assets/images/minesweeper.png');
+    background-size: cover;
+    height: 7em;
+    width: 7em;
+    margin-right: 1em;
+    cursor: pointer;
   }
 
   .viewProject {
@@ -268,7 +278,7 @@
 
     .appImage {
       margin-top: 5em;
-      background-image: url('../assets/images/minesweeper.png');
+      background-image: url('../../../assets/images/minesweeper.png');
       background-size: cover;
       height: 12em;
       width: 12em;

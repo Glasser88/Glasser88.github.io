@@ -1,0 +1,17 @@
+:local .ScreenshotModal {
+  .appImage {
+    background-image: url('../../../assets/images/minesweeper.png');
+    background-size: cover;
+    height: 7em;
+    width: 7em;
+    margin-right: 1em;
+  }
+
+  .bigImage {
+    background-image: url('../../../assets/images/minesweeper.png');
+    background-size: cover;
+    height: 15em;
+    width: 15em;
+    margin-right: 1em;
+  }
+}

@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 
 import ProjectDetails from './ProjectDetails';
 
-import { PROJECTS } from '../constants/projects';
+import { PROJECTS } from '../../../constants/projects';
 
 import Button from 'react-bootstrap/lib/Button';
 import Glyphicon from 'react-bootstrap/lib/Glyphicon';
@@ -52,15 +52,16 @@ class Portfolio extends Component {
         { PROJECTS.map((project, i) => (
           <div key={i} className={STYLES.projectBox}>
             <div className={STYLES.open}>
-            <Glyphicon
-              onClick={this.setCurrentProject.bind(null, project)}
-              glyph='new-window'
-            />
+              <Glyphicon
+                onClick={this.setCurrentProject.bind(null, project)}
+                glyph='new-window'
+              />
             </div>
             <h2 onClick={this.setCurrentProject.bind(null, project)}>{project.name}</h2>
             <hr className={STYLES.line} />
             <div className={STYLES.details}>
               <h5>Y. <span className={STYLES.bold}>{project.year}</span></h5>
+              <h5>C. <span className={STYLES.bold}>{project.company}</span></h5>
               <h5>T. <span className={STYLES.bold}>{project.mainTechnology}</span></h5>
             </div>
           </div>

@@ -1,0 +1,160 @@
+:local .About {
+
+  font-family: 'Merriweather', serif;
+
+  .inside {
+    height: 100%;
+    width: 29em;
+    margin-top: 4em;
+    position: relative;
+  }
+
+  .hockey {
+    position: absolute;
+    background-image: url('../../../assets/images/chiefs.png');
+    background-size: cover;
+    height: 18em;
+    width: 18em;
+    left: 1.6em;
+    top: 9.1em;
+    transition: all 500ms ease;
+  }
+
+  .title {
+    color: #121212;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .name {
+    color: #c0a062;
+    font-size: 2.7em;
+    text-align: center;
+    margin-top: -0.4em;
+    margin-left: 0.5em;
+  }
+
+  .story {
+    position: relative;
+  }
+
+  .start {
+    position: absolute;
+    color: #c3c3c3;
+    font-size: 1.3em;
+    top: 1em;
+    right: 3.7em;
+  }
+
+  .intro {
+    position: absolute;
+    color: #c3c3c3;
+    width: 54%;
+    top: 2.6em;
+    font-size: 1.3em;
+    right: 2em;
+    line-height: 30px;
+  }
+
+  .always {
+    position: absolute;
+    color: #c3c3c3;
+    font-size: 1.3em;
+    right: 1.8em;
+    top: 6.03em;
+  }
+
+  .pointOne {
+    position: absolute;
+    color: #c3c3c3;
+    font-size: 1.3em;
+    left: 8.4em;
+    top: 7.6em;
+    line-height: 30px;
+  }
+
+  .finish {
+    position: absolute;
+    top: 14.3em;
+    left: 5em;
+    color: #c3c3c3;
+    font-size: 1.3em;
+  }
+
+  @media (min-width: 480px) {
+    .hockey {
+      position: absolute;
+      background-image: url('../../../assets/images/chiefs.png');
+      background-size: cover;
+      height: 25em;
+      width: 25em;
+      left: 1.4em;
+      top: 7.8em;
+      transition: all 500ms ease;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .inside {
+      position: fixed;
+      top: 7.5em;
+      left: 6.7em;
+      right: 6.7em;
+      bottom: 6.7em;
+      display: flex;
+    }
+
+    .hockey {
+      background-image: url('../../../assets/images/chiefs.png');
+      background-size: cover;
+      height: 100%;
+      width: 50em;
+      z-index: 9999;
+    }
+
+    .title {
+      color: #121212;
+      font-family: 'Merriweather', serif;
+      font-size: 4em;
+    }
+
+    .name {
+      color: #c0a062;
+      font-size: 4em;
+      margin-top: -0.8em;
+      margin-left: 1em;
+    }
+
+    .intro {
+      color: #c3c3c3;
+      font-family: 'Merriweather', serif;
+      font-size: 2em;
+      margin-top: 2em;
+      margin-left: 0.5em;
+    }
+
+    .pointOne {
+      color: #c3c3c3;
+      font-size: 1.6em;
+      margin-top: 2.5em;
+      margin-left: 0.5em;
+      font-family: 'Merriweather', serif;
+    }
+
+    .pointTwo {
+      color: #c3c3c3;
+      font-size: 1.6em;
+      margin-top: 2.5em;
+      margin-left: 0.5em;
+      font-family: 'Merriweather', serif;
+    }
+
+    .highlight {
+      color: #c0a062;
+      font-size: 1.5em;
+      font-family: 'Merriweather', serif;
+    }
+  }
+}
