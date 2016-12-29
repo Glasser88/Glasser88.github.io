@@ -1,16 +1,14 @@
 :local .Portfolio {
-  // height: 100%;
-  // width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   .projectFolder {
     width: 90%;
+    height: 30.5em;
     margin-left: auto;
     margin-right: auto;
     background-color: #1c1c1c;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0.8em;
     margin-top: 5em;
     position: relative;
     border-radius: 3px;
@@ -48,6 +46,18 @@
     color: #c3c3c3;
     z-index: 100;
     font-family: 'Merriweather', serif;
+  }
+
+  .projectHolder {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    height: 29.5em;
+    overflow: scroll;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.8em;
   }
 
   .projectBox {
@@ -100,12 +110,13 @@
 
   @media (min-width: 768px) {
     .projectFolder {
+      max-width: 70em;
       width: 85%;
       margin-top: 8em;
     }
 
     .projectBox {
-      width: 48%;
+      width: 47%;
       margin-left: 0.5em;
       margin-right: 0.5em;
     }

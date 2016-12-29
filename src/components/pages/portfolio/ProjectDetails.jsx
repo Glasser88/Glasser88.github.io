@@ -42,7 +42,8 @@ class ProjectDetails extends Component {
         </h5>
         <div className={STYLES.inside}>
           <div className={STYLES.featureOne}>
-            <h3>{project.name}</h3>
+            <div className={STYLES.projectTab}></div>
+            <div className={STYLES.tabName}>{project.name}</div>
             <div className={STYLES.insideBorder}>
               <div className={STYLES.description}>
                 <div className={STYLES.desTitle}>DESCRIPTION</div>

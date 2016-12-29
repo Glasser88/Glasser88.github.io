@@ -1,17 +1,38 @@
 :local .ScreenshotModal {
+
+  .body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  .close {
+    float: right;
+    font-size: 1.3em;
+    cursor: pointer;
+    &:hover {
+      color: #c0a062;
+    }
+  }
+
   .appImage {
     background-image: url('../../../assets/images/minesweeper.png');
     background-size: cover;
-    height: 7em;
-    width: 7em;
-    margin-right: 1em;
+    height: 20em;
+    width: 20em;
   }
 
   .bigImage {
     background-image: url('../../../assets/images/minesweeper.png');
     background-size: cover;
-    height: 15em;
-    width: 15em;
-    margin-right: 1em;
+    height: 20em;
+    width: 20em;
   }
+}
+
+.modal-body {
+  background-color: #1c1c1c;
+  border-radius: 3px;
 }
