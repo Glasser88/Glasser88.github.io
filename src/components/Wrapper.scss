@@ -17,8 +17,11 @@
 }
 
 .example-enter {
+  width: 100%;
+  position: absolute;
+  transform: translate3d(0, 0, 0);
   opacity: 0.01;
-  transition: opacity .5s ease-in;
+  transition: opacity 0.35s ease-in;
 }
 
 .example-enter.example-enter-active {
@@ -26,8 +29,11 @@
 }
 
 .example-leave {
+  width: 100%;
+  position: absolute;
   opacity: 1;
-  transition: opacity .5s ease-in;
+  transform: translate3d(0, 0, 0);
+  transition: opacity 0.35s ease-in;
 }
 
 .example-leave.example-leave-active {

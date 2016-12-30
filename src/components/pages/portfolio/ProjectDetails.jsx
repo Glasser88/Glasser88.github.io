@@ -56,17 +56,13 @@ class ProjectDetails extends Component {
                 </div>
               </div>
               <div className={STYLES.screenshots}>
-                <div className={STYLES.screenTitle}>SCREENSHOTS</div>
+                <div className={STYLES.screenTitle}>SCREENSHOT</div>
                 <div
                   onClick={this.openModal.bind(null, project.screenshotOne)}
                   className={STYLES[project.screenshotOne]}>
                 </div>
-                <div
-                  onClick={this.openModal.bind(null, project.screenshotTwo)}
-                  className={STYLES[project.screenshotTwo]}>
-                </div>
                 <ScreenshotModal
-                  showModal={screenshot === project.screenshotOne || screenshot === project.screenshotTwo }
+                  showModal={screenshot === project.screenshotOne }
                   closeModal={this.closeModal}
                   imageClass={screenshot}
                 />

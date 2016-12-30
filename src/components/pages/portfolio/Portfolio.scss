@@ -1,7 +1,19 @@
 :local .Portfolio {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+  .folderWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    font-weight: bold;
+    color: #121212;
+    margin-bottom: -0.5em;
+    margin-top: 0.5em;
+  }
 
   .projectFolder {
     width: 90%;
@@ -9,7 +21,7 @@
     margin-left: auto;
     margin-right: auto;
     background-color: #1c1c1c;
-    margin-top: 5em;
+    margin-top: 7em;
     position: relative;
     border-radius: 3px;
   }
@@ -106,9 +118,18 @@
 
   @media (min-width: 480px) {
 
+    .projectFolder {
+      margin-top: 7em;
+    }
+
   }
 
   @media (min-width: 768px) {
+
+    h1 {
+      font-size: 5em;
+    }
+
     .projectFolder {
       max-width: 70em;
       width: 85%;

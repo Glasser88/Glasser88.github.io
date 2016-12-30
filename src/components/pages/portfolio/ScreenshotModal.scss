@@ -1,32 +1,28 @@
 :local .ScreenshotModal {
 
+  border-radius: 3px;
+
   .body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    box-sizing: border-box;
   }
 
-  .close {
-    float: right;
-    font-size: 1.3em;
-    cursor: pointer;
+  .closeButton {
+    background-color: #191919;
+    border-radius: 2px;
+    color: #c0a062;
+    border: 1px solid #272727;
     &:hover {
-      color: #c0a062;
+      background-color: #c0a062;
+      color: #191919;
+      border: 1px solid #272727;
     }
   }
 
   .minesweeperOne {
     background-image: url('../../../assets/images/minesweeper.png');
-    background-size: cover;
-    height: 20em;
-    width: 20em;
-    border-radius: 3px;
-  }
-
-  .minesweeperTwo {
-    background-image: url('../../../assets/images/minesweeperTwo.png');
     background-size: cover;
     height: 20em;
     width: 20em;
@@ -41,24 +37,8 @@
     border-radius: 3px;
   }
 
-  .blackjackTwo {
-    background-image: url('../../../assets/images/blackjackTwo.png');
-    background-size: cover;
-    height: 20em;
-    width: 20em;
-    border-radius: 3px;
-  }
-
   .earthquakeOne {
     background-image: url('../../../assets/images/earthquake.png');
-    background-size: cover;
-    height: 20em;
-    width: 20em;
-    border-radius: 3px;
-  }
-
-  .earthquakeTwo {
-    background-image: url('../../../assets/images/earthquakeTwo.png');
     background-size: cover;
     height: 20em;
     width: 20em;
@@ -72,17 +52,32 @@
     width: 20em;
     border-radius: 3px;
   }
+}
 
-  .smallgameTwo {
-    background-image: url('../../../assets/images/smallgameTwo.png');
-    background-size: cover;
-    height: 20em;
-    width: 20em;
-    border-radius: 3px;
-  }
+button.close {
+  background-color: green;
 }
 
 .modal-body {
   background-color: #1c1c1c;
-  border-radius: 3px;
+  border-top: 3px solid #272727;
+  border-bottom: 3px solid #272727;
+}
+
+.modal-header {
+  border-radius: 3px 3px 0px 0px;
+  background-color: #1c1c1c;
+  border-bottom: 3px solid #272727;
+  margin-bottom: -0.2em;
+  button {
+    color: #c0a062;
+    opacity: 1;
+  }
+}
+
+.modal-footer {
+  border-radius: 0px 0px 3px 3px;
+  margin-top: -0.2em;
+  border-top: 3px solid #272727;
+  background-color: #1c1c1c;
 }

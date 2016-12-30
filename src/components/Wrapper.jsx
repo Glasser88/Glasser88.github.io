@@ -13,8 +13,8 @@ const Wrapper = ({ children, location  }) => (
     <ReactCSSTransitionGroup
       component="div"
       transitionName="example"
-      transitionEnterTimeout={500}
-      transitionLeaveTimeout={500}
+      transitionEnterTimeout={350}
+      transitionLeaveTimeout={350}
     >
     { React.cloneElement(children, {
         key: location.pathname
