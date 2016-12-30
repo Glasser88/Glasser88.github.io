@@ -77,7 +77,8 @@ class Portfolio extends Component {
 
     return (
       <div className={STYLES.Portfolio}>
-        <h1>My Portfolio</h1>
+        <h1>My Portfolio With</h1>
+        <h2 className={STYLES.favorites}>A Few Of My Favorites</h2>
         <div className={STYLES.folderWrapper}>
           { project === null && this.renderListView() }
           { project !== null && this.renderProject(project) }
