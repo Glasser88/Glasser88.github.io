@@ -1,7 +1,8 @@
 {
-  "name": "react-portfolio",
+  "name": "Glasser88.github.io",
   "version": "1.0.0",
   "description": "My new portfolio",
+  "homepage": "https://github.com/Glasser88/Glasser88.github.io",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --inline --hot"
