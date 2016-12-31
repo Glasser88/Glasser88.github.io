@@ -1,0 +1,301 @@
+:local .phoneButtons {
+
+  .dialPhone {
+    height: 24.5em;
+    width: 24.5em;
+    margin-top: 4em;
+    border-radius: 50%;
+    background: #1c1c1c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transform: rotate(0);
+    transition: transform 1s ease;
+
+    &:active {
+      transform: rotate(50deg);
+      transition: transform 1s ease;
+    }
+  }
+
+  .insideCircle {
+    height: 13.6em;
+    width: 13.6em;
+    border-radius: 50%;
+    background: #121212;
+    position: relative;
+  }
+
+  .infoCircle {
+    position: absolute;
+    height: 12.5em;
+    width: 12.5em;
+    background-color: #1c1c1c;
+    right: 6em;
+    bottom: 6em;
+    border-radius: 50%;
+  }
+
+  .info {
+    text-align: center;
+    margin-top: 5em;
+    a {
+      color: #c0a062;
+    }
+  }
+
+  .ring {
+    position: absolute;
+    right: 0;
+    bottom: 8em;
+    width: 80px;
+    height: 45px;
+    transform: rotate(40deg);
+    border-radius: 50%;
+    box-shadow: 15px 20px 0 0 #272727;
+  }
+
+  .one {
+    position: absolute;
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    top: 2em;
+    right: 1.25em;
+    font-size: 2.1em;
+    background-color: #dadada;
+  }
+
+  .two {
+    position: absolute;
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    top: 0.6em;
+    right: 3.15em;
+    font-size: 2.1em;
+    background-color: #979797;
+    border: 1px solid #979797;
+    &:hover {
+      background-color: #c0a062;
+      color: white;
+      border: 1px solid #c0a062;
+    }
+  }
+
+  .three {
+    position: absolute;
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    top: 0.35em;
+    right: 5.45em;
+    font-size: 2.1em;
+    background-color: #dadada;
+  }
+
+  .four {
+    position: absolute;
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    top: 1.2em;
+    left: 2.05em;
+    font-size: 2.1em;
+    background-color: #dadada;
+  }
+
+  .five {
+    position: absolute;
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    top: 3em;
+    left: 0.65em;
+    font-size: 2.1em;
+    background-color: #979797;
+    border: 1px solid #979797;
+    &:hover {
+      background-color: #c0a062;
+      color: white;
+      border: 1px solid #c0a062;
+    }
+  }
+
+  .six {
+    position: absolute;
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    top: 5.25em;
+    left: 0.3em;
+    font-size: 2.1em;
+    background-color: #dadada;
+  }
+
+  .seven {
+    position: absolute;
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    bottom: 2.25em;
+    left: 1.1em;
+    font-size: 2.1em;
+    background-color: #979797;
+    border: 1px solid #979797;
+    &:hover {
+      background-color: #c0a062;
+      color: white;
+      border: 1px solid #c0a062;
+    }
+  }
+
+  .eight {
+    position: absolute;
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    bottom: 0.75em;
+    left: 2.8em;
+    font-size: 2.1em;
+    background-color: #dadada;
+  }
+
+  .nine {
+    position: absolute;
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    bottom: 0.3em;
+    left: 5.05em;
+    font-size: 2.1em;
+    background-color: #dadada;
+  }
+
+  .zero {
+    position: absolute;
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    bottom: 0.95em;
+    right: 2.4em;
+    font-size: 2.1em;
+    background-color: #979797;
+    border: 1px solid #979797;
+    &:hover {
+      background-color: #c0a062;
+      color: white;
+      border: 1px solid #c0a062;
+    }
+  }
+
+  @media (min-width: 480px) {
+
+  }
+
+  @media (min-width: 768px) {
+
+    .dialPhone {
+      height: 35em;
+      width: 35em;
+      margin-top: 4em;
+      border-radius: 50%;
+      background: #1c1c1c;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .ring {
+      position: absolute;
+      right: 1em;
+      bottom: 9.5em;
+      width: 100px;
+      height: 70px;
+      transform: rotate(40deg);
+      border-radius: 50%;
+      box-shadow: 15px 20px 0 0 #272727;
+    }
+
+    .infoCircle {
+      height: 18em;
+      width: 18em;
+      right: 8.5em;
+      bottom: 8.5em;
+    }
+
+    .info {
+      margin-top: 5em;
+      font-size: 1.5em;
+    }
+
+    .insideCircle {
+      height: 20em;
+      width: 20em;
+      border-radius: 50%;
+      background: #121212;
+      background: radial-gradient(circle at 100px 100px, #1c1c1c, #000);
+    }
+
+    .one {
+      font-size: 3em;
+    }
+
+    .two {
+      font-size: 3em;
+    }
+
+    .three {
+      font-size: 3em;
+    }
+
+    .four {
+      font-size: 3em;
+    }
+
+    .five {
+      font-size: 3em;
+    }
+
+    .six {
+      font-size: 3em;
+    }
+
+    .seven {
+      font-size: 3em;
+    }
+
+    .eight {
+      font-size: 3em;
+    }
+
+    .nine {
+      font-size: 3em;
+    }
+
+    .zero {
+      font-size: 3em;
+    }
+  }
+}
+
+.test {
+  height: 10em;
+  width: 10em;
+  background-color: green;
+  animation: pulse 5s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(180deg);;
+  }
+  100% {
+    transform: rotate(0deg);;
+  }
+}
