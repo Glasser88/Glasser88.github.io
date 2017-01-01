@@ -9,28 +9,28 @@ const validate = require('webpack-validator');
 
 require('es6-promise').polyfill();
 
+
+const TARGET = process.env.npm_lifecycle_event;
+console.log("target event is " + TARGET);
+
 const config = {
-  context: __dirname,
   entry: './src/index.js',
   output: {
-    path: `${__dirname}/__build__`,
-    filename: 'bundle.js'
+    filename: 'index.js'
   },
 
-  postcss: function() {
-    return [autoprefixer({
-      browsers: ['last 3 versions']
-    })];
+  resolve: {
+    extensions: ['', '.js', '.jsx']
   },
 
   module: {
     loaders: [{
       exclude: /node_modules/,
-      test: /\.jsx?$/,
+      test: /\.js[x]?$/,
       loader: 'babel'
     }, {
       test: /\.css$/,
-      loader: 'style!css?modules&localIdentName=[name]---[local]---[hash:base64:5]'
+      loaders: ['style', 'css']
     }, {
       test: /\.scss$/,
       loaders: ['style', 'css', 'postcss', 'sass']
@@ -46,30 +46,52 @@ const config = {
     }]
   },
 
-  resolve: {
-    extensions: ['', '.js', '.jsx']
+  postcss: function() {
+    return [autoprefixer({
+      browsers: ['last 3 versions']
+    })];
   },
-
-  plugins: (() => {
-    if (process.argv.indexOf('-p') !== -1) {
-      return [
-        new webpack.DefinePlugin({
-          'process.env': {
-            NODE_ENV: JSON.stringify('production'),
-          },
-        }),
-        new webpack.NoErrorsPlugin(),
-        new webpack.optimize.OccurenceOrderPlugin(),
-        // new webpack.optimize.DedupePlugin(),
-        new webpack.optimize.UglifyJsPlugin({
-          output: {
-            comments: false,
-          },
-        })
-      ];
-    }
-    return [];
-  })(),
 };
 
-module.exports = validate(config);
+if (TARGET === 'dev' || !TARGET) {
+  module.exports = merge(config, {
+    devtool: '#source-map',
+    devServer: {
+      historyApiFallback: true
+    },
+    output: {
+      publicPath: 'http://localhost:8090/assets'
+    },
+    plugins: [
+      new NpmInstallPlugin({
+        save: true // --save
+      })
+    ]
+  });
+}
+
+if (TARGET === 'build') {
+  module.exports = merge(config, {
+    devtool: 'source-map',
+    output: {
+      path: `./dist`,
+    },
+    plugins: [
+      new HtmlWebpackPlugin({
+        title: 'Trevor Glass',
+        template: 'index-template.ejs'
+      }),
+      // new webpack.DefinePlugin({
+      //   'process.env': {
+      //     NODE_ENV: JSON.stringify('production'),
+      //   },
+      // }),
+      // new webpack.NoErrorsPlugin(),
+      // new webpack.optimize.OccurenceOrderPlugin(),
+      // new webpack.optimize.DedupePlugin(),
+      // new webpack.optimize.UglifyJsPlugin()
+    ]
+  });
+}
+
+// module.exports = validate(config);

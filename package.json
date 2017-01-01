@@ -4,7 +4,10 @@
   "description": "My new portfolio",
   "homepage": "https://github.com/Glasser88/Glasser88.github.io",
   "scripts": {
-    "start": "webpack -d --watch & live-server --entry-file=404.html"
+    "build": "webpack -p",
+    "start": "npm run serve | npm run dev",
+    "serve": "./node_modules/.bin/http-server -p 8080",
+    "dev": "webpack-dev-server -d --progress --colors --port 8090"
   },
   "repository": {
     "type": "git",
@@ -50,6 +53,7 @@
     "style-loader": "^0.13.1",
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2",
+    "webpack-md5-hash": "0.0.5",
     "webpack-merge": "^2.0.0",
     "webpack-validator": "^2.3.0"
   }
