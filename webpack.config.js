@@ -10,13 +10,10 @@ const TARGET = process.env.npm_lifecycle_event;
 console.log(`Target event is ${TARGET}`);
 
 const config = {
-  debug: true,
-  devtool: 'eval-source-map',
   context: __dirname,
   entry: './src/index.js',
-
   output: {
-    path: __dirname,
+    path: `${__dirname}__build__`,
     filename: 'bundle.js'
   },
 
@@ -61,6 +58,11 @@ const config = {
     // new webpack.DefinePlugin({ 'process.env':{ 'NODE_ENV': JSON.stringify('production') } }),
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': JSON.stringify('production')
+      }
+    }),
     new webpack.optimize.UglifyJsPlugin({
       compress: { warnings: false },
       output: {comments: false },
@@ -68,37 +70,8 @@ const config = {
       sourcemap: false,
       minimize: true,
       mangle: { except: ['$super', '$', 'exports', 'require', '$q', '$ocLazyLoad'] }
-    }),
-    new ExtractTextPlugin('src/public/stylesheets/app.css', {
-      allChunks: true
     })
   ]
 };
 
-if (TARGET === 'start' || !TARGET) {
-  module.exports = merge(config, {});
-}
-
-if (TARGET === 'build') {
-  module.exports = merge(config, {
-    devtool: 'source-map',
-    output: {
-      path: path.join(__dirname, 'dist'),
-      filename: 'bundle.js',
-      publicPath: '/static/',
-    },
-    plugins: [
-      new webpack.DefinePlugin({
-        'process.env': {
-          'NODE_ENV': JSON.stringify('production')
-        }
-      }),
-      new HtmlWebpackPlugin({
-        title: 'Trevor',
-        template: 'index-template.ejs'
-      })
-    ]
-  });
-}
-
-// module.exports = config;
+module.exports = config;

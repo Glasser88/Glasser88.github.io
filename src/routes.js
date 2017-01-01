@@ -8,11 +8,11 @@ import About from './components/pages/about/About';
 import Contact from './components/pages/contact/Contact';
 
 export default (
-  <Route path='/' component={Wrapper}>
+  <Route path='/Glasser88.github.io' component={Wrapper}>
     <IndexRoute component={Splashpage} />
 
-    <Route path="portfolio" component={Portfolio} />
-    <Route path="about" component={About} />
-    <Route path="contact" component={Contact} />
+    <Route path="/Glasser88.github.io/portfolio" component={Portfolio} />
+    <Route path="/Glasser88.github.io/about" component={About} />
+    <Route path="/Glasser88.github.io/contact" component={Contact} />
   </Route>
 );

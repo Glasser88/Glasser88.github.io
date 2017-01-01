@@ -6,10 +6,7 @@
   "repository": "https://github.com/Glasser88/Glasser88.github.io",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --progress -p",
-    "start": "webpack-dev-server --inline --hot",
-    "serve": "./node_modules/.bin/http-server -p 8080",
-    "dev": "webpack-dev-server -d --progress --colors --port 8080"
+    "start": "webpack -d --watch & live-server --entry-file=404.html"
   },
   "author": "Trevor Glass <glasser1988@gmail.com>",
   "license": "ISC",
@@ -40,6 +37,7 @@
     "file-loader": "0.8.5",
     "html-webpack-plugin": "^2.25.0",
     "http-server": "^0.9.0",
+    "live-server": "^1.1.0",
     "node-sass": "^3.13.0",
     "npm-install-webpack-plugin": "^4.0.4",
     "postcss": "5.0.15",
