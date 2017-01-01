@@ -94,7 +94,7 @@ if (TARGET === 'build') {
         }
       }),
       new HtmlWebpackPlugin({
-        title: 'Trevor Glass',
+        title: 'Trevor',
         template: 'index-template.ejs'
       })
     ]
