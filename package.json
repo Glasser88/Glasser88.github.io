@@ -3,17 +3,20 @@
   "version": "1.0.0",
   "description": "My new portfolio",
   "homepage": "https://github.com/Glasser88/Glasser88.github.io",
-  "repository": "https://github.com/Glasser88/Glasser88.github.io",
-  "main": "index.js",
   "scripts": {
     "start": "webpack -d --watch & live-server --entry-file=404.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Glasser88/Glasser88.github.io"
   },
   "author": "Trevor Glass <glasser1988@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "bootstrap-sass": "^3.3.7",
     "classnames": "^2.2.5",
-    "google-maps-react": "^1.0.19",
+    "current-input": "^1.1.1",
+    "es6-promise": "^4.0.5",
     "immutable": "^3.8.1",
     "react": "^15.4.1",
     "react-addons-css-transition-group": "^15.4.1",
@@ -48,6 +51,6 @@
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2",
     "webpack-merge": "^2.0.0",
-    "webpack-validator": "^2.2.11"
+    "webpack-validator": "^2.3.0"
   }
 }

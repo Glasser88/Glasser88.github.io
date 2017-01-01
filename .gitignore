@@ -6,3 +6,9 @@ dist/
 
 .DS_Store
 npm-debug.log
+
+# Source maps
+*.js.map
+
+# Files marked with gitigx
+*gitigx*

@@ -5,15 +5,15 @@ const autoprefixer = require('autoprefixer');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const NpmInstallPlugin = require('npm-install-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const validate = require('webpack-validator');
 
-const TARGET = process.env.npm_lifecycle_event;
-console.log(`Target event is ${TARGET}`);
+require('es6-promise').polyfill();
 
 const config = {
   context: __dirname,
   entry: './src/index.js',
   output: {
-    path: `${__dirname}__build__`,
+    path: `${__dirname}/__build__`,
     filename: 'bundle.js'
   },
 
@@ -26,7 +26,7 @@ const config = {
   module: {
     loaders: [{
       exclude: /node_modules/,
-      test: /\.(js|jsx)$/,
+      test: /\.jsx?$/,
       loader: 'babel'
     }, {
       test: /\.css$/,
@@ -45,33 +45,31 @@ const config = {
       loader: "file-loader"
     }]
   },
-  devServer: {
-    historyApiFallback: true,
-    contentBase: './'
-  },
 
   resolve: {
     extensions: ['', '.js', '.jsx']
   },
 
-  plugins: [
-    // new webpack.DefinePlugin({ 'process.env':{ 'NODE_ENV': JSON.stringify('production') } }),
-    new webpack.optimize.DedupePlugin(),
-    new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.DefinePlugin({
-      'process.env': {
-        'NODE_ENV': JSON.stringify('production')
-      }
-    }),
-    new webpack.optimize.UglifyJsPlugin({
-      compress: { warnings: false },
-      output: {comments: false },
-      mangle: false,
-      sourcemap: false,
-      minimize: true,
-      mangle: { except: ['$super', '$', 'exports', 'require', '$q', '$ocLazyLoad'] }
-    })
-  ]
+  plugins: (() => {
+    if (process.argv.indexOf('-p') !== -1) {
+      return [
+        new webpack.DefinePlugin({
+          'process.env': {
+            NODE_ENV: JSON.stringify('production'),
+          },
+        }),
+        new webpack.NoErrorsPlugin(),
+        new webpack.optimize.OccurenceOrderPlugin(),
+        // new webpack.optimize.DedupePlugin(),
+        new webpack.optimize.UglifyJsPlugin({
+          output: {
+            comments: false,
+          },
+        })
+      ];
+    }
+    return [];
+  })(),
 };
 
-module.exports = config;
+module.exports = validate(config);
