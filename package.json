@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "My new portfolio",
   "homepage": "https://github.com/Glasser88/Glasser88.github.io",
+  "repository": "https://github.com/Glasser88/Glasser88.github.io",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --inline --hot"
+    "start": "webpack-dev-server --inline --hot",
+    "build": "webpack -d"
   },
   "author": "Trevor Glass <glasser1988@gmail.com>",
   "license": "ISC",
@@ -34,6 +36,7 @@
     "css-loader": "^0.26.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "0.8.5",
+    "html-webpack-plugin": "^2.25.0",
     "node-sass": "^3.13.0",
     "postcss": "5.0.15",
     "postcss-loader": "^0.6.0",
@@ -42,6 +45,7 @@
     "style-loader": "^0.13.1",
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2",
+    "webpack-merge": "^2.0.0",
     "webpack-validator": "^2.2.11"
   }
 }

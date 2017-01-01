@@ -1,11 +1,18 @@
 const webpack = require('webpack');
+const merge = require('webpack-merge');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 
+const TARGET = process.env.npm_lifecycle_event;
+console.log(`Target event is ${TARGET}`);
+
 const config = {
+  debug: true,
   devtool: 'eval-source-map',
   context: __dirname,
   entry: './src/index.js',
+
   output: {
     path: __dirname,
     filename: 'bundle.js'
@@ -66,4 +73,19 @@ const config = {
   ]
 };
 
-module.exports = config;
+if (TARGET === 'build') {
+  module.exports = merge(config, {
+    devtool: 'source-map',
+    output: {
+      path: './dist'
+    },
+    plugins: [
+      new HtmlWebpackPlugin({
+        title: 'Trevor Glass',
+        template: 'index-template.ejs'
+      })
+    ]
+  });
+}
+
+// module.exports = config;

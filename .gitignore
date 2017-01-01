@@ -1,1 +1,8 @@
+# Dependency directories
 node_modules
+
+# Bundle directory
+dist/
+
+.DS_Store
+npm-debug.log
