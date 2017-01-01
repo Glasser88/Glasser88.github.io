@@ -6,8 +6,10 @@
   "repository": "https://github.com/Glasser88/Glasser88.github.io",
   "main": "index.js",
   "scripts": {
+    "build": "webpack --progress -p",
     "start": "webpack-dev-server --inline --hot",
-    "build": "webpack -d"
+    "serve": "./node_modules/.bin/http-server -p 8080",
+    "dev": "webpack-dev-server -d --progress --colors --port 8080"
   },
   "author": "Trevor Glass <glasser1988@gmail.com>",
   "license": "ISC",
@@ -37,7 +39,9 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "0.8.5",
     "html-webpack-plugin": "^2.25.0",
+    "http-server": "^0.9.0",
     "node-sass": "^3.13.0",
+    "npm-install-webpack-plugin": "^4.0.4",
     "postcss": "5.0.15",
     "postcss-loader": "^0.6.0",
     "redux-logger": "^2.7.4",

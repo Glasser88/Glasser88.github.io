@@ -1,8 +1,10 @@
+const path = require('path');
 const webpack = require('webpack');
 const merge = require('webpack-merge');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const autoprefixer = require('autoprefixer');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const NpmInstallPlugin = require('npm-install-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const TARGET = process.env.npm_lifecycle_event;
 console.log(`Target event is ${TARGET}`);
@@ -73,13 +75,24 @@ const config = {
   ]
 };
 
+if (TARGET === 'start' || !TARGET) {
+  module.exports = merge(config, {});
+}
+
 if (TARGET === 'build') {
   module.exports = merge(config, {
     devtool: 'source-map',
     output: {
-      path: './dist'
+      path: path.join(__dirname, 'dist'),
+      filename: 'bundle.js',
+      publicPath: '/static/',
     },
     plugins: [
+      new webpack.DefinePlugin({
+        'process.env': {
+          'NODE_ENV': JSON.stringify('production')
+        }
+      }),
       new HtmlWebpackPlugin({
         title: 'Trevor Glass',
         template: 'index-template.ejs'
