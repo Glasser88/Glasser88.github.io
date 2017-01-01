@@ -2,8 +2,6 @@ import React from 'react';
 
 import STYLES from './About.scss';
 
-// let my hard work & creativity be the driving force.
-
 const About = () => (
   <div className={STYLES.About}>
     <div>
