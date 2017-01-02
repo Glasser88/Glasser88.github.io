@@ -23,6 +23,7 @@ const config = {
   ],
   output: {
     path: buildPath,
+    publicPath: 'https://glasser88.github.io/',
     filename: 'bundle.js',
   },
 
