@@ -43,17 +43,8 @@ const config = {
       test: /\.scss$/,
       loaders: ['style', 'css', 'postcss', 'sass']
     }, {
-      test: /\.woff$/,
-      loader: "url-loader?limit=10000&mimetype=application/font-woff&name=[path][name].[ext]"
-    }, {
-      test: /\.woff2$/,
-      loader: "url-loader?limit=10000&mimetype=application/font-woff2&name=[path][name].[ext]"
-    }, {
-      test: /\.(eot|ttf|svg|gif|png)$/,
-      loaders: [
-        'file?hash=sha512&digest=hex&name=[hash].[ext]',
-        'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
-      ]
+      test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)|\.png($|\?)/,
+        loader: 'url-loader'
     }, {
       test: /\.html$/,
       loader: 'file?name=[name].[ext]',
