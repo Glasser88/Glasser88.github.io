@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "My new portfolio",
   "homepage": "https://github.com/Glasser88/Glasser88.github.io",
-  "main": "server.js",
   "scripts": {
     "start-message": "babel-node tools/startMessage.js",
     "prestart": "npm-run-all --parallel start-message",
