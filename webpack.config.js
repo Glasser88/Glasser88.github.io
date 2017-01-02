@@ -42,8 +42,14 @@ const config = {
       test: /\.scss$/,
       loaders: ['style', 'css', 'postcss', 'sass']
     }, {
-      test: /.woff$|.woff2$|.ttf$|.eot$|.svg$|.png$/,
-      loader: 'url-loader'
+      test: /\.woff$/,
+      loader: "url-loader?limit=10000&mimetype=application/font-woff&name=[path][name].[ext]"
+    }, {
+      test: /\.woff2$/,
+      loader: "url-loader?limit=10000&mimetype=application/font-woff2&name=[path][name].[ext]"
+    }, {
+      test: /\.(eot|ttf|svg|gif|png)$/,
+      loader: "file-loader"
     }, {
       test: /\.html$/,
       loader: 'file?name=[name].[ext]',
