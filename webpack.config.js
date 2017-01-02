@@ -23,7 +23,8 @@ const config = {
   ],
   output: {
     path: buildPath,
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    publicPath: '',
   },
 
   resolve: {
@@ -37,7 +38,7 @@ const config = {
       loaders: ['react-hot', 'babel-loader'],
     }, {
       test: /\.css$/,
-      loaders: ['style', 'css']
+      loaders: ['style', 'css', 'postcss']
     }, {
       test: /\.scss$/,
       loaders: ['style', 'css', 'postcss', 'sass']
@@ -71,7 +72,11 @@ const config = {
       },
     }),
     new webpack.optimize.DedupePlugin(),
-    new webpack.optimize.UglifyJsPlugin()
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false
+      }
+    })
   ]
 };
 
