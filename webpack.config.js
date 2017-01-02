@@ -50,7 +50,10 @@ const config = {
       loader: "url-loader?limit=10000&mimetype=application/font-woff2&name=[path][name].[ext]"
     }, {
       test: /\.(eot|ttf|svg|gif|png)$/,
-      loader: "file-loader"
+      loaders: [
+        'file?hash=sha512&digest=hex&name=[hash].[ext]',
+        'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
+      ]
     }, {
       test: /\.html$/,
       loader: 'file?name=[name].[ext]',
