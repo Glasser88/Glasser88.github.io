@@ -8,11 +8,11 @@
     "prestart": "npm-run-all --parallel start-message",
     "start": "npm-run-all --parallel open:src",
     "open:src": "babel-node tools/srcServer.js",
-    "open:dist": "babel-node tools/distServer.js",
-    "clean-dist": "npm run remove-dist && mkdir dist",
-    "remove-dist": "rimraf ./dist",
-    "prebuild": "npm run clean-dist",
-    "build": "babel-node tools/build.js && npm run open:dist"
+    "open:docs": "babel-node tools/distServer.js",
+    "clean-docs": "npm run remove-docs && mkdir docs",
+    "remove-docs": "rimraf ./docs",
+    "prebuild": "npm run clean-docs",
+    "build": "babel-node tools/build.js && npm run open:docs"
   },
   "repository": {
     "type": "git",
