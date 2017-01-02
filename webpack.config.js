@@ -24,7 +24,6 @@ const config = {
   output: {
     path: buildPath,
     filename: 'bundle.js',
-    publicPath: '',
   },
 
   resolve: {
@@ -43,8 +42,8 @@ const config = {
       test: /\.scss$/,
       loaders: ['style', 'css', 'postcss', 'sass']
     }, {
-      test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)|\.png($|\?)/,
-        loader: 'url-loader'
+      test: /.woff$|.woff2$|.ttf$|.eot$|.svg$|.png$/,
+      loader: 'url-loader'
     }, {
       test: /\.html$/,
       loader: 'file?name=[name].[ext]',
