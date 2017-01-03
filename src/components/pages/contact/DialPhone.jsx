@@ -17,7 +17,7 @@ const EMAIL = (
 );
 
 const TWITTER = (
-  <a href="https://twitter.com/Glasser1988" target='_blank'>Glasser1988</a>
+  <a href="https://twitter.com/Glasser1988" target='_blank'>@Glasser1988</a>
 );
 
 const LINKEDIN = (
@@ -65,6 +65,8 @@ const determineInfoClass = (spinClass) => {
 const dialPhone = ({ setSpinClass, spinDial }) => {
   return (
     <div className={STYLES.phoneBox}>
+      <div className={STYLES.dialPhoneWrap}></div>
+        <div className={STYLES.phoneImage}></div>
       <div className={determineClass(spinDial)}>
         { DIGITS.map((digit, i) => (
           <Button

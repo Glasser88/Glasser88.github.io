@@ -1,34 +1,56 @@
 :local .phoneBox {
 
   position: relative;
+  // perspective: 50em;
+
+  .phoneImage {
+    position: absolute;
+    height: 35em;
+    width: 37em;
+    // z-index: 9999;
+    // background-color: green;
+    top: 3.5em;
+    left: -12em;
+    z-index: -1;
+    background-size: cover;
+    background-image: url('../../../assets/images/phone.png');
+    filter: grayscale(100%);
+  }
 
   .insideCircle {
-    height: 13.6em;
-    width: 13.6em;
+    height: 6.5em;
+    width: 6.5em;
     border-radius: 50%;
-    background: #121212;
+    border: 2px solid #171717;
+    background: radial-gradient(circle at 150px 100px, #171717, #000);
     position: relative;
   }
 
   .infoCircle {
     position: absolute;
-    height: 12.5em;
-    width: 12.5em;
-    background-color: #1c1c1c;
-    right: 6em;
-    bottom: 6em;
-    border-radius: 50%;
+    height: 4em;
+    width: 20em;
+    right: -2.8em;
+    bottom: -18em;
+    background-color: #0b0b0b;
+    transform: rotate(2deg);
+    a {
+      position: absolute;
+      top: 1.5em;
+      left: 0;
+      right: 0;
+    }
   }
 
   .ring {
     position: absolute;
-    right: 0;
-    bottom: 8em;
-    width: 80px;
-    height: 45px;
-    transform: rotate(40deg);
+    right: -0.4em;
+    bottom: -3.3em;
+    width: 55px;
+    height: 30px;
+    transform: rotate(45deg);
     border-radius: 50%;
-    box-shadow: 15px 20px 0 0 #272727;
+    box-shadow: 14px 14px 0 0 #272727;
   }
 
   .one {
@@ -38,8 +60,10 @@
     border-radius: 50%;
     top: 2em;
     right: 1.25em;
-    font-size: 2.1em;
+    font-size: 1.2em;
     background-color: #dadada;
+    padding: 0;
+    border: 2px solid #000;
   }
 
   .two {
@@ -49,9 +73,10 @@
     border-radius: 50%;
     top: 0.6em;
     right: 3.15em;
-    font-size: 2.1em;
+    font-size: 1.2em;
     background-color: #979797;
-    border: 1px solid #979797;
+    border: 2px solid #000;
+    padding: 0;
     &:hover {
       background-color: #c0a062;
       color: white;
@@ -65,9 +90,11 @@
     width: 2em;
     border-radius: 50%;
     top: 0.35em;
-    right: 5.45em;
-    font-size: 2.1em;
+    right: 5.35em;
+    font-size: 1.2em;
     background-color: #dadada;
+    padding: 0;
+    border: 2px solid #000;
   }
 
   .four {
@@ -77,8 +104,10 @@
     border-radius: 50%;
     top: 1.2em;
     left: 2.05em;
-    font-size: 2.1em;
+    font-size: 1.2em;
     background-color: #dadada;
+    padding: 0;
+    border: 2px solid #000;
   }
 
   .five {
@@ -86,11 +115,12 @@
     height: 2em;
     width: 2em;
     border-radius: 50%;
-    top: 3em;
-    left: 0.65em;
-    font-size: 2.1em;
+    top: 2.95em;
+    left: 0.69em;
+    font-size: 1.2em;
     background-color: #979797;
-    border: 1px solid #979797;
+    border: 2px solid #000;
+    padding: 0;
     &:hover {
       background-color: #c0a062;
       color: white;
@@ -103,10 +133,12 @@
     height: 2em;
     width: 2em;
     border-radius: 50%;
-    top: 5.25em;
-    left: 0.3em;
-    font-size: 2.1em;
+    top: 5.1em;
+    left: 0.35em;
+    font-size: 1.2em;
     background-color: #dadada;
+    padding: 0;
+    border: 2px solid #000;
   }
 
   .seven {
@@ -116,9 +148,10 @@
     border-radius: 50%;
     bottom: 2.25em;
     left: 1.1em;
-    font-size: 2.1em;
+    font-size: 1.2em;
     background-color: #979797;
-    border: 1px solid #979797;
+    border: 2px solid #000;
+    padding: 0;
     &:hover {
       background-color: #c0a062;
       color: white;
@@ -133,8 +166,10 @@
     border-radius: 50%;
     bottom: 0.75em;
     left: 2.8em;
-    font-size: 2.1em;
+    font-size: 1.2em;
     background-color: #dadada;
+    padding: 0;
+    border: 2px solid #000;
   }
 
   .nine {
@@ -142,10 +177,12 @@
     height: 2em;
     width: 2em;
     border-radius: 50%;
-    bottom: 0.3em;
-    left: 5.05em;
-    font-size: 2.1em;
+    bottom: 0.4em;
+    left: 5em;
+    font-size: 1.2em;
     background-color: #dadada;
+    padding: 0;
+    border: 2px solid #000;
   }
 
   .zero {
@@ -153,16 +190,32 @@
     height: 2em;
     width: 2em;
     border-radius: 50%;
-    bottom: 0.95em;
-    right: 2.4em;
-    font-size: 2.1em;
+    bottom: 1.1em;
+    right: 2.3em;
+    font-size: 1.2em;
     background-color: #979797;
-    border: 1px solid #979797;
+    border: 2px solid #000;
+    padding: 0;
     &:hover {
       background-color: #c0a062;
       color: white;
       border: 1px solid #c0a062;
     }
+  }
+
+
+  .dialPhoneWrap {
+    position: absolute;
+    // background-color: #0b0b0b;
+    background: radial-gradient(circle at 110px 100px, #1c1c1c, #000);
+    height: 14.5em;
+    width: 14.5em;
+    top: 12em;
+    left: -0.6em;
+    z-index: 0;
+    border: 3px solid #171717;
+    border-radius: 50%;
+    transform: rotateX(20deg);
   }
 
   @media (min-width: 480px) {
@@ -171,77 +224,107 @@
 
   @media (min-width: 768px) {
 
+    .dialPhoneWrap {
+      position: absolute;
+      // background-color: #0b0b0b;
+      background: radial-gradient(circle at 110px 100px, #1c1c1c, #000);
+      height: 17em;
+      width: 17em;
+      top: 12.5em;
+      left: 12.8em;
+      z-index: 0;
+      border: 3px solid #171717;
+      border-radius: 50%;
+      transform: rotateX(20deg);
+    }
+
+    .phoneImage {
+      position: absolute;
+      height: 40em;
+      width: 45em;
+      top: 3.5em;
+      left: 0;
+      z-index: -1;
+      background-size: cover;
+      background-image: url('../../../assets/images/phone.png');
+      filter: grayscale(100%);
+    }
+
     .ring {
       position: absolute;
-      right: 1em;
-      bottom: 9.5em;
-      width: 100px;
-      height: 70px;
+      right: -14em;
+      bottom: -2.5em;
+      width: 60px;
+      height: 30px;
       transform: rotate(40deg);
       border-radius: 50%;
-      box-shadow: 15px 20px 0 0 #272727;
+      box-shadow: 15px 15px 0 0 #272727;
     }
 
     .infoCircle {
-      height: 18em;
-      width: 18em;
-      right: 8.5em;
-      bottom: 8.5em;
+      height: 5em;
+      width: 23em;
+      left: 9.5em;
+      bottom: -20.5em;
+      background-color: #0b0b0b;
+      transform: rotate(2deg);
+      a {
+        top: 1em;
+      }
     }
 
     .insideCircle {
-      height: 20em;
-      width: 20em;
-      border-radius: 50%;
-      background: #121212;
-      background: radial-gradient(circle at 100px 100px, #1c1c1c, #000);
+      height: 7.7em;
+      width: 7.7em;
+      border: 2px solid #171717;
+      background: radial-gradient(circle at 150px 100px, #171717, #000);
     }
 
     .one {
-      font-size: 3em;
+      font-size: 1.4em;
     }
 
     .two {
-      font-size: 3em;
+      font-size: 1.4em;
     }
 
     .three {
-      font-size: 3em;
+      font-size: 1.4em;
     }
 
     .four {
-      font-size: 3em;
+      font-size: 1.4em;
     }
 
     .five {
-      font-size: 3em;
+      font-size: 1.4em;
     }
 
     .six {
-      font-size: 3em;
+      font-size: 1.4em;
     }
 
     .seven {
-      font-size: 3em;
+      font-size: 1.4em;
     }
 
     .eight {
-      font-size: 3em;
+      font-size: 1.4em;
     }
 
     .nine {
-      font-size: 3em;
+      font-size: 1.4em;
     }
 
     .zero {
-      font-size: 3em;
+      font-size: 1.4em;
     }
   }
 }
 
 .NormalInfo {
   text-align: center;
-  margin-top: 5em;
+  margin-top: 1em;
   a {
     color: #c0a062;
     &:hover {
@@ -258,7 +341,7 @@
 
 .GithubFade {
   text-align: center;
-  margin-top: 5em;
+  margin-top: 1em;
   animation: GitIn 3s;
   a {
     color: #c0a062;
@@ -276,7 +359,7 @@
 
 .TwitterFade {
   text-align: center;
-  margin-top: 5em;
+  margin-top: 1em;
   animation: TwitIn 3s;
   a {
     color: #c0a062;
@@ -294,7 +377,7 @@
 
 .EmailFade {
   text-align: center;
-  margin-top: 5em;
+  margin-top: 1em;
   animation: EmailIn 3s;
   a {
     color: #c0a062;
@@ -312,7 +395,7 @@
 
 .LinkedInFade {
   text-align: center;
-  margin-top: 5em;
+  margin-top: 1em;
   animation: LinkIn 3s;
   a {
     color: #c0a062;
@@ -328,12 +411,22 @@
   }
 }
 
+.dialPhoneWrap {
+  background-color: #030303;
+  height: 20em;
+  width: 20em;
+  border-radius: 50%;
+  z-index: 99999;
+}
+
 .dialPhone {
-  height: 24.5em;
-  width: 24.5em;
+  height: 13.5em;
+  width: 13.5em;
+  top: 8.4em;
+  left: -0.1em;
   margin-top: 4em;
   border-radius: 50%;
-  background: #1c1c1c;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -341,11 +434,12 @@
 }
 
 .Github {
-  height: 24.5em;
-  width: 24.5em;
+  height: 13.5em;
+  width: 13.5em;
+  top: 8.4em;
+  left: -0.1em;
   margin-top: 4em;
   border-radius: 50%;
-  background: #1c1c1c;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -354,11 +448,12 @@
 }
 
 .Twitter {
-  height: 24.5em;
-  width: 24.5em;
+  height: 13.5em;
+  width: 13.5em;
+  top: 8.4em;
+  left: -0.1em;
   margin-top: 4em;
   border-radius: 50%;
-  background: #1c1c1c;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -367,11 +462,12 @@
 }
 
 .Email {
-  height: 24.5em;
-  width: 24.5em;
+  height: 13.5em;
+  width: 13.5em;
+  top: 8.4em;
+  left: -0.1em;
   margin-top: 4em;
   border-radius: 50%;
-  background: #1c1c1c;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -380,11 +476,12 @@
 }
 
 .LinkedIn {
-  height: 24.5em;
-  width: 24.5em;
+  height: 13.5em;
+  width: 13.5em;
+  top: 8.4em;
+  left: -0.1em;
   margin-top: 4em;
   border-radius: 50%;
-  background: #1c1c1c;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -393,6 +490,7 @@
 }
 
 @media (min-width: 768px) {
+
 
   .NormalInfo {
     margin-top: 5em;
@@ -420,28 +518,38 @@
   }
 
   .dialPhone {
-    height: 35em;
-    width: 35em;
+    height: 16em;
+    width: 16em;
+    top: 9em;
+    left: 13.3em;
   }
 
   .Github {
-    height: 35em;
-    width: 35em;
+    height: 16em;
+    width: 16em;
+    top: 9em;
+    left: 13.3em;
   }
 
   .Twitter {
-    height: 35em;
-    width: 35em;
+    height: 16em;
+    width: 16em;
+    top: 9em;
+    left: 13.3em;
   }
 
   .Email {
-    height: 35em;
-    width: 35em;
+    height: 16em;
+    width: 16em;
+    top: 9em;
+    left: 13.3em;
   }
 
   .LinkedIn {
-    height: 35em;
-    width: 35em;
+    height: 16em;
+    width: 16em;
+    top: 9em;
+    left: 13.3em;
   }
 }
 

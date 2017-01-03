@@ -3,6 +3,18 @@
   justify-content: center;
   align-items: center;
 
+  .phoneImage {
+    position: absolute;
+    height: 40em;
+    width: 45em;
+    // z-index: 9999;
+    // background-color: green;
+    top: 3.5em;
+    background-size: cover;
+    background-image: url('../../../assets/images/phone.png');
+    filter: grayscale(100%);
+  }
+
   .bigWrapper {
     display: flex;
     flex-wrap: wrap;
@@ -55,6 +67,8 @@
   }
 
   @media (min-width: 768px) {
+
+
 
     .bigWrapper {
       justify-content: flex-start;
