@@ -20,9 +20,65 @@
   <title>Trevor Glass</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet">
+  <style>
+      #loading {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 1;
+        background-color: #161616;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10000;
+        transition: opacity 0.3s ease;
+        transform: translate3d(0, 0, 0);
+      }
+      #loading.zero-opacity {
+        opacity: 0;
+      }
+      #spinner {
+        width: 60px;
+        height: 60px;
+        background-color: #c0a062;
 
+        border-radius: 100%;
+        -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+        animation: sk-scaleout 1.0s infinite ease-in-out;
+      }
+      @-webkit-keyframes sk-scaleout {
+        0% {
+          -webkit-transform: scale(0)
+        }
+        100% {
+          -webkit-transform: scale(1.0);
+          opacity: 0;
+        }
+      }
+
+      @keyframes sk-scaleout {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        } 100% {
+          -webkit-transform: scale(1.0);
+          transform: scale(1.0);
+          opacity: 0;
+        }
+      }
+
+      #portfolio {
+        opacity: 0;
+        transition: none;
+      }
+    </style>
 </head>
 <body>
-<div id="portfolio"></div>
+  <div id="loading">
+    <div id="spinner"></div>
+  </div>
+  <div id="portfolio"></div>
 </body>
 </html>

@@ -12,6 +12,21 @@ import "./styles/App.scss";
 
 const store = configureStore();
 
+const interval = setInterval(function() {
+  if(document.readyState === 'complete') {
+
+    document.getElementById("loading").className += " zero-opacity";
+    document.getElementById("portfolio").style.opacity = 1;
+
+    const timeout =  setTimeout(function () {
+      const element = document.getElementById("loading");
+      element.parentNode.removeChild(element);
+      clearTimeout(timeout);
+    }, 1000);
+
+    clearInterval(interval);
+  }
+}, 20);
 
 ReactDOM.render(
   <Provider store={store}>
