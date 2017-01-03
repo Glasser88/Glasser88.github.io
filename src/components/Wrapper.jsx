@@ -17,6 +17,7 @@ import DividerThree from '../components/dividers/DividerThree';
 import Navbar from 'react-bootstrap/lib/Navbar';
 import Nav from 'react-bootstrap/lib/Nav';
 import NavItem from 'react-bootstrap/lib/NavItem';
+import Glyphicon from 'react-bootstrap/lib/Glyphicon';
 
 import STYLES from './Wrapper.scss';
 
@@ -39,9 +40,13 @@ class Wrapper extends Component {
 
   componentDidMount() {
 
-    Events.scrollEvent.register('begin', function() {
-      console.log("begin", arguments);
+    let location;
+    Events.scrollEvent.register('begin', function(to, element) {
+      console.log("begin", to, element);
+      location = to;
     });
+
+    console.log('location', location);
 
 
     Events.scrollEvent.register('end', function() {
@@ -60,15 +65,25 @@ class Wrapper extends Component {
     scroll.scrollToTop();
   }
 
-  handleSetActive(to) {
-    console.log('tooooo', to);
-    // this.setState({
-    //   scrollToTopVisible: false,
-    // })
+  handleSetActive(location) {
+
+    console.log('location', location);
+
+    if(location !== 'splashpage') {
+      this.setState({
+        scrollToTopVisible: true,
+      })
+    } else {
+      this.setState({
+        scrollToTopVisible: false,
+      })
+    }
   }
 
   render() {
     const { scrollToTopVisible } = this.state;
+
+    console.log('scrollToTopVisible', scrollToTopVisible);
 
     return (
       <div className={STYLES.Wrapper}>
@@ -76,7 +91,14 @@ class Wrapper extends Component {
           <Navbar.Header>
             <Navbar.Brand>
               <div>
-                <Link className={STYLES.brand} to="/">
+                <Link
+                  className={STYLES.brand}
+                  to="splashpage"
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  duration={1000}
+                  onSetActive={this.handleSetActive}>
                   <div className={STYLES.logo}>TG</div>
                   <span className={STYLES.name}>Trevor Glass</span>
                 </Link>
@@ -129,8 +151,10 @@ class Wrapper extends Component {
          </Navbar.Collapse>
        </Navbar>
         <section>
-          <Splashpage />
-          <DividerOne />
+          <Element name="splashpage">
+            <Splashpage />
+          </Element>
+            <DividerOne />
           <Element name="portfolio">
             <Portfolio />
           </Element>
@@ -145,7 +169,7 @@ class Wrapper extends Component {
             <a
               className={scrollToTopVisible ? STYLES.showScroller : STYLES.hideScroller}
               onClick={this.scrollToTop}>
-              To the top!
+              <Glyphicon glyph='menu-up' />
             </a>
         </section>
         <Footer />

@@ -4,17 +4,39 @@
 
   .showScroller {
     position: fixed;
-    bottom: 2em;
-    right: 2em;
+    bottom: 1.5em;
+    right: 1.5em;
+    height: 1.5em;
+    width: 1.5em;
+    background-color: #c0a062;
+    color: #0d0d0d;
+    border-radius: 2px;
+    font-size: 1.5em;
     opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
     transition: opacity 1s ease;
   }
 
   .hideScroller {
     position: fixed;
-    bottom: 2em;
-    right: 2em;
+    bottom: 1.5em;
+    right: 1.5em;
+    height: 1.5em;
+    width: 1.5em;
+    background-color: #c0a062;
+    color: #0d0d0d;
+    border-radius: 2px;
+    font-size: 1.5em;
     opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
     transition: opacity 1s ease;
   }
 
@@ -80,14 +102,11 @@
   @media (min-width: 768px) {
 
     .logo {
-      font-weight: bold;
       height: 3em;
       width: 3em;
-      margin-right: 1em;
       margin-top: 0;
       margin-left: 0;
       border-radius: 1px;
-      transition: all 500ms ease;
     }
 
     .links {
