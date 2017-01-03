@@ -1,0 +1,65 @@
+:local .ProjectRow {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    height: 29.5em;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.8em;
+
+  .projectBox {
+    border-radius: 2px;
+    width: 100%;
+    background-color: #0d0d0d;
+    margin-bottom: 0.8em;
+    height: 13.5em;
+    font-family: 'Merriweather', serif;
+  }
+
+  .open {
+    padding: 0.5em;
+    cursor: pointer;
+    float: right;
+    margin-right: 1em;
+    margin-top: 1em;
+    &:hover {
+      color: #c0a062;
+    }
+  }
+
+  h2 {
+    font-size: 1.5em;
+    color: #fff;
+    margin-left: 1.5em;
+    margin-top: 1.5em;
+    cursor: pointer;
+  }
+
+  .line {
+    width: 20%;
+    margin-left: 2.1em;
+    border: 1px solid #c0a062;
+  }
+
+  .details {
+    text-align: left;
+    margin-left: 1.9em;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .bold {
+    font-weight: 200;
+  }
+
+  @media (min-width: 480px) {}
+
+  @media (min-width: 768px) {
+    .projectBox {
+      width: 47%;
+      margin-left: 0.5em;
+      margin-right: 0.5em;
+    }
+  }
+
+}

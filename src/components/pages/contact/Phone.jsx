@@ -2,11 +2,11 @@ import React from 'react';
 
 import { DIGITS } from '../../../constants/digits';
 
-import PhoneButtons from './PhoneButtons';
+import PhoneDial from './PhoneDial';
 
 import Button from 'react-bootstrap/lib/Button';
 
-import STYLES from './DialPhone.scss';
+import STYLES from './Phone.scss';
 
 const GITHUB = (
   <a href="https://github.com/Glasser88" target='_blank'>Glasser88</a>
@@ -23,25 +23,6 @@ const TWITTER = (
 const LINKEDIN = (
   <a href='https://www.linkedin.com/pub/trevor-glass/51/484/102' target='_blank'>Trevor Glass</a>
 );
-
-const determineClass = (spinClass) => {
-  switch(spinClass) {
-    case 'Github':
-    return 'Github';
-
-    case 'Twitter':
-    return 'Twitter';
-
-    case 'Email':
-    return 'Email';
-
-    case 'LinkedIn':
-    return 'LinkedIn';
-
-    default:
-    return 'dialPhone';
-  }
-}
 
 const determineInfoClass = (spinClass) => {
   switch(spinClass) {
@@ -62,26 +43,17 @@ const determineInfoClass = (spinClass) => {
   }
 };
 
-const dialPhone = ({ setSpinClass, spinDial }) => {
+const Phone = ({ setSpinClass, spinDial }) => {
   return (
-    <div className={STYLES.phoneBox}>
-      <div className={STYLES.dialPhoneWrap}></div>
-        <div className={STYLES.phoneImage}></div>
-      <div className={determineClass(spinDial)}>
-        { DIGITS.map((digit, i) => (
-          <Button
-            key={i}
-            className={STYLES[digit.number]}
-            disabled={digit.disabled}
-            onClick={setSpinClass.bind(null, digit.value)}>
-            { typeof digit.content === 'string' ? <i className={digit.content}></i> : digit.content  }
-          </Button>
-        ))}
-        <div className={STYLES.insideCircle}>
-        </div>
-      </div>
+    <div className={STYLES.Phone}>
+      <div className={STYLES.dialBackground}></div>
+      <div className={STYLES.phoneImage}></div>
+      <PhoneDial
+        spinDial={spinDial}
+        setSpinClass={setSpinClass}
+      />
       <div className={STYLES.ring}></div>
-      <div className={STYLES.infoCircle}>
+      <div className={STYLES.infoBar}>
         <div className={determineInfoClass(spinDial)}>
           {spinDial === 'Github' ? GITHUB : null}
           {spinDial === 'Twitter' ? TWITTER : null}
@@ -93,4 +65,4 @@ const dialPhone = ({ setSpinClass, spinDial }) => {
   );
 }
 
-export default dialPhone;
+export default Phone;

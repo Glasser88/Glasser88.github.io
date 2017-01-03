@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
-import { Link } from 'react-router';
-
+import ProjectRow from './ProjectRow';
 import ProjectDetails from './ProjectDetails';
 
 import { PROJECTS } from '../../../constants/projects';
@@ -51,25 +50,9 @@ class Portfolio extends Component {
       <div className={STYLES.projectFolder}>
         <div className={STYLES.projectTab}></div>
         <div className={STYLES.tabName}>Projects</div>
-          <div className={STYLES.projectHolder}>
-          { PROJECTS.map((project, i) => (
-            <div key={i} className={STYLES.projectBox}>
-              <div className={STYLES.open}>
-                <Glyphicon
-                  onClick={this.setCurrentProject.bind(null, project)}
-                  glyph='new-window'
-                />
-              </div>
-              <h2 onClick={this.setCurrentProject.bind(null, project)}>{project.name}</h2>
-              <hr className={STYLES.line} />
-              <div className={STYLES.details}>
-                <h5>Y. <span className={STYLES.bold}>{project.year}</span></h5>
-                <h5>C. <span className={STYLES.bold}>{project.company}</span></h5>
-                <h5>T. <span className={STYLES.bold}>{project.mainTechnology}</span></h5>
-              </div>
-            </div>
-          ))}
-        </div>
+        <ProjectRow
+          setCurrentProject={this.setCurrentProject}
+        />
       </div>
     );
   }
@@ -82,7 +65,14 @@ class Portfolio extends Component {
         <h1>My Portfolio With</h1>
         <h2 className={STYLES.favorites}>A Few Of My Favorites</h2>
         <div>
+          <ReactCSSTransitionGroup
+            className={STYLES.folderWrapper}
+            component="div"
+            transitionName="projectAnimation"
+            transitionEnterTimeout={350}
+            transitionLeaveTimeout={350}>
           { project === null && this.renderListView() }
+          </ReactCSSTransitionGroup>
           <ReactCSSTransitionGroup
             className={STYLES.folderWrapper}
             component="div"

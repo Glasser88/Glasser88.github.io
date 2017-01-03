@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import DialPhone from './DialPhone';
+import Phone from './Phone';
 
 import Glyphicon from 'react-bootstrap/lib/Glyphicon';
 import Button from 'react-bootstrap/lib/Button';
@@ -41,7 +41,7 @@ class Contact extends Component {
             <h3>Contact Info For Trevor Glass</h3>
           </div>
           <div className={STYLES.phoneWrapper}>
-            <DialPhone
+            <Phone
               setSpinClass={this.setSpinClass}
               spinDial={spinDial}
             />

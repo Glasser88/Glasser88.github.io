@@ -1,0 +1,24 @@
+@mixin phoneDialSpin($animationName, $rotation) {
+    @keyframes #{$animationName} {
+      0% {
+        transform: rotate(0);
+      }
+      50% {
+        transform: rotate(#{$rotation});
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+}
+
+@mixin informationAppear($animationName) {
+    @keyframes #{$animationName} {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+}
