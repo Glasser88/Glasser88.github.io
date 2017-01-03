@@ -3,18 +3,6 @@
   justify-content: center;
   align-items: center;
 
-  .phoneImage {
-    position: absolute;
-    height: 40em;
-    width: 45em;
-    // z-index: 9999;
-    // background-color: green;
-    top: 3.5em;
-    background-size: cover;
-    background-image: url('../../../assets/images/phone.png');
-    filter: grayscale(100%);
-  }
-
   .bigWrapper {
     display: flex;
     flex-wrap: wrap;
@@ -23,20 +11,29 @@
     padding-top: 1em;
   }
 
+  .headings {
+    width: 50em;
+  }
+
   h1 {
     font-family: 'Merriweather', serif;
     color: #121212;
     text-align: center;
+    font-weight: bold;
+    font-size: 3.2em;
     margin-bottom: 0em;
     margin-left: -1em;
     margin-top: 0.5em;
+
   }
 
   h3 {
     font-family: 'Merriweather', serif;
     color: #c0a062;
-    margin-left: 2.2em;
-    margin-top: -0.4em;
+    width: 40%;
+    text-align: center;
+    margin-left: 7em;
+    margin-top: -0.7em;
     margin-bottom: -0.5em;
   }
 
@@ -49,10 +46,6 @@
     width: 40%;
     font-family: 'Merriweather', serif;
     line-height: 30px;
-  }
-
-  .headings {
-    width: 30em;
   }
 
   .phoneWrapper {
@@ -68,33 +61,36 @@
 
   @media (min-width: 768px) {
 
-
-
     .bigWrapper {
       justify-content: flex-start;
       align-items: flex-start;
-    }
-
-    h1 {
-      position: absolute;
-      font-size: 4em;
-      right: 1em;
-      text-align: left;
-    }
-
-    h3 {
-      position: absolute;
-      top: 3.4em;
-      right: 2.3em;
-      font-size: 3em;
-      text-align: left;
-      line-height: 50px;
     }
 
     .headings {
       width: 35%;
       margin-left: 3em;
       position: relative;
+    }
+
+    h1 {
+      position: absolute;
+      font-size: 4.6em;
+      top: 0.6em;
+      right: 1.9em;
+      width: 3em;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    h3 {
+      position: absolute;
+      margin-top: -0.4em;
+      top: 6.3em;
+      width: 6em;
+      right: 1.4em;
+      font-size: 3em;
+      text-align: left;
+      line-height: 53px;
     }
 
     .phoneWrapper {

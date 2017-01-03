@@ -37,8 +37,8 @@ class Contact extends Component {
       <div className={STYLES.Contact}>
         <div className={STYLES.bigWrapper}>
           <div className={STYLES.headings}>
-            <h1>Contact Info To</h1>
-            <h3>Contact Trevor Glass</h3>
+            <h1>Dial Up The</h1>
+            <h3>Contact Info For Trevor Glass</h3>
           </div>
           <div className={STYLES.phoneWrapper}>
             <DialPhone
