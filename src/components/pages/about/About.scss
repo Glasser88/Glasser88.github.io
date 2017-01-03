@@ -1,5 +1,6 @@
 :local .About {
-
+  height: 45em;
+  padding-top: 4em;
   font-family: 'Merriweather', serif;
   display: flex;
   justify-content: center;
@@ -132,6 +133,7 @@
   }
 
   @media (min-width: 768px) {
+    height: 58em;
 
     .inside {
       width: 38em;

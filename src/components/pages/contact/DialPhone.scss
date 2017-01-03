@@ -1,17 +1,13 @@
 :local .phoneBox {
 
   position: relative;
-  // perspective: 50em;
 
   .phoneImage {
     position: absolute;
     height: 35em;
     width: 37em;
-    // z-index: 9999;
-    // background-color: green;
     top: 3.5em;
     left: -13em;
-    z-index: -1;
     background-size: cover;
     background-image: url('../../../assets/images/phone.png');
     filter: grayscale(100%);
@@ -206,13 +202,12 @@
 
   .dialPhoneWrap {
     position: absolute;
-    // background-color: #0b0b0b;
     background: radial-gradient(circle at 110px 100px, #1c1c1c, #000);
     height: 14.5em;
     width: 14.5em;
     top: 12em;
     left: -0.6em;
-    z-index: 0;
+    z-index: 5;
     border: 3px solid #171717;
     border-radius: 50%;
     transform: rotateX(20deg);
@@ -232,7 +227,6 @@
       width: 17em;
       top: 12.5em;
       left: 12.8em;
-      z-index: 0;
       border: 3px solid #171717;
       border-radius: 50%;
       transform: rotateX(20deg);
@@ -244,7 +238,6 @@
       width: 45em;
       top: 3.5em;
       left: 0;
-      z-index: -1;
       background-size: cover;
       background-image: url('../../../assets/images/phone.png');
       filter: grayscale(100%);
@@ -416,13 +409,13 @@
   height: 20em;
   width: 20em;
   border-radius: 50%;
-  z-index: 99999;
 }
 
 .dialPhone {
   height: 13.5em;
   width: 13.5em;
   top: 8.4em;
+  z-index: 10;
   left: -0.1em;
   margin-top: 4em;
   border-radius: 50%;
@@ -437,6 +430,7 @@
   height: 13.5em;
   width: 13.5em;
   top: 8.4em;
+  z-index: 10;
   left: -0.1em;
   margin-top: 4em;
   border-radius: 50%;
@@ -451,6 +445,7 @@
   height: 13.5em;
   width: 13.5em;
   top: 8.4em;
+  z-index: 10;
   left: -0.1em;
   margin-top: 4em;
   border-radius: 50%;
@@ -465,6 +460,7 @@
   height: 13.5em;
   width: 13.5em;
   top: 8.4em;
+  z-index: 10;
   left: -0.1em;
   margin-top: 4em;
   border-radius: 50%;
@@ -479,6 +475,7 @@
   height: 13.5em;
   width: 13.5em;
   top: 8.4em;
+  z-index: 10;
   left: -0.1em;
   margin-top: 4em;
   border-radius: 50%;

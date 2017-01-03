@@ -2,6 +2,8 @@ import React, { Component, PropTypes } from 'react';
 
 import { Link } from 'react-router';
 
+import Portfolio from '../portfolio/Portfolio';
+
 import STYLES from './Splashpage.scss';
 
 class Splashpage extends Component {

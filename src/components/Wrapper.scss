@@ -1,48 +1,81 @@
 :local .Wrapper {
-  min-height: 47em;
-  overflow: scroll;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  min-height: 100%;
   background-color: #161616;
 
-
-  @media (min-width: 480px) {
-    min-height: 46em;
+  .Topbar {
+    z-index: 9999;
+    border-radius: 0px !important;
+    background-color: #161616 !important;
+    border: none !important;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.1em;
   }
+
+  .logo {
+    font-weight: bold;
+    height: 1.75em;
+    width: 2.3em;
+    margin-right: 1em;
+    margin-top: -0.4em;
+    margin-left: -0.1em;
+    border-radius: 2px;
+    background-color: #c0a062;
+    color: #161616;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 500ms ease;
+  }
+
+  .brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.1em;
+  }
+
+  .name {
+    color: #fff;
+    margin-top: -0.2em;
+  }
+
+  .link {
+    color: #fff;
+    font-size: 1.1em;
+    &:hover {
+      text-decoration: none;
+      color: #c0a062;
+    }
+    &:active {
+      text-decoration: none;
+      color: #c0a062;
+    }
+    &:focus {
+      text-decoration: none;
+      color: #c0a062;
+      border-bottom: 1px solid #c0a062;
+    }
+  }
+
+  @media (min-width: 480px) {}
 
   @media (min-width: 768px) {
-    min-height: 56em;
+
+    .logo {
+      font-weight: bold;
+      height: 3em;
+      width: 3em;
+      margin-right: 1em;
+      margin-top: 0;
+      margin-left: 0;
+      border-radius: 1px;
+      transition: all 500ms ease;
+    }
+
+    .links {
+      margin-top: 1.26em;
+    }
   }
-}
-
-.example-enter {
-  width: 100%;
-  position: absolute;
-  transform: translate3d(0, 0, 0);
-  opacity: 0.01;
-  transition: opacity 0.35s ease-in;
-}
-
-.example-enter.example-enter-active {
-  opacity: 1;
-}
-
-.example-leave {
-  width: 100%;
-  position: absolute;
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-  transition: opacity 0.35s ease-in;
-}
-
-.example-leave.example-leave-active {
-  opacity: 0;
-}
-
-.link-active {
-  color: #bbbbbb;
-  text-decoration: none;
 }

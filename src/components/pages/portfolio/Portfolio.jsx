@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+
 import { Link } from 'react-router';
 
 import ProjectDetails from './ProjectDetails';
@@ -79,9 +81,16 @@ class Portfolio extends Component {
       <div className={STYLES.Portfolio}>
         <h1>My Portfolio With</h1>
         <h2 className={STYLES.favorites}>A Few Of My Favorites</h2>
-        <div className={STYLES.folderWrapper}>
+        <div>
           { project === null && this.renderListView() }
-          { project !== null && this.renderProject(project) }
+          <ReactCSSTransitionGroup
+            className={STYLES.folderWrapper}
+            component="div"
+            transitionName="projectAnimation"
+            transitionEnterTimeout={350}
+            transitionLeaveTimeout={350}>
+            { project !== null && (this.renderProject(project)) }
+          </ReactCSSTransitionGroup>
         </div>
       </div>
     );

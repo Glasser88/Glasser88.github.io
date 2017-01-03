@@ -1,6 +1,9 @@
 :local .Portfolio {
+  padding-bottom: 2em;
+  height: 70em;
 
   .folderWrapper {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,7 +28,10 @@
 
   .projectFolder {
     width: 90%;
-    height: 30.5em;
+    z-index: 30;
+    display: block;
+    margin: 0 auto;
+    height: 58em;
     margin-left: auto;
     margin-right: auto;
     background-color: #1c1c1c;
@@ -36,6 +42,7 @@
 
   .projectTab {
     position: absolute;
+    z-index: -1;
     width: 150px;
     height: 100px;
     top: -4em;
@@ -43,7 +50,6 @@
     margin: 20px 0;
     background: #1c1c1c;
     border-radius: 50% / 10%;
-    z-index: -10;
     color: white;
     text-align: center;
     text-indent: .1em;
@@ -72,7 +78,6 @@
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     height: 29.5em;
-    overflow: scroll;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -133,6 +138,7 @@
   }
 
   @media (min-width: 768px) {
+    height: 58em;
 
     h1 {
       font-size: 4em;
@@ -145,6 +151,7 @@
 
     .projectFolder {
       max-width: 70em;
+      height: 30em;
       width: 85%;
       margin-top: 8em;
     }
@@ -155,4 +162,24 @@
       margin-right: 0.5em;
     }
   }
+}
+
+.projectAnimation-enter {
+  transform: translate3d(0, 0, 0);
+  opacity: 0.01;
+  transition: opacity 0.35s ease-in;
+}
+
+.projectAnimation-enter.projectAnimation-enter-active {
+  opacity: 1;
+}
+
+.projectAnimation-leave {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: opacity 0.35s ease-in;
+}
+
+.projectAnimation-leave.projectAnimation-leave-active {
+  opacity: 0;
 }
