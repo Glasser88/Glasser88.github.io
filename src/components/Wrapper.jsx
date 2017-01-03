@@ -13,6 +13,7 @@ import Contact from '../components/pages/contact/Contact';
 import DividerOne from '../components/dividers/DividerOne';
 import DividerTwo from '../components/dividers/DividerTwo';
 import DividerThree from '../components/dividers/DividerThree';
+import GoogleMaps from '../components/pages/maps/GoogleMaps';
 
 import Navbar from 'react-bootstrap/lib/Navbar';
 import Nav from 'react-bootstrap/lib/Nav';
@@ -40,14 +41,9 @@ class Wrapper extends Component {
 
   componentDidMount() {
 
-    let location;
     Events.scrollEvent.register('begin', function(to, element) {
       console.log("begin", to, element);
-      location = to;
     });
-
-    console.log('location', location);
-
 
     Events.scrollEvent.register('end', function() {
       console.log("end", arguments);
@@ -166,6 +162,7 @@ class Wrapper extends Component {
           <Element name="contact">
             <Contact />
           </Element>
+          <GoogleMaps />
             <a
               className={scrollToTopVisible ? STYLES.showScroller : STYLES.hideScroller}
               onClick={this.scrollToTop}>

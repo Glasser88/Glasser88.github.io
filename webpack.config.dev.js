@@ -6,7 +6,7 @@ const autoprefixer = require('autoprefixer');
 
 module.exports = {
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ['', '.js', '.jsx', '.json']
   },
   debug: true,
   devtool: 'eval-source-map',
