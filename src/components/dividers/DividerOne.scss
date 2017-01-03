@@ -1,4 +1,75 @@
 :local .DividerOne {
-  height: 20em;
+  height: 75em;
   background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .boxHolder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .box {
+    width: 25em;
+    height: 25em;
+  }
+
+  .circle {
+    height: 7em;
+    width: 7em;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2em;
+    border-radius: 50%;
+    background-color: #333333;
+    border: 2px solid #0d0d0d;
+    position: relative;
+  }
+
+  .icon {
+    font-size: 3.5em;
+    color: #c0a062;
+    top: 0.45em;
+    left: 0.45em;
+  }
+
+  h3 {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+  }
+
+  p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  @media (min-width: 480px) {
+    .box {
+
+    }
+  }
+
+  @media (min-width: 768px) {
+    height: 35em;
+
+    .box {
+      height: 25em;
+      width: 15em;
+    }
+  }
+
+  @media (min-width: 1100px) {
+    .box {
+      height: 25em;
+      width: 25em;
+    }
+  }
 }

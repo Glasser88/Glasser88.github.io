@@ -2,6 +2,22 @@
   min-height: 100%;
   background-color: #161616;
 
+  .showScroller {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    opacity: 1;
+    transition: opacity 1s ease;
+  }
+
+  .hideScroller {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+
   .Topbar {
     z-index: 9999;
     border-radius: 0px !important;

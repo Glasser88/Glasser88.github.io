@@ -12,6 +12,7 @@ import About from '../components/pages/about/About';
 import Contact from '../components/pages/contact/Contact';
 import DividerOne from '../components/dividers/DividerOne';
 import DividerTwo from '../components/dividers/DividerTwo';
+import DividerThree from '../components/dividers/DividerThree';
 
 import Navbar from 'react-bootstrap/lib/Navbar';
 import Nav from 'react-bootstrap/lib/Nav';
@@ -29,12 +30,19 @@ class Wrapper extends Component {
   constructor(props) {
     super(props);
 
+    this.state = {
+      scrollToTopVisible: false,
+    }
+
+    this.handleSetActive = this.handleSetActive.bind(this);
   }
 
   componentDidMount() {
+
     Events.scrollEvent.register('begin', function() {
       console.log("begin", arguments);
     });
+
 
     Events.scrollEvent.register('end', function() {
       console.log("end", arguments);
@@ -52,7 +60,15 @@ class Wrapper extends Component {
     scroll.scrollToTop();
   }
 
+  handleSetActive(to) {
+    console.log('tooooo', to);
+    // this.setState({
+    //   scrollToTopVisible: false,
+    // })
+  }
+
   render() {
+    const { scrollToTopVisible } = this.state;
 
     return (
       <div className={STYLES.Wrapper}>
@@ -69,7 +85,7 @@ class Wrapper extends Component {
             <Navbar.Toggle />
           </Navbar.Header>
          <Navbar.Collapse>
-           <Nav pullRight>
+           <Nav className={STYLES.links} pullRight>
              <NavItem eventKey={1} href="#">
                <Link
                  className={STYLES.link}
@@ -122,10 +138,15 @@ class Wrapper extends Component {
           <Element name="about">
             <About />
           </Element>
+          <DividerThree />
           <Element name="contact">
             <Contact />
           </Element>
-            <a onClick={this.scrollToTop}>To the top!</a>
+            <a
+              className={scrollToTopVisible ? STYLES.showScroller : STYLES.hideScroller}
+              onClick={this.scrollToTop}>
+              To the top!
+            </a>
         </section>
         <Footer />
       </div>

@@ -1,0 +1,40 @@
+:local .DividerThree {
+  height: 12em;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .contentHolder {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .yellowBlocks {
+    height: 12em;
+    display: flex;
+    width: 100%;
+  }
+
+  .blockOne {
+    background-color: #c0a062;
+    width: 50%;
+  }
+
+  .blockTwo {
+    background-color: #b39b68;
+    width: 50%;
+  }
+
+  .socialBar {
+    height: 12em;
+    width: 100%;
+    background-color: #333333;
+  }
+
+  .test {
+    background-color: #c0a062;
+  }
+}
