@@ -15,16 +15,6 @@
     filter: grayscale(100%);
   }
 
-  .insideCircle {
-    height: 6.5em;
-    width: 6.5em;
-    border-radius: 50%;
-    z-index: 15;
-    border: 2px solid green;
-    background: radial-gradient(circle at 150px 100px, #171717, #000);
-    position: relative;
-  }
-
   .infoBar {
     position: absolute;
     height: 4em;
@@ -108,103 +98,36 @@
         top: 1em;
       }
     }
-
-    .insideCircle {
-      height: 7.7em;
-      width: 7.7em;
-      border: 2px solid #171717;
-      background: radial-gradient(circle at 150px 100px, #171717, #000);
-    }
   }
 }
 
 .NormalInfo {
   text-align: center;
   margin-top: 1em;
-  a {
-    color: #c0a062;
-    &:hover {
-      color: #c0a062
-    }
-    &:active {
-      color: #c0a062
-    }
-    &:focus {
-      color: #c0a062
-    }
-  }
 }
 
 .GithubFade {
   text-align: center;
   margin-top: 1em;
   animation: gitAppear 3s;
-  a {
-    color: #c0a062;
-    &:hover {
-      color: #c0a062
-    }
-    &:active {
-      color: #c0a062
-    }
-    &:focus {
-      color: #c0a062
-    }
-  }
 }
 
 .TwitterFade {
   text-align: center;
   margin-top: 1em;
   animation: twitAppear 3s;
-  a {
-    color: #c0a062;
-    &:hover {
-      color: #c0a062
-    }
-    &:active {
-      color: #c0a062
-    }
-    &:focus {
-      color: #c0a062
-    }
-  }
 }
 
 .EmailFade {
   text-align: center;
   margin-top: 1em;
   animation: emailAppear 3s;
-  a {
-    color: #c0a062;
-    &:hover {
-      color: #c0a062
-    }
-    &:active {
-      color: #c0a062
-    }
-    &:focus {
-      color: #c0a062
-    }
-  }
 }
 
 .LinkedInFade {
   text-align: center;
   margin-top: 1em;
   animation: linkedAppear 3s;
-  a {
-    color: #c0a062;
-    &:hover {
-      color: #c0a062
-    }
-    &:active {
-      color: #c0a062
-    }
-    &:focus {
-      color: #c0a062
-    }
-  }
 }
 
 @media (min-width: 768px) {

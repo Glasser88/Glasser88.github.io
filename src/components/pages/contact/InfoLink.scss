@@ -1,0 +1,14 @@
+:local .InfoLink {
+  a {
+    color: #c0a062;
+    &:hover {
+      color: #c0a062
+    }
+    &:active {
+      color: #c0a062
+    }
+    &:focus {
+      color: #c0a062
+    }
+  }
+}

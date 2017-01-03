@@ -10,7 +10,10 @@ const PhoneButton = ({ setSpinClass, digit }) => (
       className={STYLES[digit.number]}
       disabled={digit.disabled}
       onClick={setSpinClass.bind(null, digit.value)}>
-      { typeof digit.content === 'string' ? <i className={digit.content}></i> : digit.content  }
+      { typeof digit.content === 'string' ?
+        ( <i className={digit.content}></i> ) :
+        digit.content
+      }
     </Button>
   </div>
 );

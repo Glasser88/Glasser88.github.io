@@ -27,9 +27,9 @@ const determineClass = (spinClass) => {
   }
 }
 
-const PhoneDial = ({ spinDial, setSpinClass }) => (
+const PhoneDial = ({ spinClass, setSpinClass }) => (
   <div className={STYLES.PhoneDial}>
-    <div className={determineClass(spinDial)}>
+    <div className={determineClass(spinClass)}>
       { DIGITS.map((digit, i) => (
         <PhoneButton
           key={i}

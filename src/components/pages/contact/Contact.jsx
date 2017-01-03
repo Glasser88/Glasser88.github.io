@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 
 import Phone from './Phone';
 
-import Glyphicon from 'react-bootstrap/lib/Glyphicon';
-import Button from 'react-bootstrap/lib/Button';
-
 import STYLES from './Contact.scss';
 
 class Contact extends Component {
@@ -12,7 +9,7 @@ class Contact extends Component {
     super(props);
 
     this.state = {
-      spinDial: false,
+      spinClass: false,
     }
 
     this.setSpinClass = this.setSpinClass.bind(this);
@@ -21,17 +18,17 @@ class Contact extends Component {
   setSpinClass(prop) {
     if(prop !== this.state.spinDial) {
       this.setState({
-        spinDial: false,
+        spinClass: false,
       })
     }
 
     this.setState({
-      spinDial: prop,
+      spinClass: prop,
     })
   }
 
   render() {
-    const { spinDial } = this.state;
+    const { spinClass } = this.state;
 
     return (
       <div className={STYLES.Contact}>
@@ -43,7 +40,7 @@ class Contact extends Component {
           <div className={STYLES.phoneWrapper}>
             <Phone
               setSpinClass={this.setSpinClass}
-              spinDial={spinDial}
+              spinClass={spinClass}
             />
           </div>
         </div>
