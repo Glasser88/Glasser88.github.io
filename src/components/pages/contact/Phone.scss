@@ -13,6 +13,7 @@
     background-size: cover;
     background-image: url('../../../assets/images/phone.png');
     filter: grayscale(100%);
+    filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5)); filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
   }
 
   .infoBar {
