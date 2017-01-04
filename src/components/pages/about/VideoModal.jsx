@@ -3,29 +3,34 @@ import React, { PropTypes } from 'react';
 import Modal from 'react-bootstrap/lib/Modal';
 import Button from 'react-bootstrap/lib/Button';
 
-const VideoModal = ({ openModal, closeModal }) => (
-  <Modal show={openModal} onHide={closeModal}>
+import STYLES from './VideoModal.scss';
+
+const VideoModal = ({ show, onHide }) => (
+  <Modal
+    show={show}
+    onHide={onHide}
+    className={STYLES.VideoModal}>
     <Modal.Header closeButton>
       <Modal.Title>Memorial Cup Championship Run</Modal.Title>
     </Modal.Header>
     <Modal.Body>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/2KnfvwIPHLw?autoplay=1"
-        frameBorder="0"
-        allowfullscreen>
-      </iframe>
+      <div className={STYLES.videoWrapper}>
+        <iframe
+          src="https://www.youtube.com/embed/2KnfvwIPHLw?autoplay=1"
+          frameBorder="0"
+          allowfullscreen>
+        </iframe>
+      </div>
     </Modal.Body>
     <Modal.Footer>
-      <Button onClick={closeModal}>Close</Button>
+      <Button onClick={onHide}>Close</Button>
     </Modal.Footer>
   </Modal>
 );
 
 VideoModal.propTypes = {
-  openModal: PropTypes.bool.isRequired,
-  closeModal: PropTypes.func,
+  show: PropTypes.bool,
+  onHide: PropTypes.func,
 }
 
 export default VideoModal;

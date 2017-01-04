@@ -96,6 +96,7 @@
     font-size: 0.9em;
     left: -2em;
     top: 4.4em;
+    color: #146474;
     transform: rotate(-90deg);
     font-family: 'Open Sans', sans-serif;
   }
@@ -115,6 +116,7 @@
     position: absolute;
     letter-spacing: 1px;
     font-size: 0.9em;
+    color: #146474;
     font-family: 'Open Sans', sans-serif;
     left: 1.3em;
     top: 11em;
@@ -137,6 +139,7 @@
     font-size: 0.9em;
     left: -5.55em;
     top: 3.1em;
+    color: #146474;
     transform: rotate(-90deg);
     font-family: 'Open Sans', sans-serif;
   }
@@ -211,10 +214,11 @@
     padding: 1em;
     border-radius: 1px;
     background-color: #012537;
-    border: 1px solid #011829;
+    border: 1px solid #146474;
     text-transform: uppercase;
     color: #c9995b;
     font-size: 0.9em;
+    font-family: 'Open Sans', sans-serif;
     &:hover {
       background-color: #c9995b;
       color: #191919;

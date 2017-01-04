@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import VideoModal from './VideoModal';
+
 import Button from 'react-bootstrap/lib/Button';
 import Glyphicon from 'react-bootstrap/lib/Glyphicon';
 
@@ -12,7 +14,7 @@ class About extends Component {
     super(props);
 
     this.state = {
-      openModal: false,
+      modalOpen: false,
     };
 
     this.closeModal = this.closeModal.bind(this);
@@ -21,18 +23,18 @@ class About extends Component {
 
   closeModal() {
     this.setState({
-      openModal: false,
+      modalOpen: false,
     })
   }
 
   openModal() {
     this.setState({
-      openModal: true,
+      modalOpen: true,
     })
   }
 
   render() {
-    const { openModal } = this.state;
+    const { modalOpen } = this.state;
 
     return (
       <div className={STYLES.About}>
@@ -54,17 +56,11 @@ class About extends Component {
               className={STYLES.videoButton}>
               <Glyphicon glyph='film' />
             </Button>
-            <Modal show={openModal} onHide={this.closeModal}>
-              <Modal.Header closeButton>
-                <Modal.Title>Modal heading</Modal.Title>
-              </Modal.Header>
-              <Modal.Body>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/2KnfvwIPHLw?autoplay=1" frameBorder="0" allowfullscreen></iframe>
-              </Modal.Body>
-              <Modal.Footer>
-                <Button onClick={this.closeModal}>Close</Button>
-              </Modal.Footer>
-            </Modal>
+            <VideoModal
+              show={modalOpen}
+              onHide={this.closeModal}
+            />
+
             <Button
               className={STYLES.pdfButton}>
               <i className="fa fa-file-pdf-o"></i>

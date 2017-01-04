@@ -89,12 +89,12 @@
 
   .videoButton {
     position: absolute;
-    border-radius: 50%;
-    bottom: 2em;
+    // border-radius: 50%;
+    bottom: 4em;
     left: 2em;
-    height: 2.5em;
-    width: 2.5em;
-    font-size: 2em;
+    height: 1.8em;
+    width: 5.5em;
+    font-size: 1.8em;
     color: #fff;
     background-color: #c0a062;
     border: 1px solid #a68e60;
@@ -102,12 +102,12 @@
 
   .pdfButton {
     position: absolute;
-    bottom: 2em;
+    bottom: 4em;
     left: 8em;
-    border-radius: 50%;
-    height: 2.5em;
-    width: 2.5em;
-    font-size: 2em;
+    // border-radius: 50%;
+    height: 1.8em;
+    width: 5.5em;
+    font-size: 1.8em;
     color: #fff;
     background-color: #c0a062;
     border: 1px solid #a68e60;
@@ -175,8 +175,8 @@
     .hockey {
       height: 32em;
       width: 32em;
-      left: -4em;
-      top: 9.3em;
+      left: -3em;
+      top: 10.8em;
       transition: all 500ms ease;
     }
 
@@ -218,24 +218,17 @@
     }
 
     .videoButton {
-      position: absolute;
       right: -2em;
-      border-radius: 50%;
-      height: 2.5em;
-      width: 2.5em;
+      height: 2em;
+      width: 5.5em;
       font-size: 2em;
       color: #fff;
-      background-color: #c0a062;
-      border: 1px solid #a68e60;
     }
 
     .pdfButton {
-      position: absolute;
-      top: 10em;
       right: -3em;
-      border-radius: 50%;
-      height: 2.5em;
-      width: 2.5em;
+      height: 2em;
+      width: 5.5em;
       font-size: 2em;
       color: #fff;
       background-color: #c0a062;

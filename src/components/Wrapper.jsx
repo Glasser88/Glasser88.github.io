@@ -62,9 +62,6 @@ class Wrapper extends Component {
   }
 
   handleSetActive(location) {
-
-    console.log('location', location);
-
     if(location !== 'splashpage') {
       this.setState({
         scrollToTopVisible: true,
@@ -78,8 +75,6 @@ class Wrapper extends Component {
 
   render() {
     const { scrollToTopVisible } = this.state;
-
-    console.log('scrollToTopVisible', scrollToTopVisible);
 
     return (
       <div className={STYLES.Wrapper}>

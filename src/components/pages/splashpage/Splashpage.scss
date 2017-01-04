@@ -66,14 +66,6 @@
   @media (min-width: 480px) {
     height: 50em;
 
-    .text {
-      margin-top: 5em;
-      width: 38em;
-      margin-left: auto;
-      margin-right: auto;
-      position: relative;
-    }
-
     h1 {
       font-size: 4.8em;
       left: 0.7em;
@@ -102,6 +94,14 @@
       left: 10em;
     }
 
+    .text {
+      margin-top: 5em;
+      width: 38em;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+    }
+
     .line {
       top: 35em;
       left: 15.7em;
@@ -111,14 +111,6 @@
 
   @media (min-width: 768px) {
     height: 55em;
-
-    .text {
-      margin-top: 10em;
-      width: 60em;
-      margin-left: auto;
-      margin-right: auto;
-      position: relative;
-    }
 
     h1 {
       position: absolute;
@@ -148,6 +140,20 @@
       font-size: 1.6em;
       left: 15.3em;
       top: 23em;
+    }
+
+    .text {
+      margin-top: 10em;
+      width: 60em;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+    }
+
+    .line {
+      top: 40em;
+      left: 27.5em;
+      width: 10em;
     }
   }
 }
