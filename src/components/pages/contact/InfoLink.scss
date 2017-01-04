@@ -1,4 +1,9 @@
 :local .InfoLink {
+
+  .linkWrapper {
+    display: flex; 
+  }
+
   a {
     color: #c0a062;
     &:hover {
