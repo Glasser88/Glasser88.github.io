@@ -3,7 +3,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 2em;
   background-color: #021019;
   border-bottom: 3px solid #08304b;
 
@@ -12,12 +11,6 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding-top: 1em;
-    margin-top: -20em;
-  }
-
-  .headings {
-    width: 50em;
   }
 
   h1 {
@@ -26,9 +19,6 @@
     text-align: center;
     font-weight: bold;
     font-size: 3.2em;
-    margin-bottom: 0em;
-    margin-left: -1em;
-    margin-top: 0.5em;
 
   }
 
@@ -36,16 +26,9 @@
     font-family: 'Merriweather', serif;
     color: #c0a062;
     width: 40%;
-    text-align: center;
-    margin-left: 7em;
-    margin-top: -0.7em;
-    margin-bottom: -0.5em;
   }
 
   h4 {
-    position: absolute;
-    top: 2.4em;
-    left: 4em;
     font-size: 1em;
     text-align: center;
     width: 40%;
@@ -54,7 +37,6 @@
   }
 
   .phoneWrapper {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,43 +48,17 @@
 
   @media (min-width: 768px) {
 
-    .bigWrapper {
-      justify-content: flex-start;
-      align-items: flex-start;
-    }
-
-    .headings {
-      width: 35%;
-      margin-left: 3em;
-      position: relative;
-    }
-
     h1 {
-      position: absolute;
       font-size: 4.6em;
-      top: 0.6em;
-      right: 1.9em;
       width: 3em;
       font-weight: bold;
       text-align: left;
     }
 
     h3 {
-      position: absolute;
-      margin-top: -0.4em;
-      top: 6.3em;
       width: 6em;
-      right: 1.4em;
       font-size: 3em;
-      text-align: left;
       line-height: 53px;
-    }
-
-    .phoneWrapper {
-      width: 55%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
   }
 }

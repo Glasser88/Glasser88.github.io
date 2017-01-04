@@ -29,7 +29,10 @@ const Phone = ({ setSpinClass, spinClass }) => {
   return (
     <div className={STYLES.Phone}>
       <div className={STYLES.dialBackground}></div>
-      <div className={STYLES.phoneImage}></div>
+      <div className={STYLES.phoneBase}></div>
+      <div className={STYLES.phoneIcon}>
+        <i className="fa fa-phone"></i>
+      </div>
       <PhoneDial
         spinClass={spinClass}
         setSpinClass={setSpinClass}
