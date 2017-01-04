@@ -21,7 +21,7 @@
   }
 
   .headings {
-    width: 50%;
+    width: 100%;
     margin-top: -12em;
   }
 
@@ -39,6 +39,8 @@
     color: #146474;
     text-align: right;
     text-shadow: 2px 2px #000;
+    margin-right: 1em;
+    margin-top: -0.9em;
   }
 
   .phoneWrapper {
@@ -66,6 +68,25 @@
       line-height: 40px;
       margin-top: -0.7em;
       margin-left: 2em;
+    }
+
+    .bigWrapper {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .line {
+      border: 1px solid #c0a062;
+      width: 10em;
+      margin-right: 10em;
+    }
+
+    .headings {
+      width: 50%;
+      margin-top: -12em;
     }
   }
 }

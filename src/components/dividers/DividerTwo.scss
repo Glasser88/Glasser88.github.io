@@ -1,5 +1,5 @@
 :local .DividerTwo {
-  height: 70em;
+  height: 60em;
   width: 100%;
   background-color: #012537;
   display: flex;
@@ -24,13 +24,15 @@
     color: #011829;
     font-size: 2.6em;
     text-shadow: 0.5px 0.5px #000;
+    margin-left: 1.8em;
+    margin-top: 4em;
   }
 
   h3 {
     color: #146474;
     font-size: 2em;
     margin-top: -0.9em;
-    margin-left: 0.5em;
+    margin-left: 2.5em;
     text-shadow: 2px 2px #000;
   }
 
@@ -42,12 +44,16 @@
 
   .line {
     border: 1px solid #c0a062;
-    margin-left: 4em;
+    margin-left: 8em;
     width: 8em;
   }
 
   .radar {
-    margin-left: 1.5em;
+    margin-left: 0em;
+  }
+
+  .legend {
+    margin-left: 2.5em;
   }
 
   .withCoffee {

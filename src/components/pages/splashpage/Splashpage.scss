@@ -1,6 +1,6 @@
 :local .Splashpage {
   width: 100%;
-  height: 35em;
+  height: 40em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,7 +20,7 @@
     font-size: 3.8em;
     color: #011829;
     font-weight: bold;
-    top: 0em;
+    top: 1em;
     left: 0.5em;
     text-shadow: 0.7px 0.7px #000;
   }
@@ -29,7 +29,7 @@
     width: 80%;
     position: absolute;
     font-size: 1.8em;
-    top: 1.6em;
+    top: 3.5em;
     line-height: 35px;
     left: 1em;
     color: #146474;
@@ -41,8 +41,8 @@
     color: #c3c3c3;
     font-size: 1.1em;
     position: absolute;
-    top: 14em;
-    left: 3em;
+    top: 18em;
+    left: 5em;
     width: 12.5em;
     line-height: 20px;
   }
@@ -50,20 +50,22 @@
   h4 {
     position: absolute;
     font-size: 1em;
-    top: 19.5em;
-    left: 5em;
+    top: 24.5em;
+    left: 7.3em;
   }
 
   .line {
     border: 1px solid #c0a062;
     position: absolute;
-    top: 24em;
-    left: 7em;
+    top: 27em;
+    left: 8.9em;
     z-index: 10;
-    width: 20em;
+    width: 7em;
   }
 
   @media (min-width: 480px) {
+    height: 50em;
+
     .text {
       margin-top: 5em;
       width: 38em;
@@ -74,14 +76,14 @@
 
     h1 {
       font-size: 4.8em;
-      left: 0.4em;
+      left: 0.7em;
     }
 
     h2 {
       width: 90%;
       position: absolute;
       font-size: 2.5em;
-      top: 1.4em;
+      top: 3.1em;
       line-height: 50px;
       left: 1em;
       text-align: left;
@@ -90,15 +92,20 @@
     h3 {
       font-size: 1.4em;
       line-height: 27px;
-      top: 15em;
-      left: 5em;
+      top: 18em;
+      left: 8em;
     }
 
     h4 {
       font-size: 1.3em;
-      top: 20.3em;
-      left: 7em;
-      color: #c0a062;
+      top: 24.3em;
+      left: 10em;
+    }
+
+    .line {
+      top: 35em;
+      left: 15.7em;
+      width: 8em;
     }
   }
 
