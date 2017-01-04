@@ -1,35 +1,8 @@
 import React from 'react';
 
-const DoughnutChart = require("react-chartjs").Doughnut;
+const LineChart = require("react-chartjs").Line;
 
-const otherData = [
-  {
-      value: 50,
-      color:"#146474",
-      highlight: "#118295",
-      label: "Fishing"
-  },
-  {
-      value: 20,
-      color: "#011829",
-      highlight: "#002742",
-      label: "Golfing"
-  },
-  {
-      value: 20,
-      color: "#0e4f64",
-      highlight: "#07687f",
-      label: "Camping"
-  },
-  {
-      value: 10,
-      color: "#c0a062",
-      highlight: "#d7b97d",
-      label: "Gaming"
-  }
-];
-
-
+import { SKILLS_DATA } from '../../constants/skills-data';
 
 import STYLES from './DividerThree.scss';
 
@@ -37,13 +10,28 @@ const DividerThree = () => (
   <div className={STYLES.DividerThree}>
     <div className={STYLES.chartHolder}>
       <div>
-        <DoughnutChart
-          data={otherData} width="300" height="300"
+        <LineChart
+          data={SKILLS_DATA}
+          height="350"
+          width="400"
         />
       </div>
       <div className={STYLES.description}>
-        <h2>Something Here</h2>
-        <h3>Some more stuff here</h3>
+        <div className={STYLES.headings}>
+          <h2>An Overview of My</h2>
+          <h3>Ever Evolving Skillset </h3>
+          <hr className={STYLES.line} />
+          <div className={STYLES.legend}>
+            <div className={STYLES.hockeySkills}>
+              <div className={STYLES.hockeyColor}></div>
+              <h4>Hockey Skills</h4>
+            </div>
+            <div className={STYLES.codingSkills}>
+              <div className={STYLES.codingColor}></div>
+                <h4>Coding Skills</h4>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

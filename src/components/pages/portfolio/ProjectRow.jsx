@@ -16,7 +16,7 @@ const ProjectRow = ({ setCurrentProject }) => (
             glyph='new-window'
           />
         </div>
-        <h2 onClick={setCurrentProject.bind(null, project)}>{project.name}</h2>
+        <h3 onClick={setCurrentProject.bind(null, project)}>{project.name}</h3>
         <hr className={STYLES.line} />
         <div className={STYLES.details}>
           <h5>Y. <span className={STYLES.bold}>{project.year}</span></h5>

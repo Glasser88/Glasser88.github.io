@@ -7,36 +7,42 @@
   border-bottom: 3px solid #08304b;
 
   .bigWrapper {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
   }
 
-  h1 {
+  .line {
+    border: 1px solid #c0a062;
+    width: 10em;
+    margin-right: 10em;
+  }
+
+  .headings {
+    width: 50%;
+    margin-top: -12em;
+  }
+
+  h2 {
     font-family: 'Merriweather', serif;
     color: #011829;
     text-align: center;
     font-weight: bold;
     font-size: 3.2em;
-
+    text-shadow: 0.7px 0.7px #000;
   }
 
   h3 {
     font-family: 'Merriweather', serif;
-    color: #c0a062;
-    width: 40%;
-  }
-
-  h4 {
-    font-size: 1em;
-    text-align: center;
-    width: 40%;
-    font-family: 'Merriweather', serif;
-    line-height: 30px;
+    color: #146474;
+    text-align: right;
+    text-shadow: 2px 2px #000;
   }
 
   .phoneWrapper {
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,17 +54,18 @@
 
   @media (min-width: 768px) {
 
-    h1 {
-      font-size: 4.6em;
-      width: 3em;
+    h2 {
+      font-size: 4em;
       font-weight: bold;
-      text-align: left;
+      margin-bottom: 0;
     }
 
     h3 {
-      width: 6em;
-      font-size: 3em;
-      line-height: 53px;
+      width: 9em;
+      font-size: 2.8em;
+      line-height: 40px;
+      margin-top: -0.7em;
+      margin-left: 2em;
     }
   }
 }

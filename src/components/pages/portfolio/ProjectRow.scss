@@ -15,12 +15,11 @@
   .projectBox {
     border-radius: 2px;
     width: 100%;
-    // background-color: #0d0d0d;
     background-color: #011829;
     margin-bottom: 0.8em;
     height: 13.5em;
     font-family: 'Merriweather', serif;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   }
 
   .open {
@@ -30,12 +29,13 @@
     float: right;
     margin-right: 1em;
     margin-top: 1em;
+    text-shadow: 3px 3px #000;
     &:hover {
       color: #c0a062;
     }
   }
 
-  h2 {
+  h3 {
     font-size: 1.5em;
     color: #eee;
     margin-left: 1.5em;

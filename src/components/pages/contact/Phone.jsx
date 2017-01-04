@@ -32,9 +32,6 @@ const Phone = ({ setSpinClass, spinClass }) => {
     <div className={STYLES.Phone}>
       <div className={STYLES.dialBackground}></div>
       <div className={STYLES.phoneBase}></div>
-      <div className={STYLES.phoneIcon}>
-        <i className="fa fa-phone"></i>
-      </div>
       <Glyphicon className={STYLES.phoneGlyph} glyph="phone-alt" />
       <PhoneDial
         spinClass={spinClass}

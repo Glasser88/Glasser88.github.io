@@ -7,8 +7,8 @@
   .phoneBase {
     position: absolute;
     top: 7em;
-    left: -1.5em;
     height: 0;
+    right: 0em;
     width: 390px;
     z-index: 3;
     border-bottom: 188px solid #011829;
@@ -20,18 +20,10 @@
   .phoneGlyph {
     position: absolute;
     top: -0.31em;
-    right: -0.38em;
+    right: -0.05em;
     font-size: 30em;
     color: #012537;
-  }
-
-  .phoneIcon {
-    // color: #011829;
-    // top: -0.7em;
-    // right: -0.256em;
-    // position: absolute;
-    // transform: rotate(135deg);
-    // font-size: 30em;
+    text-shadow: 0.9px 0.9px #000;
   }
 
   .infoBar {
@@ -77,18 +69,19 @@
   @media (min-width: 768px) {
 
     .dialBackground {
-      left: 3.9em;
+      left: -6em;
       top: -0.18em;
       height: 17em;
       width: 17em;
       border: 3px solid #011829;
       border-radius: 50%;
       transform: rotateX(20deg);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     }
 
     .ring {
-      right: -4.8em;
-      bottom: 7em;
+      right: 5.1em;
+      bottom: 5.5em;
       width: 60px;
       height: 30px;
       transform: rotate(40deg);
@@ -96,8 +89,8 @@
     }
 
     .infoBar {
-      bottom: -2.5em;
-      left: 1.5em;
+      bottom: -3.9em;
+      left: -9em;
       height: 3em;
       width: 22em;
       a {
