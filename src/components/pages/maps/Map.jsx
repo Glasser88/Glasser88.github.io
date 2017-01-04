@@ -19,7 +19,8 @@ const Map = withGoogleMap(({
     defaultCenter={{ lat: 32.766462, lng: -79.894853 }}
     defaultOptions={{
       styles: fancyMapStyles,
-      scrollwheel: false, 
+      scrollwheel: false,
+      disableDefaultUI: true, 
     }}
     onClick={onMapClick}>
     {markers.map(marker => (

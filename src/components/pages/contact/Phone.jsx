@@ -4,6 +4,8 @@ import PhoneDial from './PhoneDial';
 
 import InfoLink from './InfoLink';
 
+import Glyphicon from 'react-bootstrap/lib/Glyphicon';
+
 import STYLES from './Phone.scss';
 
 const determineInfoClass = (spinClass) => {
@@ -33,6 +35,7 @@ const Phone = ({ setSpinClass, spinClass }) => {
       <div className={STYLES.phoneIcon}>
         <i className="fa fa-phone"></i>
       </div>
+      <Glyphicon className={STYLES.phoneGlyph} glyph="phone-alt" />
       <PhoneDial
         spinClass={spinClass}
         setSpinClass={setSpinClass}
