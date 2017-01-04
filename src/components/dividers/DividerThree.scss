@@ -1,7 +1,24 @@
 :local .DividerThree {
   height: 20em;
+  width: 100%;
   background-color: #012537;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Merriweather', serif;
+
+  .chartHolder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (min-width: 480px) {
+
+  }
+
+  @media (min-width: 768px) {
+    height: 35em;
+  }
 }

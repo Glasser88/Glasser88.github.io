@@ -13,7 +13,6 @@ import Contact from '../components/pages/contact/Contact';
 import DividerOne from '../components/dividers/DividerOne';
 import DividerTwo from '../components/dividers/DividerTwo';
 import DividerThree from '../components/dividers/DividerThree';
-import DividerFour from '../components/dividers/DividerFour';
 import GoogleMaps from '../components/pages/maps/GoogleMaps';
 
 import Navbar from 'react-bootstrap/lib/Navbar';
@@ -112,7 +111,7 @@ class Wrapper extends Component {
                  to="portfolio"
                  spy={true}
                  smooth={true}
-                 offset={0}
+                 offset={-50}
                  duration={1000}
                  onSetActive={this.handleSetActive}>
                  Portfolio
@@ -163,7 +162,6 @@ class Wrapper extends Component {
           <Element name="contact">
             <Contact />
           </Element>
-          <DividerFour />
           <GoogleMaps />
             <a
               className={scrollToTopVisible ? STYLES.showScroller : STYLES.hideScroller}

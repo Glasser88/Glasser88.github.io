@@ -52,6 +52,15 @@
     left: 5em;
   }
 
+  .line {
+    border: 1px solid #c0a062;
+    position: absolute;
+    top: 24em;
+    left: 7em;
+    z-index: 10;
+    width: 20em;
+  }
+
   @media (min-width: 480px) {
     .text {
       margin-top: 5em;
@@ -121,15 +130,15 @@
 
     h3 {
       font-size: 1.8em;
-      left: 10em;
-      top: 15em;
+      left: 12em;
+      top: 17em;
       line-height: 35px;
     }
 
     h4 {
       font-size: 1.6em;
-      left: 13.3em;
-      top: 21em;
+      left: 15.3em;
+      top: 23em;
     }
   }
 }

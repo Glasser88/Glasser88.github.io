@@ -6,6 +6,11 @@
   justify-content: center;
   align-items: center;
 
+  .line {
+    border: 1px solid #c0a062;
+    width: 10em;
+  }
+
   .inside {
     height: 100%;
     width: 29em;

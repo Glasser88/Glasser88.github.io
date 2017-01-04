@@ -5,6 +5,30 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Merriweather', serif;
+
+  h2 {
+    color: #011829;
+    font-size: 2.6em;
+  }
+
+  h3 {
+    color: #146474;
+    font-size: 2em;
+    margin-top: -0.9em;
+    margin-left: 0.5em;
+  }
+
+  h4 {
+    color: #c3c3c3;
+    margin-left: 1em;
+  }
+
+  .line {
+    border: 1px solid #c0a062;
+    margin-left: 4em;
+    width: 8em;
+  }
 
   .chartHolder {
     display: flex;
@@ -14,7 +38,7 @@
   }
 
   .description {
-    margin-top: -7em;
+    margin-top: -8em;
     margin-right: 1.5em;
   }
 
@@ -24,6 +48,8 @@
 
   .withCoffee {
     display: flex;
+    padding-left: 1.5em;
+    padding-top: 2.5em;
   }
 
   .coffeeColor {
@@ -35,6 +61,8 @@
 
   .withoutCoffee {
     display: flex;
+    padding-left: 1.5em;
+    padding-top: 2.5em;
   }
 
   .noCoffeeColor {

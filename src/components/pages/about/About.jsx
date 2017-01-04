@@ -9,6 +9,7 @@ const About = () => (
       <div>
         <h2>The Story Of</h2>
         <h3>Trevor Glass</h3>
+        <hr className={STYLES.line} />
         <div className={STYLES.story}>
           <p className={STYLES.one}>From hockey player to</p>
           <p className={STYLES.two}>
