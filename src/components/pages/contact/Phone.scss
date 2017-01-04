@@ -47,13 +47,13 @@
 
   .dialBackground {
     position: absolute;
-    background: radial-gradient(circle at 110px 100px, #1c1c1c, #000);
+    background-color: #012537;
     height: 14.5em;
     width: 14.5em;
     top: 12em;
     left: -0.6em;
     z-index: 5;
-    border: 3px solid #171717;
+    border: 3px solid #146474;
     border-radius: 50%;
     transform: rotateX(20deg);
   }

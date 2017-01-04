@@ -13,16 +13,26 @@
   h1 {
     text-align: center;
     font-weight: bold;
-    color: #121212;
+    // color: #121212;
+    color: #011829;
     margin-top: 1.5em;
   }
 
   .favorites {
     text-align: center;
     margin-bottom: -0.5em;
-    color: #c0a062;
+    // color: #c0a062;
+    color: #146474;
     margin-top: -1em;
     margin-left: -1.2em;
+  }
+
+  .underline {
+    border: 1px solid #c0a062;
+    width: 20%;
+    margin-top: 3.5em;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .projectFolder {
@@ -33,10 +43,12 @@
     height: 58em;
     margin-left: auto;
     margin-right: auto;
-    background-color: #1c1c1c;
+    // background-color: #1c1c1c;
+    background-color: #012537;
     top: 9em;
     position: absolute;
-    border-radius: 3px;
+    border-radius: 2px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   }
 
   .projectTab {
@@ -47,7 +59,7 @@
     top: -4em;
     left: 0.5em;
     margin: 20px 0;
-    background: #1c1c1c;
+    background: #012537;
     border-radius: 50% / 10%;
     color: white;
     text-align: center;

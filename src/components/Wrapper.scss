@@ -1,7 +1,7 @@
 :local .Wrapper {
   min-height: 100%;
-  background-color: #161616;
-  // background-color: #021019;
+  // background-color: #161616;
+  background-color: #021019;
 
   .showScroller {
     position: fixed;
@@ -44,7 +44,7 @@
   .Topbar {
     z-index: 9999;
     border-radius: 0px !important;
-    background-color: #161616 !important;
+    background-color: #021019 !important;
     border: none !important;
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;

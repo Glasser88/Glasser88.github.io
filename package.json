@@ -22,6 +22,7 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap-sass": "^3.3.7",
+    "chart.js": "^1.1.1",
     "classnames": "^2.2.5",
     "current-input": "^1.1.1",
     "es6-promise": "^4.0.5",
@@ -30,6 +31,7 @@
     "react": "^15.4.1",
     "react-addons-css-transition-group": "^15.4.1",
     "react-bootstrap": "^0.30.7",
+    "react-chartjs": "^0.8.0",
     "react-dom": "^15.4.1",
     "react-google-maps": "^6.0.1",
     "react-helmet": "^3.3.0",

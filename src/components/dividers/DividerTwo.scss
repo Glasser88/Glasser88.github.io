@@ -1,4 +1,54 @@
 :local .DividerTwo {
   height: 20em;
-  background-color: #f5f5f5;
+  width: 100%;
+  background-color: #012537;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .chartHolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .description {
+    margin-top: -7em;
+    margin-right: 1.5em;
+  }
+
+  .radar {
+    margin-left: 1.5em;
+  }
+
+  .withCoffee {
+    display: flex;
+  }
+
+  .coffeeColor {
+    background-color: rgba(220,220,220,1);
+    height: 3em;
+    width: 3em;
+    border-radius: 2px;
+  }
+
+  .withoutCoffee {
+    display: flex;
+  }
+
+  .noCoffeeColor {
+    background-color: rgba(151,187,205,1);
+    height: 3em;
+    width: 3em;
+    border-radius: 2px;
+  }
+
+  @media (min-width: 480px) {
+
+  }
+
+  @media (min-width: 768px) {
+    height: 35em;
+  }
 }

@@ -7,8 +7,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-top: 2px solid #08304b;
   a {
-    color: #5e5e5e;
+    color: #146474;
+    // color: #5e5e5e;
     margin: 0 0.4em;
     &:hover {
       color: #c9995b;

@@ -22,7 +22,7 @@ class GoogleMaps extends Component {
         },
         key: `Taiwan`,
         defaultAnimation: 2,
-        icon: '../../../assets/images/test.png'
+        icon: '../../../assets/images/home.png'
       }],
     };
 
@@ -44,6 +44,7 @@ class GoogleMaps extends Component {
       {
         position: event.latLng,
         defaultAnimation: 2,
+        icon: '../../../assets/images/smiley.png',
         key: Date.now(), // Add a key property for: http://fb.me/react-warning-keys
       },
     ];

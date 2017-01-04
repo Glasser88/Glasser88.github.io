@@ -64,6 +64,7 @@ class Portfolio extends Component {
       <div className={STYLES.Portfolio}>
         <h1>My Portfolio With</h1>
         <h2 className={STYLES.favorites}>A Few Of My Favorites</h2>
+        <hr className={STYLES.underline} />
         <div>
           <ReactCSSTransitionGroup
             className={STYLES.folderWrapper}
