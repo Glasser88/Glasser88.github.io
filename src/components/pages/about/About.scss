@@ -89,8 +89,9 @@
 
   .videoButton {
     position: absolute;
-    right: -2em;
     border-radius: 50%;
+    bottom: 2em;
+    left: 2em;
     height: 2.5em;
     width: 2.5em;
     font-size: 2em;
@@ -101,8 +102,8 @@
 
   .pdfButton {
     position: absolute;
-    top: 10em;
-    right: -3em;
+    bottom: 2em;
+    left: 8em;
     border-radius: 50%;
     height: 2.5em;
     width: 2.5em;
@@ -214,6 +215,31 @@
       line-height: 40px;
       left: 9.5em;
       top: 15.5em;
+    }
+
+    .videoButton {
+      position: absolute;
+      right: -2em;
+      border-radius: 50%;
+      height: 2.5em;
+      width: 2.5em;
+      font-size: 2em;
+      color: #fff;
+      background-color: #c0a062;
+      border: 1px solid #a68e60;
+    }
+
+    .pdfButton {
+      position: absolute;
+      top: 10em;
+      right: -3em;
+      border-radius: 50%;
+      height: 2.5em;
+      width: 2.5em;
+      font-size: 2em;
+      color: #fff;
+      background-color: #c0a062;
+      border: 1px solid #a68e60;
     }
   }
 }

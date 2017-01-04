@@ -27,7 +27,7 @@ const DividerTwo = () => (
       <div className={STYLES.radar}>
         <RadarChart
           className={STYLES.radar}
-          data={INTERESTS_DATA} width="400" height="400"
+          data={INTERESTS_DATA} width="300" height="400"
         />
       </div>
     </div>

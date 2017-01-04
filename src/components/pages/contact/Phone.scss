@@ -15,6 +15,7 @@
     border-left: 80px solid transparent;
     border-right: 80px solid transparent;
     padding: 0 8px 0 0;
+    display: none;
   }
 
   .phoneGlyph {
@@ -24,6 +25,7 @@
     font-size: 30em;
     color: #012537;
     text-shadow: 0.9px 0.9px #000;
+    display: none;
   }
 
   .infoBar {
@@ -33,6 +35,7 @@
     z-index: 10;
     background-color: #012537;
     border-radius: 2px;
+    display: none;
     a {
       position: absolute;
       top: 1.5em;
@@ -53,6 +56,7 @@
 
   .dialBackground {
     position: absolute;
+    left: -5em;
     background-color: #012537;
     height: 14.5em;
     width: 14.5em;
@@ -77,6 +81,30 @@
       border-radius: 50%;
       transform: rotateX(20deg);
       box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      display: inline;
+    }
+
+    .phoneGlyph {
+      position: absolute;
+      top: -0.31em;
+      right: -0.05em;
+      font-size: 30em;
+      color: #012537;
+      text-shadow: 0.9px 0.9px #000;
+      display: inline;
+    }
+
+    .phoneBase {
+      position: absolute;
+      top: 7em;
+      height: 0;
+      right: 0em;
+      width: 390px;
+      z-index: 3;
+      border-bottom: 188px solid #011829;
+      border-left: 80px solid transparent;
+      border-right: 80px solid transparent;
+      padding: 0 8px 0 0;
     }
 
     .ring {
@@ -93,6 +121,7 @@
       left: -9em;
       height: 3em;
       width: 22em;
+      display: inline;
       a {
         top: 0.3em;
       }

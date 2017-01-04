@@ -12,7 +12,7 @@ const DividerThree = () => (
       <div>
         <LineChart
           data={SKILLS_DATA}
-          height="350"
+          height="300"
           width="400"
         />
       </div>
