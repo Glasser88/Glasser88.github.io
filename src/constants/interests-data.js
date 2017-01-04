@@ -1,5 +1,5 @@
 export const INTERESTS_DATA = {
-  labels: ["Fishing", "Golfing", "Camping", "Sports", "Coding", "Gaming", "Running"],
+  labels: ["Fishing", "Golfing", "Camping", "Sports", "Coding", "Gaming", "Running", "Eating"],
   datasets: [
       {
           label: "With Coffee",
