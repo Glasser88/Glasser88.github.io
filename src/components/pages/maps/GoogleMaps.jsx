@@ -78,7 +78,7 @@ class GoogleMaps extends Component {
     return (
       <div style={{height: `40em`}}>
         <Helmet
-          title="Getting Started"
+          title="Trevor Glass"
         />
         <Map
           containerElement={
