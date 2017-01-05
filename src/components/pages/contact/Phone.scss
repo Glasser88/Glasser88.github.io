@@ -1,3 +1,4 @@
+@import '../../../styles/variables';
 @import "contact-animations";
 
 :local .Phone {
@@ -65,11 +66,11 @@
     transform: rotateX(20deg);
   }
 
-  @media (min-width: 480px) {
+  @media (min-width: $extra-small-devices) {
 
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $small-devices) {
 
     .dialBackground {
       left: -6em;
@@ -154,7 +155,7 @@
   animation: linkedAppear 3s;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $small-devices) {
 
   .NormalInfo {
     margin-top: 5em;

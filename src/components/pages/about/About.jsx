@@ -62,7 +62,7 @@ class About extends Component {
             <Button
               onClick={this.openModal}
               className={STYLES.videoButton}>
-              <Glyphicon glyph='film' />&nbsp;&nbsp;HOCKEY
+              <Glyphicon className={STYLES.film} glyph='film' />&nbsp;&nbsp;HOCKEY
             </Button>
             <a href="../../../assets/docs/resume2017.pdf" target='_blank'>
               <Button

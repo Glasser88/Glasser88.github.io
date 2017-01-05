@@ -1,3 +1,6 @@
+@import '../../../styles/variables';
+@import 'portfolio-animations';
+
 :local .Portfolio {
   height: 75em;
   position: relative;
@@ -6,12 +9,20 @@
   h2 {
     text-align: center;
     font-weight: bold;
-    color: #121212;
+    color: $shadow-color;
     margin-top: 1.5em;
   }
 
   h3 {
-    color: #fff;
+    text-align: center;
+    margin-bottom: -0.5em;
+    color: $highlight-color;
+    margin-top: -1em;
+    margin-left: -1.2em;
+  }
+
+  h4 {
+    color: $subheader-color;
     margin-top: 3.2em;
     z-index: 100;
     font-size: 1.2em;
@@ -25,16 +36,10 @@
     align-items: center;
   }
 
-  .favorites {
-    text-align: center;
-    margin-bottom: -0.5em;
-    color: #c0a062;
-    margin-top: -1em;
-    margin-left: -1.2em;
-  }
-
-  .underline {
-    border: 1px solid #c0a062;
+  .line {
+    border-top: 0 none;
+    height: 1px;
+    background-color: $accent-color;
     width: 10em;
     margin-top: 3.5em;
     margin-left: auto;
@@ -47,7 +52,7 @@
     left: 0;
     right: 0;
     top: 10em;
-    background-color: #1c1c1c;
+    background-color: $secondary-color;
     position: absolute;
   }
 
@@ -57,7 +62,7 @@
     position: absolute;
     top: -2.8em;
     left: 0em;
-    border-bottom: 40px solid #1c1c1c;
+    border-bottom: 40px solid $secondary-color;
 	  border-left: 15px solid transparent;
   	border-right: 15px solid transparent;
     display: flex;
@@ -65,22 +70,14 @@
     align-items: center;
   }
 
-  .tabName {
-    position: absolute;
-    top: -1.6em;
-    left: 3.4em;
-    color: #c3c3c3;
-    z-index: 100;
-  }
-
-  @media (min-width: 480px) {
+  @media (min-width: $extra-small-devices) {
     height: 81em;
 
     h2 {
       font-size: 3em;
     }
 
-    .favorites {
+    h3 {
       font-size: 2.1em;
     }
 
@@ -93,14 +90,14 @@
 
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $small-devices) {
     height: 56em;
 
     h2 {
       font-size: 4em;
     }
 
-    .favorites {
+    h3 {
       margin-top: -0.9em;
       font-size: 2.5em;
     }
@@ -114,22 +111,4 @@
   }
 }
 
-.projectAnimation-enter {
-  transform: translate3d(0, 0, 0);
-  opacity: 0.01;
-  transition: opacity 0.35s ease-in;
-}
-
-.projectAnimation-enter.projectAnimation-enter-active {
-  opacity: 1;
-}
-
-.projectAnimation-leave {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-  transition: opacity 0.35s ease-in;
-}
-
-.projectAnimation-leave.projectAnimation-leave-active {
-  opacity: 0;
-}
+@include fadeProjectFolder();

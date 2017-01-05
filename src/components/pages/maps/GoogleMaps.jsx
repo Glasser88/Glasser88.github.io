@@ -21,8 +21,8 @@ class GoogleMaps extends Component {
           lng: -79.894853,
         },
         key: `Taiwan`,
+        icon: '../../../assets/images/home.png',
         defaultAnimation: 2,
-        icon: '../../../assets/images/home.png'
       }],
     };
 

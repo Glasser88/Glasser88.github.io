@@ -10,14 +10,13 @@ const ProjectRow = ({ setCurrentProject }) => (
   <div className={STYLES.ProjectRow}>
     { PROJECTS.map((project, i) => (
       <div key={i} className={STYLES.projectBox}>
-        <div className={STYLES.open}>
+        <div className={STYLES.openIcon}>
           <Glyphicon
             onClick={setCurrentProject.bind(null, project)}
             glyph='new-window'
           />
         </div>
         <h2
-          className={STYLES.projectTitle}
           onClick={setCurrentProject.bind(null, project)}>
           {project.name}
         </h2>

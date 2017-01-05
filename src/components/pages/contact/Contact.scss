@@ -1,3 +1,5 @@
+@import '../../../styles/variables';
+
 :local .Contact {
   height: 47em;
   display: flex;
@@ -6,7 +8,7 @@
 
   h2 {
     font-family: 'Merriweather', serif;
-    color: #121212;
+    color: $shadow-color;
     text-align: center;
     font-weight: bold;
     font-size: 3.2em;
@@ -14,7 +16,7 @@
 
   h3 {
     font-family: 'Merriweather', serif;
-    color: #c0a062;
+    color: $highlight-color;
     text-align: right;
     margin-right: 1em;
     margin-top: -0.9em;
@@ -33,7 +35,9 @@
 
   .line {
     position: absolute;
-    border: 1px solid #c0a062;
+    border-top: 0 none;
+    height: 1px;
+    background-color: $accent-color;
     width: 10em;
     right: 0;
     left: 0;
@@ -54,11 +58,11 @@
     align-items: center;
   }
 
-  @media (min-width: 480px) {
+  @media (min-width: $extra-small-devices) {
 
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $small-devices) {
 
     .headings {
       position: relative;

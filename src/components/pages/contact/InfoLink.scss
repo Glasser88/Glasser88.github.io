@@ -1,19 +1,21 @@
+@import '../../../styles/variables';
+
 :local .InfoLink {
 
   .linkWrapper {
-    display: flex; 
+    display: flex;
   }
 
   a {
-    color: #c0a062;
+    color: $highlight-color;
     &:hover {
-      color: #c0a062
+      color: $highlight-color;
     }
     &:active {
-      color: #c0a062
+      color: $highlight-color;
     }
     &:focus {
-      color: #c0a062
+      color: $highlight-color;
     }
   }
 }

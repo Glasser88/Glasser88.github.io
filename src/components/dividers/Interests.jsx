@@ -6,29 +6,39 @@ const RadarChart = require("react-chartjs").Radar;
 
 import STYLES from './Interests.scss';
 
+const INTERESTS_OPTIONS = {
+  responsive: true,
+}
+
 const Interests = () => (
   <div className={STYLES.Interests}>
-    <div className={STYLES.chartHolder}>
+    <div className={STYLES.insideWrapper}>
       <div className={STYLES.description}>
-        <h2>Some of My Interests</h2>
-        <h3>On any given day</h3>
-        <hr className={STYLES.line} />
-        <div className={STYLES.legend}>
-          <div className={STYLES.withCoffee}>
-            <div className={STYLES.coffeeColor}></div>
-            <h4>With Coffee</h4>
-          </div>
-          <div className={STYLES.withoutCoffee}>
-            <div className={STYLES.noCoffeeColor}></div>
-            <h4>Without Coffee</h4>
+        <div>
+          <h2>On Any Given Day</h2>
+          <h3>Some of My Interests</h3>
+          <hr className={STYLES.line} />
+          <div className={STYLES.legend}>
+            <div className={STYLES.withCoffee}>
+              <div className={STYLES.coffeeColor}></div>
+              <h4>With Coffee</h4>
+            </div>
+            <div className={STYLES.withoutCoffee}>
+              <div className={STYLES.noCoffeeColor}></div>
+              <h4>Without Coffee</h4>
+            </div>
           </div>
         </div>
       </div>
-      <div>
-        <RadarChart
-          className={STYLES.radar}
-          data={INTERESTS_DATA} width="300" height="400"
-        />
+      <div className={STYLES.graph}>
+        <div>
+          <RadarChart
+            className={STYLES.radar}
+            data={INTERESTS_DATA}
+            options={INTERESTS_OPTIONS}
+
+          />
+        </div>
       </div>
     </div>
   </div>

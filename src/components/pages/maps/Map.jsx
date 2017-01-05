@@ -2,10 +2,16 @@ import React, { PropTypes } from 'react';
 
 import { withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
 
+// import { default as MarkerClusterer } from 'react-google-maps/lib/addons/MarkerClusterer';
+//
+// <MarkerClusterer
+//   averageCenter
+//   enableRetinaIcons
+//   gridSize={60}
+// >
+// </MarkerClusterer>
+
 import fancyMapStyles from '../../../constants/fancy-map-styles';
-
-console.log('GoogleMap', withGoogleMap);
-
 
 const Map = withGoogleMap(({
   onMapLoad,
@@ -15,7 +21,7 @@ const Map = withGoogleMap(({
 }) => (
   <GoogleMap
     ref={onMapLoad}
-    defaultZoom={7}
+    defaultZoom={3}
     defaultCenter={{ lat: 32.766462, lng: -79.894853 }}
     defaultOptions={{
       styles: fancyMapStyles,

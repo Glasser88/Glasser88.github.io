@@ -1,3 +1,5 @@
+@import '../../styles/variables';
+
 :local .Skills {
   height: 60em;
   width: 100%;
@@ -7,22 +9,24 @@
   font-family: 'Merriweather', serif;
 
   h2 {
-    color: #121212;
+    color: $shadow-color;
     font-size: 2.6em;
   }
 
   h3 {
-    color: #c0a062;
+    color: $highlight-color;
     font-size: 2em;
     margin-top: -0.9em;
     margin-left: 0.5em;
   }
 
   h4 {
-    color: #fff;
+    color: $subheader-color;
     margin-left: 1em;
-    margin-top: 0.7em;
-    text-shadow: 1px 1px #000;
+    margin-top: 0.9em;
+    font-size: 1.1em;
+    font-weight: 600;
+    font-family: 'Roboto Condensed', sans-serif;
   }
 
   .chartHolder {
@@ -118,15 +122,17 @@
   }
 
   .line {
-    border: 1px solid #c0a062;
+    border-top: 0 none;
+    height: 1px;
+    background-color: $accent-color;
     width: 10em;
   }
 
-  @media (min-width: 480px) {
+  @media (min-width: $extra-small-devices) {
 
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $small-devices) {
     height: 35em;
 
     h2 {
@@ -140,9 +146,11 @@
     }
 
     h4 {
-      color: #c3c3c3;
       margin-left: 1em;
-      text-shadow: 1px 1px #000;
+    }
+
+    .line {
+      width: 10em;
     }
 
     .chartHolder {
@@ -177,11 +185,6 @@
     .codingSkills {
       display: flex;
       margin-top: 2.5em;
-    }
-
-    .line {
-      border: 1px solid #c0a062;
-      width: 10em;
     }
   }
 }

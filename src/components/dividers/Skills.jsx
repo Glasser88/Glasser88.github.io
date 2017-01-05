@@ -24,11 +24,11 @@ const Skills = () => (
           <div className={STYLES.legend}>
             <div className={STYLES.hockeySkills}>
               <div className={STYLES.hockeyColor}></div>
-              <h4>Hockey Skills</h4>
+              <h4>HOCKEY SKILLS</h4>
             </div>
             <div className={STYLES.codingSkills}>
               <div className={STYLES.codingColor}></div>
-                <h4>Coding Skills</h4>
+                <h4>CODING SKILLS</h4>
             </div>
           </div>
         </div>

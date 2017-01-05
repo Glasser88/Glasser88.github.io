@@ -49,7 +49,7 @@ class Portfolio extends Component {
     return (
       <div className={STYLES.projectFolder}>
         <div className={STYLES.projectTab}>
-          <h3>Projects</h3>
+          <h4>Projects</h4>
         </div>
         <ProjectRow
           setCurrentProject={this.setCurrentProject}
@@ -64,8 +64,8 @@ class Portfolio extends Component {
     return (
       <div className={STYLES.Portfolio}>
         <h2>My Portfolio With</h2>
-        <h3 className={STYLES.favorites}>A Few Of My Favorites</h3>
-        <hr className={STYLES.underline} />
+        <h3>A Few Of My Favorites</h3>
+        <hr className={STYLES.line} />
         <div>
           <ReactCSSTransitionGroup
             className={STYLES.folderWrapper}

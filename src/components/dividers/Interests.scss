@@ -1,3 +1,5 @@
+@import '../../styles/variables';
+
 :local .Interests {
   height: 60em;
   width: 100%;
@@ -7,26 +9,25 @@
   font-family: 'Merriweather', serif;
 
   h2 {
-    color: #121212;
+    color: $shadow-color;
     font-size: 2.6em;
     margin-left: 1.8em;
-    margin-top: 4em;
   }
 
   h3 {
-    color: #c0a062;
+    color: $highlight-color;
     font-size: 2em;
     margin-top: -0.9em;
     margin-left: 2.5em;
   }
 
   h4 {
-    color: #fff;
+    color: $header-color;
     margin-left: 1em;
     text-shadow: 1px 1px #000;
   }
 
-  .chartHolder {
+  .insideWrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,18 +36,31 @@
   }
 
   .description {
-    margin-top: -8em;
-    margin-right: 1.5em;
+    width: 100%;
+    height: 30em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .line {
-    border: 1px solid #c0a062;
+    border: 0 none;
+    height: 1px;
+    background-color: $accent-color;
     margin-left: 8em;
     width: 8em;
   }
 
+  .graph {
+    padding: 0;
+    width: 100%;
+    height: 30em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .radar {
-    margin-left: 0em;
   }
 
   .legend {
@@ -121,16 +135,24 @@
     border-top: 11.55px solid rgba(192,160,98,0.5);
   }
 
-  @media (min-width: 480px) {
+  @media (min-width: $extra-small-devices) {
     height: 65em;
 
     .description {
-      margin-top: -10em;
+      height: 35em;
     }
 
+    .graph {
+      height: 35em;
+    }
+
+    .radar {
+      max-height: 35em;
+      max-width: 35em;
+    }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $small-devices) {
     height: 35em;
 
     h2 {
@@ -148,12 +170,11 @@
     }
 
     .line {
-      border: 1px solid #c0a062;
       margin-left: 9em;
       width: 10em;
     }
 
-    .chartHolder {
+    .insideWrapper {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -161,12 +182,16 @@
     }
 
     .description {
-      margin-top: -11em;
-      margin-right: 1.5em;
+      width: 50%;
+    }
+
+    .graph {
+      width: 50%;
     }
 
     .radar {
-      margin-left: 1.5em;
+      max-height: 35em;
+      max-width: 35em;
     }
 
     .withCoffee {

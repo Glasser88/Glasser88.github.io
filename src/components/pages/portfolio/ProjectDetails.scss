@@ -1,3 +1,5 @@
+@import '../../../styles/variables';
+
 :local .ProjectDetails {
   height: 100%;
   width: 100%;
@@ -5,7 +7,7 @@
 
   h5 {
     position: absolute;
-    color: #c0a062;
+    color: $highlight-color;
     margin-left: 2.5em;
     margin-top: 0em;
     font-weight: lighter;
@@ -13,7 +15,7 @@
   }
 
   h3 {
-    color: #fff;
+    color: $header-color;
     margin-top: 3.2em;
     z-index: 100;
     font-size: 1.2em;
@@ -33,7 +35,7 @@
   .projectFolder {
     width: 90%;
     height: 30em;
-    background-color: #1c1c1c;
+    background-color: $secondary-color;
     margin-left: 1em;
     margin-right: 1em;
     top: 3em;
@@ -46,7 +48,7 @@
     position: absolute;
     top: -2.8em;
     left: 0em;
-    border-bottom: 40px solid #1c1c1c;
+    border-bottom: 40px solid $secondary-color;
 	  border-left: 15px solid transparent;
   	border-right: 15px solid transparent;
     display: flex;
@@ -55,7 +57,7 @@
   }
 
   .projectBorder {
-    border: 1px solid #272727;
+    border: 1px solid $detail-color;
     width: 100%;
     height: 100%;
     margin-top: 1em;
@@ -76,7 +78,7 @@
     font-size: 0.9em;
     left: -2em;
     top: 4.4em;
-    color: #5e5e5e;
+    color: $subheader-color;
     transform: rotate(-90deg);
     font-family: 'Open Sans', sans-serif;
   }
@@ -86,7 +88,7 @@
     width: 80%;
     left: 2.5em;
     top: 1em;
-    color: #c3c3c3;
+    color: $paragraph-color;
     line-height: 25px;
     font-size: 1.1em;
     font-family: 'Merriweather', serif;
@@ -96,7 +98,7 @@
     position: absolute;
     letter-spacing: 1px;
     font-size: 0.9em;
-    color: #5e5e5e;
+    color: $subheader-color;
     font-family: 'Open Sans', sans-serif;
     left: 1.3em;
     top: 11em;
@@ -107,7 +109,7 @@
     width: 80%;
     left: 1.3em;
     top: 11em;
-    color: #c3c3c3;
+    color: $paragraph-color;
     line-height: 25px;
     font-size: 1.1em;
     font-family: 'Merriweather', serif;
@@ -119,7 +121,7 @@
     font-size: 0.9em;
     left: -5.55em;
     top: 3.1em;
-    color: #5e5e5e;
+    color: $subheader-color;
     transform: rotate(-90deg);
     font-family: 'Open Sans', sans-serif;
   }
@@ -183,20 +185,20 @@
     left: 3em;
     padding: 1em;
     border-radius: 1px;
-    background-color: #1c1c1c;
-    border: 1px solid #272727;
+    background-color: $secondary-color;
+    border: 1px solid $detail-color;
     text-transform: uppercase;
     color: #c0a062;
     font-size: 0.9em;
     font-family: 'Open Sans', sans-serif;
     &:hover {
-      background-color: #c9995b;
+      background-color: $accent-color;
       color: #191919;
-      border: 1px solid #272727;
+      border: 1px solid $detail-color;
     }
   }
 
-  @media (min-width: 480px) {
+  @media (min-width: $extra-small-devices) {
 
     .folderWrapper {
       height: 100%;
@@ -212,7 +214,7 @@
 
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $small-devices) {
     width: 85%;
     max-width: 70em;
 
@@ -312,7 +314,7 @@
     }
   }
 
-  @media (min-width: 1050px) {
+  @media (min-width: $medium-devices) {
     .screenshots {
       width: 29em;
     }

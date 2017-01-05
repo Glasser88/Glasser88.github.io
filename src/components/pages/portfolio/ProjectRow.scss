@@ -1,3 +1,5 @@
+@import '../../../styles/variables';
+
 :local .ProjectRow {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
@@ -8,29 +10,29 @@
   justify-content: space-between;
   padding: 0.8em;
 
-  h5 {
-    color: #c3c3c3;
-  }
-
-  .projectTitle {
+  h2 {
     font-size: 1.3em;
-    color: #ffffff;
+    color: $header-color;
     text-align: left;
     margin-left: 1.5em;
     margin-top: 1.5em;
     cursor: pointer;
   }
 
+  h5 {
+    color: $subheader-color;
+  }
+
   .projectBox {
     width: 100%;
-    background-color: #0d0d0d;
+    background-color: $dark-color;
     margin-bottom: 0.8em;
     height: 13.5em;
     font-family: 'Merriweather', serif;
   }
 
-  .open {
-    color: #c3c3c3;
+  .openIcon {
+    color: $highlight-color;
     padding: 0.5em;
     cursor: pointer;
     float: right;
@@ -44,8 +46,10 @@
 
   .line {
     width: 20%;
+    border: 0 none;
+    height: 1px;
+    background-color: $accent-color;
     margin-left: 2.1em;
-    border: 1px solid #c0a062;
   }
 
   .details {
@@ -58,9 +62,9 @@
     font-weight: 200;
   }
 
-  @media (min-width: 480px) {}
+  @media (min-width: $extra-small-devices) {}
 
-  @media (min-width: 768px) {
+  @media (min-width: $small-devices) {
     .projectBox {
       width: 47%;
       margin-left: 0.5em;

@@ -1,7 +1,8 @@
+@import '../styles/variables';
+
 :local .Wrapper {
   min-height: 100%;
-  // background-color: #021019;
-  background-color: #161616;
+  background-color: $primary-color;
 
   .showScroller {
     position: fixed;
@@ -9,7 +10,7 @@
     right: 1.5em;
     height: 1.5em;
     width: 1.5em;
-    background-color: #c0a062;
+    background-color: $accent-color;
     color: #0d0d0d;
     border-radius: 2px;
     font-size: 1.5em;
@@ -62,7 +63,6 @@
     margin-right: 1em;
     margin-top: -0.4em;
     margin-left: -0.1em;
-    border-radius: 2px;
     background-color: #c0a062;
     color: #161616;
     display: flex;
@@ -103,16 +103,17 @@
     }
   }
 
-  @media (min-width: 480px) {}
+  @media (min-width: $extra-small-devices) {
 
-  @media (min-width: 768px) {
+  }
+
+  @media (min-width: $small-devices) {
 
     .logo {
       height: 3em;
       width: 3em;
       margin-top: 0;
       margin-left: 0;
-      border-radius: 1px;
     }
 
     .links {
