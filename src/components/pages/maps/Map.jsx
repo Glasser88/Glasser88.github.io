@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 
 import { withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
 
-import fancyMapStyles from '../../../constants/fancyMapStyles';
+import fancyMapStyles from '../../../constants/fancy-map-styles';
 
 console.log('GoogleMap', withGoogleMap);
 
@@ -20,7 +20,7 @@ const Map = withGoogleMap(({
     defaultOptions={{
       styles: fancyMapStyles,
       scrollwheel: false,
-      disableDefaultUI: true, 
+      disableDefaultUI: true,
     }}
     onClick={onMapClick}>
     {markers.map(marker => (

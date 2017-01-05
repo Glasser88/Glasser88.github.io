@@ -1,5 +1,5 @@
 export const INTERESTS_DATA = {
-  labels: ["Fishing", "Golfing", "Camping", "Sports", "Coding", "Gaming", "Running", "Eating"],
+  labels: ["Fishing", "Golfing", "Camping", "Hockey", "Coding", "Gaming", "Running", "Eating"],
   datasets: [
       {
           label: "With Coffee",
@@ -13,9 +13,9 @@ export const INTERESTS_DATA = {
       },
       {
           label: "Without Coffee",
-          fillColor: "rgba(151,187,205,0.2)",
-          strokeColor: "rgba(151,187,205,1)",
-          pointColor: "rgba(151,187,205,1)",
+          fillColor: "rgba(192,160,98,0.2)",
+          strokeColor: "rgba(192,160,98,1)",
+          pointColor: "rgba(192,160,98,1)",
           pointStrokeColor: "#fff",
           pointHighlightFill: "#fff",
           pointHighlightStroke: "rgba(151,187,205,1)",

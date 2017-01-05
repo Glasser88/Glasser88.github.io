@@ -40,23 +40,20 @@ class ProjectDetails extends Component {
         <h5 onClick={goBack}>
           <Glyphicon className={STYLES.back} glyph='menu-left' /> Back To Projects
         </h5>
-        <div className={STYLES.inside}>
-          <div className={STYLES.featureOne}>
-            <div className={STYLES.projectTab}></div>
-            <div className={STYLES.tabName}>{project.name}</div>
-            <div className={STYLES.insideBorder}>
+        <div className={STYLES.folderWrapper}>
+          <div className={STYLES.projectFolder}>
+            <div className={STYLES.projectTab}>
+              <h3>{project.name}</h3>
+            </div>
+            <div className={STYLES.projectBorder}>
               <div className={STYLES.description}>
-                <div className={STYLES.desTitle}>DESCRIPTION</div>
-                <div className={STYLES.desBlock}>
-                  {project.description}
-                </div>
-                <div className={STYLES.techTitle}>TECHNOLOGIES</div>
-                <div className={STYLES.techBlock}>
-                  {project.technologies}
-                </div>
+                <h4 className={STYLES.descriptionHeader}>DESCRIPTION</h4>
+                <p className={STYLES.descriptionText}>{project.description}</p>
+                <h4 className={STYLES.techHeader}>TECHNOLOGIES</h4>
+                <p className={STYLES.techText}>{project.technologies}</p>
               </div>
               <div className={STYLES.screenshots}>
-                <div className={STYLES.screenTitle}>SCREENSHOT</div>
+                <h4 className={STYLES.screenHeader}>SCREENSHOT</h4>
                 <div
                   onClick={this.openModal.bind(null, project.screenshotOne)}
                   className={STYLES[project.screenshotOne]}>

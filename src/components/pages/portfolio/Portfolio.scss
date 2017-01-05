@@ -3,6 +3,21 @@
   position: relative;
   font-family: 'Merriweather', serif;
 
+  h2 {
+    text-align: center;
+    font-weight: bold;
+    color: #121212;
+    margin-top: 1.5em;
+  }
+
+  h3 {
+    color: #fff;
+    margin-top: 3.2em;
+    z-index: 100;
+    font-size: 1.2em;
+    font-family: 'Merriweather', serif;
+  }
+
   .folderWrapper {
     width: 100%;
     display: flex;
@@ -10,69 +25,44 @@
     align-items: center;
   }
 
-  h2 {
-    text-align: center;
-    font-weight: bold;
-    color: #011829;
-    margin-top: 1.5em;
-    text-shadow: 0.7px 0.7px #000;
-  }
-
   .favorites {
     text-align: center;
     margin-bottom: -0.5em;
-    color: #146474;
+    color: #c0a062;
     margin-top: -1em;
     margin-left: -1.2em;
-    text-shadow: 3px 3px #000;
   }
 
   .underline {
     border: 1px solid #c0a062;
-    width: 30%;
+    width: 10em;
     margin-top: 3.5em;
     margin-left: auto;
     margin-right: auto;
   }
 
   .projectFolder {
-    width: 90%;
-    z-index: 30;
-    display: block;
-    margin: 0 auto;
+    width: 100%;
     height: 58em;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #012537;
-    top: 14em;
+    left: 0;
+    right: 0;
+    top: 10em;
+    background-color: #1c1c1c;
     position: absolute;
-    border-radius: 2px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   }
 
   .projectTab {
+    height: 0;
+	  width: 16em;
     position: absolute;
-    z-index: -1;
-    width: 150px;
-    height: 100px;
-    top: -4em;
-    left: 0.5em;
-    margin: 20px 0;
-    background: #012537;
-    border-radius: 50% / 10%;
-    color: white;
-    text-align: center;
-    text-indent: .1em;
-    &:before {
-      content: '';
-      position: absolute;
-      top: 10%;
-      bottom: 10%;
-      right: -5%;
-      left: -5%;
-      background: inherit;
-      border-radius: 5% / 50%;
-    }
+    top: -2.8em;
+    left: 0em;
+    border-bottom: 40px solid #1c1c1c;
+	  border-left: 15px solid transparent;
+  	border-right: 15px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .tabName {
@@ -96,6 +86,9 @@
 
     .projectFolder {
       top: 15em;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
     }
 
   }
@@ -116,7 +109,7 @@
       max-width: 70em;
       height: 30em;
       width: 85%;
-      top: 17em;
+      top: 20em;
     }
   }
 }

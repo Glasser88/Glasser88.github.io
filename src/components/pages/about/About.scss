@@ -6,6 +6,10 @@
   justify-content: center;
   align-items: center;
 
+  a {
+    text-decoration: none;
+  }
+
   p {
     position: absolute;
     color: #c3c3c3;
@@ -13,102 +17,17 @@
   }
 
   h2 {
-    color: #011829;
+    color: #121212;
     font-size: 3em;
-    font-weight: bold;
     text-align: center;
     margin-bottom: 0;
-    text-shadow: 0.7px 0.7px #000;
   }
 
   h3 {
-    color: #146474;
+    color: #c0a062;
     font-size: 2.7em;
     text-align: center;
     margin-top: -0.5em;
-    text-shadow: 3px 3px #000;
-  }
-
-  .stickOne {
-    width: 5.8em;
-    left: 3.5em;
-    top: 19.9em;
-    height: 0.4em;
-    background: #c0a062;
-    position: absolute;
-    opacity: 0.9;
-    border-radius: 10px 0px 15px 0px;
-    box-shadow: 1px 1px #000;
-    transform: rotate(-13deg);
-  }
-
-  .brand {
-    display: none;
-  }
-
-  .testTwo {
-    width: 8em;
-    top: 18.2em;
-    left: 10.2em;
-    height: 0.4em;
-    background: #c0a062;
-    position: absolute;
-    opacity: 0.9;
-    border-radius: 15px 10px 5px 0px;
-    box-shadow: 1px 1px #000;
-    transform: rotate(-12deg);
-  }
-
-  .blade {
-    background: #b39b65;
-    position: absolute;
-    top: 15.8em;
-    left: 16.8em;
-    width: 3.1em;
-    height: 1em;
-    transform: rotate(-66deg);
-    border-radius: 0px 10px 15px 15px;
-  }
-
-  .tape {
-    position: absolute;
-    height: 1em;
-    width: 0.8em;
-    left: 0.5em;
-    top: 0em;
-    border-right: 2px solid #146474;
-    border-left: 2px solid #146474;
-    background-color: #012537;
-  }
-
-  .tapeTwo {
-    position: absolute;
-    height: 1em;
-    width: 0.8em;
-    left: 1.1em;
-    top: 0em;
-    border-right: 2px solid #146474;
-    border-left: 2px solid #146474;
-    background-color: #012537;
-  }
-
-  .tapeThree {
-    position: absolute;
-    height: 1em;
-    width: 0.8em;
-    left: 1.9em;
-    top: 0em;
-    border-right: 2px solid #146474;
-    border-left: 2px solid #146474;
-    background-color: #012537;
-  }
-
-  .arrowOne {
-    display: none;
-  }
-
-  .arrowTwo {
-    display: none;
   }
 
   .line {
@@ -124,9 +43,13 @@
     position: relative;
   }
 
-  .hockey {
+  .imageHolder {
+    height: 33em;
+  }
+
+  .hockeyImage {
     position: absolute;
-    background-image: url('../../../assets/images/chief.png');
+    background-image: url('../../../assets/images/chiefs.png');
     background-size: cover;
     height: 18em;
     width: 18em;
@@ -171,37 +94,24 @@
     line-height: 30px;
   }
 
-  .highlights {
-    font-size: 1em;
-    color: #c3c3c3;
-    position: absolute;
-    left: 15.7em;
-    top: 39em;
-  }
-
-  .resume {
-    font-size: 1em;
-    color: #c3c3c3;
-    position: absolute;
-    left: 2.9em;
-    top: 39em;
-  }
-
-  .videoButton {
-    position: absolute;
-    top: 19em;
-    left: 3em;
-    height: 2.5em;
-    width: 2.5em;
-    font-size: 1.8em;
-    border-radius: 50%;
-    color: #fff;
-    background-color: #012537;
-    border: 3px solid #146474;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  .buttonBar {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .videoButton {
+    font-size: 1em;
+    color: #fff;
+    background-color: #c0a062;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px;
+    margin-right: 1em;
+    font-family: 'Open Sans', sans-serif;
     &:hover {
       background-color: #c0a062;
       color: #021019;
@@ -209,20 +119,16 @@
   }
 
   .pdfButton {
-    position: absolute;
-    top: 19em;
-    left: 10em;
-    height: 2.5em;
-    width: 2.5em;
-    border-radius: 50%;
-    font-size: 1.8em;
+    font-size: 1em;
     color: #fff;
-    background-color: #012537;
-    border: 3px solid #146474;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    background-color: #c0a062;
+    border: none;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 0px;
+    margin-left: 1em;
+    font-family: 'Open Sans', sans-serif;
     &:hover {
       background-color: #c0a062;
       color: #021019;
@@ -240,98 +146,12 @@
       width: 34em;
     }
 
-    .hockey {
+    .hockeyImage {
       height: 25em;
       width: 25em;
       left: 0.3em;
       top: 11em;
       transition: all 500ms ease;
-    }
-
-    .stickOne {
-      width: 8.2em;
-      left: 3em;
-      top: 23.4em;
-      height: 0.45em;
-      background: #c0a062;
-      position: absolute;
-      opacity: 0.9;
-      border-radius: 10px 0px 15px 0px;
-      box-shadow: 1px 1px #000;
-      transform: rotate(-13deg);
-    }
-
-    .testTwo {
-      width: 10.6em;
-      top: 21.1em;
-      left: 12.2em;
-      height: 0.45em;
-      background: #c0a062;
-      position: absolute;
-      opacity: 0.9;
-      border-radius: 15px 10px 5px 0px;
-      box-shadow: 1px 1px #000;
-      transform: rotate(-12deg);
-    }
-
-    .blade {
-      background: #b39b65;
-      position: absolute;
-      top: 17.85em;
-      left: 21.35em;
-      width: 4.3em;
-      height: 1.2em;
-      transform: rotate(-63deg);
-      border-radius: 0px 10px 15px 15px;
-    }
-
-    .tape {
-      position: absolute;
-      height: 1.25em;
-      width: 1em;
-      left: 0.5em;
-      top: 0em;
-      border-right: 2px solid #146474;
-      border-left: 2px solid #146474;
-      background-color: #012537;
-    }
-
-    .tapeTwo {
-      position: absolute;
-      height: 1.25em;
-      width: 1em;
-      left: 1.5em;
-      top: 0em;
-      border-right: 2px solid #146474;
-      border-left: 2px solid #146474;
-      background-color: #012537;
-    }
-
-    .tapeThree {
-      position: absolute;
-      height: 1.25em;
-      width: 1em;
-      left: 2.5em;
-      top: 0em;
-      border-right: 2px solid #146474;
-      border-left: 2px solid #146474;
-      background-color: #012537;
-    }
-
-    .highlights {
-      font-size: 1em;
-      color: #c3c3c3;
-      position: absolute;
-      left: 17.3em;
-      top: 44em;
-    }
-
-    .resume {
-      font-size: 1em;
-      color: #c3c3c3;
-      position: absolute;
-      left: 2.9em;
-      top: 44em;
     }
 
     .videoButton {
@@ -402,7 +222,7 @@
       margin-left: 12em;
     }
 
-    .hockey {
+    .hockeyImage {
       height: 32em;
       width: 32em;
       left: -3em;
@@ -448,124 +268,6 @@
       line-height: 40px;
       left: 9.5em;
       top: 15.5em;
-    }
-
-    .stickOne {
-      width: 10.8em;
-      left: 0.3em;
-      height: 0.8em;
-      background: #c0a062;
-      position: absolute;
-      top: 26.6em;
-      opacity: 0.9;
-      border-radius: 10px 0px 15px 0px;
-      box-shadow: 1px 1px #000;
-      transform: rotate(-13deg);
-    }
-
-    .brand {
-      font-size: 0.7em;
-      position: absolute;
-      margin-left: 3.5em;
-      margin-top: -0.1em;
-      color: #021019;
-      font-weight: bold;
-      font-family: 'Open Sans', sans-serif;
-      transform: rotate(0.5deg);
-      display: inline;
-    }
-
-    .testTwo {
-      width: 14em;
-      top: 23.6em;
-      left: 12.1em;
-      height: 0.8em;
-      background: #c0a062;
-      position: absolute;
-      opacity: 0.9;
-      border-radius: 15px 10px 5px 0px;
-      box-shadow: 1px 1px #000;
-      transform: rotate(-12deg);
-    }
-
-    .blade {
-      background: #b39b65;
-      position: absolute;
-      top: 19.7em;
-      left: 24.1em;
-      width: 5.35em;
-      height: 1.55em;
-      transform: rotate(-66deg);
-      border-radius: 0px 10px 15px 15px;
-    }
-
-    .tape {
-      position: absolute;
-      height: 1.75em;
-      width: 1.2em;
-      left: 1em;
-      top: -0.1em;
-      border-right: 2px solid #146474;
-      border-left: 2px solid #146474;
-      background-color: #012537;
-    }
-
-    .tapeTwo {
-      position: absolute;
-      height: 1.75em;
-      width: 1.2em;
-      left: 2.1em;
-      top: -0.1em;
-      border-right: 2px solid #146474;
-      border-left: 2px solid #146474;
-      background-color: #012537;
-    }
-
-    .tapeThree {
-      position: absolute;
-      height: 1.75em;
-      width: 1.2em;
-      left: 3.1em;
-      top: -0.1em;
-      border-right: 2px solid #146474;
-      border-left: 2px solid #146474;
-      background-color: #012537;
-    }
-
-    .arrowOne {
-      position: absolute;
-      top: 6em;
-      left: -4.5em;
-      color: #c0a062;
-      font-size: 1.8em;
-      transform: rotate(-20deg);
-      display: inline;
-    }
-
-    .arrowTwo {
-      position: absolute;
-      top: 14em;
-      left: -8.4em;
-      color: #c0a062;
-      font-size: 1.8em;
-      transform: rotate(-20deg);
-      display: inline;
-    }
-
-    .highlights {
-      color: #c3c3c3;
-      position: absolute;
-      left: -9em;
-      top: 10.4em;
-      font-size: 1.3em;
-    }
-
-    .resume {
-      color: #c3c3c3;
-      position: absolute;
-      left: -14em;
-      top: 21.7em;
-      font-size: 1.3em;
     }
 
     .videoButton {

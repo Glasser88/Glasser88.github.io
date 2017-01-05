@@ -39,46 +39,38 @@ class About extends Component {
     return (
       <div className={STYLES.About}>
         <div className={STYLES.inside}>
-          <div className={STYLES.hockey}></div>
-          <div className={STYLES.stickOne}>
-            <span className={STYLES.brand}>TREVOR GLASS</span>
-          </div>
-          <div className={STYLES.testTwo}></div>
-          <div className={STYLES.blade}>
-            <div className={STYLES.tape}></div>
-            <div className={STYLES.tapeTwo}></div>
-            <div className={STYLES.tapeThree}></div>
-          </div>
-          <div>
-            <h2>The Story Of</h2>
-            <h3>Trevor Glass</h3>
-            <hr className={STYLES.line} />
-            <div className={STYLES.story}>
-              <p className={STYLES.one}>From hockey player to</p>
-              <p className={STYLES.two}>Software Engineer my values have &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; remained the same.</p>
-              <p className={STYLES.three}>Always use</p>
-              <p className={STYLES.four}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; my creativity and hard work to create opportunities. Dream of the impossible. And</p>
-              <p className={STYLES.five}>always believe that anything is possible.</p>
+          <div className={STYLES.imageHolder}>
+            <div className={STYLES.hockeyImage}></div>
+            <div>
+              <h2>The Story Of</h2>
+              <h3>Trevor Glass</h3>
+              <hr className={STYLES.line} />
+              <div className={STYLES.story}>
+                <p className={STYLES.one}>From hockey player to</p>
+                <p className={STYLES.two}>Software Engineer my values have &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; remained the same.</p>
+                <p className={STYLES.three}>Always use</p>
+                <p className={STYLES.four}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; my creativity and hard work to create opportunities. Dream of the impossible. And</p>
+                <p className={STYLES.five}>always believe that anything is possible.</p>
+              </div>
+              <VideoModal
+                show={modalOpen}
+                onHide={this.closeModal}
+              />
+              <div className={STYLES.hexagon}></div>
             </div>
+          </div>
+          <div className={STYLES.buttonBar}>
             <Button
               onClick={this.openModal}
               className={STYLES.videoButton}>
-              <Glyphicon glyph='film' />
+              <Glyphicon glyph='film' />&nbsp;&nbsp;HOCKEY
             </Button>
-            <Glyphicon className={STYLES.arrowOne} glyph='share-alt' />
-            <h4 className={STYLES.highlights}>Hockey Highlights</h4>
-            <VideoModal
-              show={modalOpen}
-              onHide={this.closeModal}
-            />
-          <a href="../../../assets/docs/resume2017.pdf" target='_blank'>
-            <Button
-              className={STYLES.pdfButton}>
-              <i className="fa fa-file-pdf-o"></i>
-            </Button>
-          </a>
-            <Glyphicon className={STYLES.arrowTwo} glyph='share-alt' />
-            <h4 className={STYLES.resume}>Printable Resume</h4>
+            <a href="../../../assets/docs/resume2017.pdf" target='_blank'>
+              <Button
+                className={STYLES.pdfButton}>
+                <i className="fa fa-file-pdf-o"></i>&nbsp;&nbsp;RESUME
+              </Button>
+            </a>
           </div>
         </div>
       </div>

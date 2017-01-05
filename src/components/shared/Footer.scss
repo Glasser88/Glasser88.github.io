@@ -2,24 +2,23 @@
   width: 100%;
   height: 2em;
   font-size: 2.5em;
-  // position: absolute;
   bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 2px solid #08304b;
   a {
-    color: #146474;
-    // color: #5e5e5e;
+    color: #5e5e5e;
     margin: 0 0.4em;
+    transition: color 500ms ease;
     &:hover {
-      color: #c9995b;
+      color: #c0a062;
+      transition: color 500ms ease;
     }
     &:active {
-      color: #c9995b;
+      color: #c0a062;
     }
     &:focus {
-      color: #c9995b;
+      color: #c0a062;
 
     }
   }

@@ -48,8 +48,9 @@ class Portfolio extends Component {
   renderListView() {
     return (
       <div className={STYLES.projectFolder}>
-        <div className={STYLES.projectTab}></div>
-        <div className={STYLES.tabName}>Projects</div>
+        <div className={STYLES.projectTab}>
+          <h3>Projects</h3>
+        </div>
         <ProjectRow
           setCurrentProject={this.setCurrentProject}
         />

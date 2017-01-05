@@ -13,9 +13,9 @@ export const SKILLS_DATA= {
       },
       {
           label: "Coding skills",
-          fillColor: "rgba(151,187,205,0.2)",
-          strokeColor: "rgba(151,187,205,1)",
-          pointColor: "rgba(151,187,205,1)",
+          fillColor: "rgba(192,160,98,0.2)",
+          strokeColor: "rgba(192,160,98,1)",
+          pointColor: "rgba(192,160,98,1)",
           pointStrokeColor: "#fff",
           pointHighlightFill: "#fff",
           pointHighlightStroke: "rgba(151,187,205,1)",

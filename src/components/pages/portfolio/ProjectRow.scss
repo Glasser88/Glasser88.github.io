@@ -12,14 +12,21 @@
     color: #c3c3c3;
   }
 
+  .projectTitle {
+    font-size: 1.3em;
+    color: #ffffff;
+    text-align: left;
+    margin-left: 1.5em;
+    margin-top: 1.5em;
+    cursor: pointer;
+  }
+
   .projectBox {
-    border-radius: 2px;
     width: 100%;
-    background-color: #011829;
+    background-color: #0d0d0d;
     margin-bottom: 0.8em;
     height: 13.5em;
     font-family: 'Merriweather', serif;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   }
 
   .open {
@@ -33,15 +40,6 @@
     &:hover {
       color: #c0a062;
     }
-  }
-
-  h3 {
-    font-size: 1.5em;
-    color: #eee;
-    margin-left: 1.5em;
-    margin-top: 1.5em;
-    cursor: pointer;
-    text-shadow: 3px 3px #000;
   }
 
   .line {
