@@ -56,7 +56,6 @@ class About extends Component {
                 show={modalOpen}
                 onHide={this.closeModal}
               />
-              <div className={STYLES.hexagon}></div>
             </div>
           </div>
           <div className={STYLES.buttonBar}>

@@ -8,8 +8,12 @@ const DividerOne = () => (
   <div className={STYLES.DividerOne}>
     <div className={STYLES.boxHolder}>
       <div className={STYLES.box}>
-        <div className={STYLES.circle}>
-          <Glyphicon className={STYLES.icon} glyph="globe" />
+        <div className={STYLES.hexagonWrapper}>
+          <div className={STYLES.hexagon}>
+            <div className={STYLES.iconWrapper}>
+              <Glyphicon className={STYLES.icon} glyph="globe" />
+            </div>
+          </div>
         </div>
         <h3>Development</h3>
         <hr className={STYLES.line} />
@@ -20,8 +24,12 @@ const DividerOne = () => (
         </p>
       </div>
       <div className={STYLES.box}>
-        <div className={STYLES.circle}>
-          <Glyphicon className={STYLES.icon} glyph="eye-open" />
+        <div className={STYLES.hexagonWrapper}>
+          <div className={STYLES.hexagon}>
+            <div className={STYLES.iconWrapper}>
+              <Glyphicon className={STYLES.icon} glyph="eye-open" />
+            </div>
+          </div>
         </div>
         <h3>Design</h3>
           <hr className={STYLES.line} />
@@ -32,8 +40,12 @@ const DividerOne = () => (
         </p>
       </div>
       <div className={STYLES.box}>
-        <div className={STYLES.circle}>
-          <Glyphicon className={STYLES.icon} glyph="education" />
+        <div className={STYLES.hexagonWrapper}>
+          <div className={STYLES.hexagon}>
+            <div className={STYLES.iconWrapper}>
+              <Glyphicon className={STYLES.icon} glyph="education" />
+            </div>
+          </div>
         </div>
         <h3>Education</h3>
           <hr className={STYLES.line} />

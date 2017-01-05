@@ -146,38 +146,16 @@
       width: 34em;
     }
 
+    .imageHolder {
+      height: 37em;
+    }
+
     .hockeyImage {
       height: 25em;
       width: 25em;
       left: 0.3em;
       top: 11em;
       transition: all 500ms ease;
-    }
-
-    .videoButton {
-      position: absolute;
-      top: 21.5em;
-      left: 3em;
-      height: 2.5em;
-      width: 2.5em;
-      font-size: 1.8em;
-      border-radius: 50%;
-      color: #fff;
-      background-color: #012537;
-      border: 3px solid #146474;
-    }
-
-    .pdfButton {
-      position: absolute;
-      top: 21.5em;
-      left: 10.8em;
-      height: 2.5em;
-      width: 2.5em;
-      border-radius: 50%;
-      font-size: 1.8em;
-      color: #fff;
-      background-color: #012537;
-      border: 3px solid #146474;
     }
 
     .story {
@@ -220,6 +198,10 @@
     .inside {
       width: 38em;
       margin-left: 12em;
+    }
+
+    .imageHolder {
+      height: 40em;
     }
 
     .hockeyImage {
@@ -268,32 +250,6 @@
       line-height: 40px;
       left: 9.5em;
       top: 15.5em;
-    }
-
-    .videoButton {
-      position: absolute;
-      top: 4em;
-      left: -3em;
-      height: 3em;
-      width: 3em;
-      font-size: 1.8em;
-      border-radius: 50%;
-      color: #fff;
-      background-color: #012537;
-      border: 3px solid #146474;
-    }
-
-    .pdfButton {
-      position: absolute;
-      top: 12em;
-      left: -7em;
-      height: 3em;
-      width: 3em;
-      border-radius: 50%;
-      font-size: 1.8em;
-      color: #fff;
-      background-color: #012537;
-      border: 3px solid #146474;
     }
   }
 }

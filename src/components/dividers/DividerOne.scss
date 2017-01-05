@@ -5,6 +5,24 @@
   align-items: center;
   width: 100%;
 
+  h3 {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    color: #fff;
+  }
+
+  p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #969696;
+    margin-top: 1.5em;
+    font-size: 1.1em;
+    text-shadow: 2px 2px #021019;
+    font-family: 'Open Sans', sans-serif;
+  }
+
   .boxHolder {
     display: flex;
     flex-wrap: wrap;
@@ -23,43 +41,59 @@
     width: 6em;
   }
 
-  .circle {
-    height: 7em;
-    width: 7em;
-    display: block;
-    margin: 0 auto;
-    margin-top: 2em;
-    border-radius: 50%;
-    background-color: #011829;
-    border: 2px solid #146474;
+  .hexagonWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hexagon {
     position: relative;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    width: 100px;
+    height: 57.74px;
+    background-color: #1c1c1c;
+    margin: 28.87px 0;
+    border-left: solid 3px #cdae73;
+    border-right: solid 3px #cdae73;
+  }
+
+  .hexagon:before,
+  .hexagon:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 70.71px;
+    height: 70.71px;
+    -webkit-transform: scaleY(0.5774) rotate(-45deg);
+    -ms-transform: scaleY(0.5774) rotate(-45deg);
+    transform: scaleY(0.5774) rotate(-45deg);
+    background-color: inherit;
+    left: 11.6447px;
+  }
+
+  .hexagon:before {
+    top: -35.3553px;
+    border-top: solid 4.2426px #cdae73;
+    border-right: solid 4.2426px #cdae73;
+  }
+
+  .hexagon:after {
+    bottom: -35.3553px;
+    border-bottom: solid 4.2426px #cdae73;
+    border-left: solid 4.2426px #cdae73;
+  }
+
+  .iconWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .icon {
+    color: #333333;
+    z-index: 100;
     font-size: 3.5em;
-    color: #fff;
-    top: 0.45em;
-    left: 0.45em;
-  }
-
-  h3 {
-    text-align: center;
-    font-family: 'Merriweather', serif;
-    color: #146474;
-    text-shadow: 2px 2px #000;
-  }
-
-  p {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    color: #c3c3c3;
-    margin-top: 1.5em;
-    font-size: 1.1em;
-    text-shadow: 2px 2px #021019;
-    font-family: 'Open Sans', sans-serif;
   }
 
   @media (min-width: 480px) {
