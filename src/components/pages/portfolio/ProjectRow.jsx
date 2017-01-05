@@ -17,6 +17,7 @@ const ProjectRow = ({ setCurrentProject }) => (
           />
         </div>
         <h2
+          className={STYLES.projectName}
           onClick={setCurrentProject.bind(null, project)}>
           {project.name}
         </h2>
