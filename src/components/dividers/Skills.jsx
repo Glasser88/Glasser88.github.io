@@ -4,10 +4,10 @@ const LineChart = require("react-chartjs").Line;
 
 import { SKILLS_DATA } from '../../constants/skills-data';
 
-import STYLES from './DividerThree.scss';
+import STYLES from './Skills.scss';
 
-const DividerThree = () => (
-  <div className={STYLES.DividerThree}>
+const Skills = () => (
+  <div className={STYLES.Skills}>
     <div className={STYLES.chartHolder}>
       <div className={STYLES.chart}>
         <LineChart
@@ -37,4 +37,4 @@ const DividerThree = () => (
   </div>
 );
 
-export default DividerThree;
+export default Skill;

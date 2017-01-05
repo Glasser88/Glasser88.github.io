@@ -1,4 +1,4 @@
-:local .DividerThree {
+:local .Interests {
   height: 60em;
   width: 100%;
   display: flex;
@@ -9,59 +9,57 @@
   h2 {
     color: #121212;
     font-size: 2.6em;
+    margin-left: 1.8em;
+    margin-top: 4em;
   }
 
   h3 {
     color: #c0a062;
     font-size: 2em;
     margin-top: -0.9em;
-    margin-left: 0.5em;
+    margin-left: 2.5em;
   }
 
   h4 {
     color: #fff;
     margin-left: 1em;
-    margin-top: 0.7em;
     text-shadow: 1px 1px #000;
   }
 
   .chartHolder {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    width: 100%;
   }
 
   .description {
-    order: 1;
+    margin-top: -8em;
+    margin-right: 1.5em;
   }
 
-  .chart {
-    order: 2;
+  .line {
+    border: 1px solid #c0a062;
+    margin-left: 8em;
+    width: 8em;
   }
 
-  .headings {
-    margin-top: -5em;
-    margin-left: 0;
+  .radar {
+    margin-left: 0em;
   }
 
   .legend {
-    margin-left: 2em;
-    margin-top: 4em;
-    margin-bottom: 6em;
+    margin-left: 2.5em;
   }
 
-  .hockeySkills {
+  .withCoffee {
     display: flex;
+    padding-left: 1.5em;
+    padding-top: 2.5em;
   }
 
-  .codingSkills {
-    display: flex;
-    margin-top: 2.5em;
-  }
-
-  .hockeyColor {
+  .coffeeColor {
     position: relative;
     width: 40px;
     height: 23.09px;
@@ -69,8 +67,8 @@
     margin: 11.55px 0;
   }
 
-  .hockeyColor:before,
-  .hockeyColor:after {
+  .coffeeColor:before,
+  .coffeeColor:after {
     content: "";
     position: absolute;
     width: 0;
@@ -78,18 +76,24 @@
     border-right: 20px solid transparent;
   }
 
-  .hockeyColor:before {
+  .coffeeColor:before {
     bottom: 100%;
     border-bottom: 11.55px solid #fff;
   }
 
-  .hockeyColor:after {
+  .coffeeColor:after {
     top: 100%;
     width: 0;
     border-top: 11.55px solid #fff;
   }
 
-  .codingColor {
+  .withoutCoffee {
+    display: flex;
+    padding-left: 1.5em;
+    padding-top: 2.5em;
+  }
+
+  .noCoffeeColor {
     position: relative;
     width: 40px;
     height: 23.09px;
@@ -97,8 +101,8 @@
     margin: 11.55px 0;
   }
 
-  .codingColor:before,
-  .codingColor:after {
+  .noCoffeeColor:before,
+  .noCoffeeColor:after {
     content: "";
     position: absolute;
     width: 0;
@@ -106,23 +110,23 @@
     border-right: 20px solid transparent;
   }
 
-  .codingColor:before {
+  .noCoffeeColor:before {
     bottom: 100%;
     border-bottom: 11.55px solid rgba(192,160,98,0.5);
   }
 
-  .codingColor:after {
+  .noCoffeeColor:after {
     top: 100%;
     width: 0;
     border-top: 11.55px solid rgba(192,160,98,0.5);
   }
 
-  .line {
-    border: 1px solid #c0a062;
-    width: 10em;
-  }
-
   @media (min-width: 480px) {
+    height: 65em;
+
+    .description {
+      margin-top: -10em;
+    }
 
   }
 
@@ -136,52 +140,45 @@
     h3 {
       font-size: 2em;
       margin-top: -0.9em;
-      margin-left: 0.5em;
+      margin-left: 3em;
     }
 
     h4 {
-      color: #c3c3c3;
       margin-left: 1em;
-      text-shadow: 1px 1px #000;
-    }
-
-    .chartHolder {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .description {
-      order: 2;
-    }
-
-    .chart {
-      order: 1;
-    }
-
-    .headings {
-      margin-top: -7em;
-      margin-left: 4em;
-    }
-
-    .legend {
-      margin-left: 2em;
-      margin-top: 3em;
-    }
-
-    .hockeySkills {
-      display: flex;
-    }
-
-    .codingSkills {
-      display: flex;
-      margin-top: 2.5em;
     }
 
     .line {
       border: 1px solid #c0a062;
+      margin-left: 9em;
       width: 10em;
+    }
+
+    .chartHolder {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    .description {
+      margin-top: -11em;
+      margin-right: 1.5em;
+    }
+
+    .radar {
+      margin-left: 1.5em;
+    }
+
+    .withCoffee {
+      display: flex;
+      padding-left: 1.5em;
+      padding-top: 2.5em;
+    }
+
+    .withoutCoffee {
+      display: flex;
+      padding-left: 1.5em;
+      padding-top: 2.5em;
     }
   }
 }

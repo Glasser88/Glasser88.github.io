@@ -4,10 +4,10 @@ import { INTERESTS_DATA } from '../../constants/interests-data';
 
 const RadarChart = require("react-chartjs").Radar;
 
-import STYLES from './DividerTwo.scss';
+import STYLES from './Interests.scss';
 
-const DividerTwo = () => (
-  <div className={STYLES.DividerTwo}>
+const Interests = () => (
+  <div className={STYLES.Interests}>
     <div className={STYLES.chartHolder}>
       <div className={STYLES.description}>
         <h2>Some of My Interests</h2>
@@ -34,4 +34,4 @@ const DividerTwo = () => (
   </div>
 );
 
-export default DividerTwo;
+export default Interests;

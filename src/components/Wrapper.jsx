@@ -3,7 +3,6 @@ import React, { Component, PropTypes } from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import Scroll from 'react-scroll';
 
-import Topbar from './shared/Topbar';
 import Footer from './shared/Footer';
 
 import Splashpage from '../components/pages/splashpage/Splashpage';
@@ -11,8 +10,8 @@ import Portfolio from '../components/pages/portfolio/Portfolio';
 import About from '../components/pages/about/About';
 import Contact from '../components/pages/contact/Contact';
 import DividerOne from '../components/dividers/DividerOne';
-import DividerTwo from '../components/dividers/DividerTwo';
-import DividerThree from '../components/dividers/DividerThree';
+import Interests from '../components/dividers/Interests';
+import Skills from '../components/dividers/Skills';
 import GoogleMaps from '../components/pages/maps/GoogleMaps';
 
 import Navbar from 'react-bootstrap/lib/Navbar';
@@ -149,11 +148,11 @@ class Wrapper extends Component {
           <Element name="portfolio">
             <Portfolio />
           </Element>
-          <DividerTwo />
+          <Interests />
           <Element name="about">
             <About />
           </Element>
-          <DividerThree />
+          <Skills />
           <Element name="contact">
             <Contact />
           </Element>
