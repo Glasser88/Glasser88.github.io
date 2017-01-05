@@ -92,6 +92,9 @@ export default {
         test: /(\.css|\.scss)$/,
         loader: ExtractTextPlugin.extract('css?sourceMap!postcss!sass?sourceMap')
       }, {
+        test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: 'file-loader'
+      }, {
         test: /\.json$/,
         loader: "json"
       }]
