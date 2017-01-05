@@ -19,6 +19,11 @@
     height: 25em;
   }
 
+  .line {
+    border: 1px solid #c0a062;
+    width: 6em;
+  }
+
   .circle {
     height: 7em;
     width: 7em;
@@ -34,7 +39,7 @@
 
   .icon {
     font-size: 3.5em;
-    color: #c0a062;
+    color: #fff;
     top: 0.45em;
     left: 0.45em;
   }
@@ -65,7 +70,7 @@
   }
 
   @media (min-width: 768px) {
-    height: 35em;
+    height: 40em;
 
     .box {
       height: 25em;

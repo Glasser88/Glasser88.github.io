@@ -6,25 +6,6 @@
   background-color: #021019;
   border-bottom: 3px solid #08304b;
 
-  .bigWrapper {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .line {
-    border: 1px solid #c0a062;
-    width: 10em;
-    margin-right: 10em;
-  }
-
-  .headings {
-    width: 100%;
-    margin-top: -12em;
-  }
-
   h2 {
     font-family: 'Merriweather', serif;
     color: #011829;
@@ -43,8 +24,35 @@
     margin-top: -0.9em;
   }
 
+  h4 {
+    display: none;
+  }
+
+  .bigWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .line {
+    position: absolute;
+    border: 1px solid #c0a062;
+    width: 10em;
+    right: 0;
+    left: 0;
+  }
+
+  .headingWrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -12em;
+  }
+
   .phoneWrapper {
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,22 +64,36 @@
 
   @media (min-width: 768px) {
 
+    .headings {
+      position: relative;
+    }
+
     h2 {
       font-size: 4em;
       font-weight: bold;
-      margin-bottom: 0;
+      margin-top: -2em;
+      margin-right: 1em;
     }
 
     h3 {
-      width: 9em;
       font-size: 2.8em;
       line-height: 40px;
-      margin-top: -0.7em;
-      margin-left: 2em;
+      margin-top: -0.6em;
+      margin-left: 0.5em;
+      text-align: left;
+    }
+
+    h4 {
+      position: absolute;
+      width: 8em;
+      margin-left: 1em;
+      color: #c3c3c3;
+      line-height: 35px;
+      font-size: 1.8em;
+      display: inline-block;
     }
 
     .bigWrapper {
-      width: 100%;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
@@ -80,13 +102,18 @@
 
     .line {
       border: 1px solid #c0a062;
-      width: 10em;
-      margin-right: 10em;
+      width: 6.5em;
+      position: absolute;
+      top: 10em;
+      left: -25em;
     }
 
-    .headings {
-      width: 50%;
-      margin-top: -12em;
+    .headingWrap {
+      width: 60%;
+    }
+
+    .phoneWrapper {
+      width: 40%;
     }
   }
 }

@@ -33,10 +33,13 @@ class Contact extends Component {
     return (
       <div className={STYLES.Contact}>
         <div className={STYLES.bigWrapper}>
-          <div className={STYLES.headings}>
-            <h2>Dial Up The</h2>
-            <h3>Contact Info For Trevor Glass</h3>
-            <hr className={STYLES.line} />
+          <div className={STYLES.headingWrap}>
+            <div className={STYLES.headings}>
+              <h2>Dial Up The</h2>
+              <h3>Contact Info For Trevor Glass</h3>
+              <h4>Get in touch with me to get the ball rolling!</h4>
+                <hr className={STYLES.line} />
+            </div>
           </div>
           <div className={STYLES.phoneWrapper}>
             <Phone

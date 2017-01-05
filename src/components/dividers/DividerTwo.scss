@@ -85,6 +85,11 @@
   }
 
   @media (min-width: 480px) {
+    height: 65em;
+
+    .description {
+      margin-top: -10em;
+    }
 
   }
 
@@ -125,7 +130,7 @@
     }
 
     .description {
-      margin-top: -8em;
+      margin-top: -11em;
       margin-right: 1.5em;
     }
 

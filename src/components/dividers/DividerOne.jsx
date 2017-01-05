@@ -12,6 +12,7 @@ const DividerOne = () => (
           <Glyphicon className={STYLES.icon} glyph="globe" />
         </div>
         <h3>Development</h3>
+        <hr className={STYLES.line} />
         <p>
           With creative thinking as my backbone, I have always enjoyed coming
           up with new ways to solve complex problems and create real world
@@ -23,6 +24,7 @@ const DividerOne = () => (
           <Glyphicon className={STYLES.icon} glyph="eye-open" />
         </div>
         <h3>Design</h3>
+          <hr className={STYLES.line} />
         <p>
           With an eye for design, I always make sure that every project I take
           on creates a stunning visual impression by combining amazing graphics
@@ -34,6 +36,7 @@ const DividerOne = () => (
           <Glyphicon className={STYLES.icon} glyph="education" />
         </div>
         <h3>Education</h3>
+          <hr className={STYLES.line} />
         <p>
           I am always pushing myself to expand my knowledge in all aspects of
           software development. Learning new technologies has become a favorite
