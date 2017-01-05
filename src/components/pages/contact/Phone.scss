@@ -92,12 +92,23 @@
     }
 
     .ring {
+      position: absolute;
+      right: 0;
+      width: 55px;
+      height: 30px;
+      z-index: 10;
+      transform: rotate(45deg);
+      border-radius: 50%;
+      box-shadow: 14px 14px 0 0 #5e5e5e;
+    }
+
+    .ring {
       right: 5.1em;
       bottom: 5.5em;
       width: 60px;
       height: 30px;
       transform: rotate(40deg);
-      box-shadow: 15px 15px 0 0 #272727;
+      box-shadow: 15px 15px 0 0 #5e5e5e;
     }
 
     .infoBar {
