@@ -1,86 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--
-  **NOTE:** This is a template for index.html. It uses ejs and htmlWebpackPlugin to generate a different index.html for each environment. htmlWebpackPlugin will dynamically add references to the scripts and styles that it bundles to this file. The generated bundles have hash-based filenames, so it's necessary to add the references dynamically.
-  For more info on ejs, see http://www.embeddedjs.com/. For examples of using it with htmlWebpackPlugin, see https://github.com/jaketrent/html-webpack-template/blob/master/index.ejs
-  -->
-<head>
-  <!--
-    The htmlWebpackPlugin will parse the logic below so that trackJS is only added to the production version of index.html (since only webpack.config.prod.js provides the trackJS token)
-    This is an example of how to add features to index.html for only one environment.
-    To track JavaScript errors via TrackJS, sign up for a free trial at TrackJS.com and enter your token in /webpack.config.prod.js on line 55.
-   -->
-  <% if (htmlWebpackPlugin.options.trackJSToken) { %>
-  <script>window._trackJs = {token: '<%= htmlWebpackPlugin.options.trackJSToken %>'};</script>
-  <script src="https://d2zah9y47r7bi2.cloudfront.net/releases/current/tracker.js"></script>
-  <% } %>
-
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8"/>
-  <title>Trevor Glass</title>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyesbQMyKVVbBgKVi2g6VX7mop2z96jBo" ></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet">
-  <style>
-      #loading {
-        position: fixed;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        opacity: 1;
-        background-color: #161616;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 10000;
-        transition: opacity 0.3s ease;
-        transform: translate3d(0, 0, 0);
-      }
-      #loading.zero-opacity {
-        opacity: 0;
-      }
-      #spinner {
-        width: 60px;
-        height: 60px;
-        background-color: #c0a062;
-
-        border-radius: 100%;
-        -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
-        animation: sk-scaleout 1.0s infinite ease-in-out;
-      }
-      @-webkit-keyframes sk-scaleout {
-        0% {
-          -webkit-transform: scale(0)
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8"/>
+    <title>Trevor Glass</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyesbQMyKVVbBgKVi2g6VX7mop2z96jBo" ></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet">
+    <style>
+        #loading {
+          position: fixed;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          opacity: 1;
+          background-color: #161616;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 10000;
+          transition: opacity 0.3s ease;
+          transform: translate3d(0, 0, 0);
         }
-        100% {
-          -webkit-transform: scale(1.0);
+        #loading.zero-opacity {
           opacity: 0;
         }
-      }
+        #spinner {
+          width: 60px;
+          height: 60px;
+          background-color: #c0a062;
 
-      @keyframes sk-scaleout {
-        0% {
-          -webkit-transform: scale(0);
-          transform: scale(0);
-        } 100% {
-          -webkit-transform: scale(1.0);
-          transform: scale(1.0);
-          opacity: 0;
+          border-radius: 100%;
+          -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+          animation: sk-scaleout 1.0s infinite ease-in-out;
         }
-      }
+        @-webkit-keyframes sk-scaleout {
+          0% {
+            -webkit-transform: scale(0)
+          }
+          100% {
+            -webkit-transform: scale(1.0);
+            opacity: 0;
+          }
+        }
 
-      #portfolio {
-        opacity: 0;
-        transition: none;
-      }
-    </style>
-</head>
-<body>
-  <div id="loading">
-    <div id="spinner"></div>
-  </div>
-  <div id="portfolio"></div>
-</body>
+        @keyframes sk-scaleout {
+          0% {
+            -webkit-transform: scale(0);
+            transform: scale(0);
+          } 100% {
+            -webkit-transform: scale(1.0);
+            transform: scale(1.0);
+            opacity: 0;
+          }
+        }
+
+        #portfolio {
+          opacity: 0;
+          transition: none;
+        }
+      </style>
+  </head>
+  <body>
+    <div id="loading">
+      <div id="spinner"></div>
+    </div>
+    <div id="portfolio"></div>
+  </body>
 </html>
