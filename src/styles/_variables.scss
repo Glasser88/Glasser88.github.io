@@ -13,11 +13,42 @@ $dark-color: #0d0d0d;
 
 // Fonts
 $header-color: #fff;
+$header-font-family: 'Merriweather';
+
 $subheader-color: #5e5e5e;
+$subheader-font-weight: 600;
+$subheader-font-family: 'Open Sans';
+
 $paragraph-color: #999999;
+$paragraph-font-weight: 300;
+$paragraph-font-family: 'Merriweather';
+
 $highlight-color: #c0a062;
+$highlight-font-family: 'Merriweather';
+
 $shadow-color: #121212;
+$shadow-font-weight: 900;
+$shadow-font-family: 'Merriweather';
+
 $detail-color: #272727;
+
+// Buttons
+$button-color: #c0a062;
+$button-background-color: $primary-color;
+$button-border-color: $detail-color;
+$button-font-family: 'Open Sans';
+
+$button-hover-color: #fff;
+$button-hover-transition-time: 1s;
+$button-hover-background-color: #b99550;
+$button-hover-border-color: $accent-color;
+
+$highlight-button-color: #fff;
+$highlight-button-background-color: $accent-color;
+$highlight-button-font-family: 'Open Sans';
+
+$highlight-button-hover-background-color: #b99550;
+$highlight-button-hover-transition-time: 1s;
 
 //Animations
 $fade-project-enter: 350ms;

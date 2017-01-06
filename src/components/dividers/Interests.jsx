@@ -21,11 +21,11 @@ const Interests = () => (
           <div className={STYLES.legend}>
             <div className={STYLES.withCoffee}>
               <div className={STYLES.coffeeColor}></div>
-              <h4>With Coffee</h4>
+              <h4>WITH COFFEE</h4>
             </div>
             <div className={STYLES.withoutCoffee}>
               <div className={STYLES.noCoffeeColor}></div>
-              <h4>Without Coffee</h4>
+              <h4>WITHOUT COFFEE</h4>
             </div>
           </div>
         </div>
@@ -35,7 +35,8 @@ const Interests = () => (
           <RadarChart
             className={STYLES.radar}
             data={INTERESTS_DATA}
-            options={INTERESTS_OPTIONS}
+            height="300"
+            width="370"
 
           />
         </div>

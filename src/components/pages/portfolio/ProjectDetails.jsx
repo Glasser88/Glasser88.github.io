@@ -43,7 +43,7 @@ class ProjectDetails extends Component {
         <div className={STYLES.folderWrapper}>
           <div className={STYLES.projectFolder}>
             <div className={STYLES.projectTab}>
-              <h3>{project.name}</h3>
+              <h3 className={STYLES.projectName}>{project.name}</h3>
             </div>
             <div className={STYLES.projectBorder}>
               <div className={STYLES.description}>

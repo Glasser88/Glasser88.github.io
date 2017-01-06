@@ -49,7 +49,7 @@ class Portfolio extends Component {
     return (
       <div className={STYLES.projectFolder}>
         <div className={STYLES.projectTab}>
-          <h4>Projects</h4>
+          <h4>PROJECTS</h4>
         </div>
         <ProjectRow
           setCurrentProject={this.setCurrentProject}

@@ -23,10 +23,11 @@
 
   h4 {
     color: $subheader-color;
-    margin-top: 3.2em;
+    margin-top: 3.7em;
     z-index: 100;
-    font-size: 1.2em;
-    font-family: 'Merriweather', serif;
+    font-size: 1.1em;
+    font-weight: $subheader-font-weight;
+    font-family: $subheader-font-family, serif;
   }
 
   .folderWrapper {
@@ -51,7 +52,7 @@
     height: 58em;
     left: 0;
     right: 0;
-    top: 10em;
+    top: 14em;
     background-color: $secondary-color;
     position: absolute;
   }

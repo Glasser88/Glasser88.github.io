@@ -11,7 +11,7 @@
   h1 {
     position: absolute;
     font-size: 3.8em;
-    color: #121212;
+    color: $shadow-color;
     top: 1em;
     left: 0.5em;
   }
@@ -23,12 +23,12 @@
     top: 3.5em;
     line-height: 35px;
     left: 1em;
-    color: #c0a062;
+    color: $highlight-color;
     text-align: left;
   }
 
   h3 {
-    color: #c3c3c3;
+    color: $header-color;
     font-size: 1.1em;
     position: absolute;
     top: 18em;
@@ -38,7 +38,7 @@
   }
 
   h4 {
-    color: #5e5e5e;
+    color: $subheader-color;
     position: absolute;
     font-size: 1em;
     top: 24.5em;
@@ -58,7 +58,7 @@
   .line {
     border-top: 0 none;
     height: 1px;
-    background-color: #c0a062;
+    background-color: $accent-color;
     position: absolute;
     top: 27em;
     left: 8.9em;
@@ -158,5 +158,13 @@
       left: 27.5em;
       width: 10em;
     }
+  }
+
+  @media (min-width: $medium-devices) {
+    height: 65em;
+  }
+
+  @media (min-width: $large-devices) {
+    height: 65em;
   }
 }

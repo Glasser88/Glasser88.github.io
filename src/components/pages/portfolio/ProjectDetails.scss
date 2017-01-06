@@ -14,14 +14,6 @@
     cursor: pointer;
   }
 
-  h3 {
-    color: $header-color;
-    margin-top: 3.2em;
-    z-index: 100;
-    font-size: 1.2em;
-    font-family: 'Merriweather', serif;
-  }
-
   .folderWrapper {
     height: 100%;
     width: 100%;
@@ -56,6 +48,14 @@
     align-items: center;
   }
 
+  .projectName {
+    color: $header-color;
+    margin-top: 2.4em;
+    z-index: 100;
+    font-size: 1.2em;
+    font-family: $header-font-family, serif;
+  }
+
   .projectBorder {
     border: 1px solid $detail-color;
     width: 100%;
@@ -77,10 +77,11 @@
     letter-spacing: 1px;
     font-size: 0.9em;
     left: -2em;
-    top: 4.4em;
-    color: $subheader-color;
+    top: 1.6em;
     transform: rotate(-90deg);
-    font-family: 'Open Sans', sans-serif;
+    color: $subheader-color;
+    font-weight: $subheader-font-weight;
+    font-family: $subheader-font-family, sans-serif;
   }
 
   .descriptionText {
@@ -88,42 +89,46 @@
     width: 80%;
     left: 2.5em;
     top: 1em;
-    color: $paragraph-color;
     line-height: 25px;
     font-size: 1.1em;
-    font-family: 'Merriweather', serif;
+    color: $paragraph-color;
+    font-weight: $paragraph-font-weight;
+    font-family: $paragraph-font-family, serif;
   }
 
   .techHeader {
     position: absolute;
     letter-spacing: 1px;
     font-size: 0.9em;
-    color: $subheader-color;
-    font-family: 'Open Sans', sans-serif;
     left: 1.3em;
-    top: 11em;
+    top: 10em;
+    color: $subheader-color;
+    font-weight: $subheader-font-weight;
+    font-family: $subheader-font-family, sans-serif;
   }
 
   .techText {
     position: absolute;
     width: 80%;
-    left: 1.3em;
-    top: 11em;
-    color: $paragraph-color;
+    left: 1.2em;
+    top: 12em;
     line-height: 25px;
     font-size: 1.1em;
-    font-family: 'Merriweather', serif;
+    color: $paragraph-color;
+    font-weight: $paragraph-font-weight;
+    font-family: $paragraph-font-family, serif;
   }
 
   .screenHeader {
     position: absolute;
     letter-spacing: 1px;
     font-size: 0.9em;
-    left: -5.55em;
-    top: 3.1em;
-    color: $subheader-color;
+    left: -5.2em;
+    top: 0.3em;
     transform: rotate(-90deg);
-    font-family: 'Open Sans', sans-serif;
+    color: $subheader-color;
+    font-weight: $subheader-font-weight;
+    font-family: $subheader-font-family, sans-serif;
   }
 
   .screenshots {
@@ -185,16 +190,17 @@
     left: 3em;
     padding: 1em;
     border-radius: 1px;
-    background-color: $secondary-color;
-    border: 1px solid $detail-color;
     text-transform: uppercase;
-    color: #c0a062;
     font-size: 0.9em;
-    font-family: 'Open Sans', sans-serif;
+    color: $button-color;
+    background-color: $button-background-color;
+    border: 1px solid $button-border-color;
+    font-family: $button-font-family, sans-serif;
     &:hover {
-      background-color: $accent-color;
-      color: #191919;
-      border: 1px solid $detail-color;
+      background-color: $button-hover-background-color;
+      color: $button-hover-color;
+      border: 1px solid $button-hover-border-color;
+      transition: $button-hover-transition-time;
     }
   }
 
@@ -210,6 +216,18 @@
 
     .projectFolder {
       margin-top: 5em;
+    }
+
+    .descriptionHeader {
+      top: 1em;
+    }
+
+    .techText {
+      top: 12.5em;
+    }
+
+    .screenHeader {
+      top: -0.2em;
     }
 
   }
@@ -243,7 +261,7 @@
     .descriptionHeader {
       font-size: 0.9em;
       left: 0;
-      top: 5em;
+      top: 1.7em;
       transform: rotate(-90deg);
     }
 
@@ -254,19 +272,19 @@
     }
 
     .techHeader {
-      left: 1.3em;
+      left: 3.3em;
       top: 11em;
     }
 
     .techText {
       width: 40%;
-      left: 5em;
-      top: 14.5em;
+      left: 2.7em;
+      top: 14em;
     }
 
     .screenHeader {
       position: relative;
-      top: -6.5em;
+      top: -8em;
       left: 9.5em;
       transform: rotate(0deg);
     }
@@ -319,8 +337,8 @@
       width: 29em;
     }
 
-    .screenTitle {
-      top: -9.5em;
+    .screenHeader {
+      top: -11.5em;
       left: 13em;
     }
 

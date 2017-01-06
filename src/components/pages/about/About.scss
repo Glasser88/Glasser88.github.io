@@ -3,7 +3,6 @@
 :local .About {
   height: 50em;
   padding-top: 4em;
-  font-family: 'Merriweather', serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,30 +13,35 @@
 
   p {
     position: absolute;
-    color: $paragraph-color;
     font-size: 1.2em;
+    color: $paragraph-color;
+    font-weight: $paragraph-font-weight;
+    font-family: $paragraph-font-family;
   }
 
   h2 {
-    color: $shadow-color;
     font-size: 3em;
     text-align: center;
     margin-bottom: 0;
+    color: $shadow-color;
+    font-weight: $shadow-font-weight;
+    font-family: $shadow-font-family;
   }
 
   h3 {
-    color: $highlight-color;
     font-size: 2.7em;
     text-align: center;
     margin-top: -0.5em;
+    color: $highlight-color;
+    font-family: $highlight-font-family;
   }
 
   .line {
     border-top: 0 none;
     height: 1px;
-    background-color: $accent-color;
     width: 10em;
     margin-left: 9em;
+    background-color: $accent-color;
   }
 
   .inside {
@@ -111,37 +115,35 @@
 
   .videoButton {
     font-size: 0.9em;
-    font-weight: 500;
-    color: #fff;
-    background-color: $accent-color;
     border: none;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 0px;
     margin-right: 1em;
-    font-family: 'Roboto Condensed', sans-serif;
+    color: $highlight-button-color;
+    background-color: $highlight-button-background-color;
+    font-family: $highlight-button-font-family, sans-serif;
     &:hover {
-      background-color: #c0a062;
-      color: #021019;
+      background-color: $highlight-button-hover-background-color;
+      transition: all 1s ease;
     }
   }
 
   .pdfButton {
     font-size: 0.9em;
-    font-weight: 500;
-    color: #fff;
-    background-color: $accent-color;
     border: none;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 0px;
     margin-left: 1em;
-    font-family: 'Roboto Condensed', sans-serif;
+    color: $highlight-button-color;
+    background-color: $highlight-button-background-color;
+    font-family: $highlight-button-font-family, sans-serif;
     &:hover {
-      background-color: #c0a062;
-      color: #021019;
+      background-color: $highlight-button-background-color;
+      transition: all 1s ease;
     }
   }
 

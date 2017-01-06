@@ -25,8 +25,8 @@
     margin-left: 1em;
     margin-top: 0.9em;
     font-size: 1.1em;
-    font-weight: 600;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: $subheader-font-weight;
+    font-family: $subheader-font-family, sans-serif;
   }
 
   .chartHolder {
