@@ -47,7 +47,7 @@ class About extends Component {
               <hr className={STYLES.line} />
               <div className={STYLES.story}>
                 <p className={STYLES.one}>From hockey player to</p>
-                <p className={STYLES.two}>Software Engineer my values have &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; remained the same.</p>
+                <p className={STYLES.two}>Software Engineer my values have &nbsp;&nbsp;&nbsp; remained the same.</p>
                 <p className={STYLES.three}>Always use</p>
                 <p className={STYLES.four}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; my creativity and hard work to create opportunities. Dream of the impossible. And</p>
                 <p className={STYLES.five}>always believe that anything is possible.</p>
@@ -67,7 +67,7 @@ class About extends Component {
             <a href="../../../assets/docs/resume2017.pdf" target='_blank'>
               <Button
                 className={STYLES.pdfButton}>
-                <i className="fa fa-file-pdf-o"></i>&nbsp;&nbsp;RESUME
+                <span className={STYLES.pdf}><i className="fa fa-file-pdf-o"></i></span>&nbsp;&nbsp;RESUME
               </Button>
             </a>
           </div>

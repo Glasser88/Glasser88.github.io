@@ -11,7 +11,7 @@
     height: 0;
     right: -4.7em;
     width: 330px;
-    z-index: 3;
+    z-index: 5;
     border-bottom: 188px solid #272727;
     border-left: 80px solid transparent;
     border-right: 80px solid transparent;
@@ -56,14 +56,17 @@
   .dialBackground {
     position: absolute;
     left: -1em;
-    top: 7em;
+    top: 6.9em;
     background-color: #272727;
     height: 14.5em;
     width: 14.5em;
     z-index: 15;
     border: 3px solid #0d0d0d;
     border-radius: 50%;
-    transform: rotateX(20deg);
+  }
+
+  @media (min-width: $tiny-devices) {
+
   }
 
   @media (min-width: $extra-small-devices) {

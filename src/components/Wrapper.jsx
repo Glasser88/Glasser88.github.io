@@ -89,7 +89,7 @@ class Wrapper extends Component {
                   smooth={true}
                   duration={1000}
                   onSetActive={this.handleSetActive}>
-                  <div className={STYLES.logo}>TG</div>
+                  <div className={STYLES.logo}><span>TG</span></div>
                   <span className={STYLES.name}>Trevor Glass</span>
                 </Link>
               </div>

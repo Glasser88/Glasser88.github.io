@@ -1,6 +1,7 @@
 @import '../../../styles/variables';
 
 :local .About {
+
   height: 50em;
   padding-top: 4em;
   display: flex;
@@ -16,7 +17,7 @@
     font-size: 1.2em;
     color: $paragraph-color;
     font-weight: $paragraph-font-weight;
-    font-family: $paragraph-font-family;
+    font-family: $paragraph-font-family, serif;
   }
 
   h2 {
@@ -25,7 +26,7 @@
     margin-bottom: 0;
     color: $shadow-color;
     font-weight: $shadow-font-weight;
-    font-family: $shadow-font-family;
+    font-family: $shadow-font-family, serif;
   }
 
   h3 {
@@ -33,7 +34,7 @@
     text-align: center;
     margin-top: -0.5em;
     color: $highlight-color;
-    font-family: $highlight-font-family;
+    font-family: $highlight-font-family, serif;
   }
 
   .line {
@@ -59,9 +60,9 @@
     position: absolute;
     background-image: url('../../../assets/images/chiefs.png');
     background-size: cover;
-    height: 18em;
-    width: 18em;
-    left: 1.6em;
+    height: 17.5em;
+    width: 17.5em;
+    left: 1em;
     top: 11.1em;
     transition: all 500ms ease;
     filter: drop-shadow(5px 2px 7px rgba(255,255,255,0.4)); filter: drop-shadow(10px 10px 7px rgba(0,0,0,0.9));
@@ -110,15 +111,17 @@
   }
 
   .film {
-    margin-top: -0.22em;
+    margin-top: 0.05em;
+  }
+
+  .pdf {
+    margin-top: -0.1em;
   }
 
   .videoButton {
     font-size: 0.9em;
     border: none;
     display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 0px;
     margin-right: 1em;
     color: $highlight-button-color;
@@ -134,8 +137,6 @@
     font-size: 0.9em;
     border: none;
     display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 0px;
     margin-left: 1em;
     color: $highlight-button-color;
@@ -148,6 +149,11 @@
   }
 
   @media (min-width: $small-devices) {
+
+
+  }
+
+  @media (min-width: $extra-small-devices) {
     height: 60em;
 
     p {
@@ -202,9 +208,19 @@
       left: 8.5em;
       margin-right: 1em;
     }
+
+    .videoButton {
+      font-size: 1em;
+      height: 2.5em;
+    }
+
+    .pdfButton {
+      font-size: 1em;
+      height: 2.5em;
+    }
   }
 
-  @media (min-width: $extra-small-devices) {
+  @media (min-width: $small-devices) {
     height: 65em;
 
     .inside {

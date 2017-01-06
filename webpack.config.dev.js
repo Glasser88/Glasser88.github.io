@@ -4,13 +4,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const validate = require('webpack-validator');
 const autoprefixer = require('autoprefixer');
 
-module.exports = {
+module.exports = validate({
   resolve: {
     extensions: ['', '.js', '.jsx', '.json']
   },
   debug: true,
   devtool: 'eval-source-map',
-  noInfo: true,
   entry: [
     './src/webpack-public-path',
     'webpack-hot-middleware/client?reload=true',
@@ -72,6 +71,4 @@ module.exports = {
     }]
   },
   postcss: ()=> [autoprefixer]
-};
-
-// module.exports = validate(config);
+});

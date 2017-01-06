@@ -49,17 +49,61 @@
     border-radius: 0px !important;
     background-color: #161616 !important;
     border: none !important;
-    font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     font-size: 1.1em;
   }
 
+  // .logo {
+  //   position: relative;
+  //   font-weight: lighter;
+  //   width: 45px;
+  //   height: 25.98px;
+  //   background-color: #151515;
+  //   margin: 5.99px 0;
+  //   color: #161616;
+  //   border-left: solid 2px #cdae73;
+  //   border-right: solid 2px #cdae73;
+  //   transition: all 1s ease;
+  //   font-family: 'Open Sans', sans-serif;
+  //   span {
+  //     z-index: 10;
+  //     position: absolute;
+  //     color: $accent-color;
+  //   }
+  // }
+  //
+  // .logo:before,
+  // .logo:after {
+  //   content: "";
+  //   position: absolute;
+  //   z-index: 1;
+  //   width: 31.82px;
+  //   height: 31.82px;
+  //   -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  //   -ms-transform: scaleY(0.5774) rotate(-45deg);
+  //   transform: scaleY(0.5774) rotate(-45deg);
+  //   background-color: inherit;
+  //   left: 4.5901px;
+  // }
+  //
+  // .logo:before {
+  //   top: -15.9099px;
+  //   border-top: solid 2.8284px #cdae73;
+  //   border-right: solid 2.8284px #cdae73;
+  // }
+  //
+  // .logo:after {
+  //   bottom: -15.9099px;
+  //   border-bottom: solid 2.8284px #cdae73;
+  //   border-left: solid 2.8284px #cdae73;
+  // }
+
   .logo {
-    font-weight: bold;
-    height: 1.75em;
+    font-weight: 200;
+    height: 1.76em;
     width: 2.3em;
-    margin-right: 1em;
-    margin-top: -0.4em;
+    margin-right: 0.7em;
+    margin-top: -0.35em;
     margin-left: -0.1em;
     background-color: #c0a062;
     color: #161616;
@@ -67,7 +111,7 @@
     justify-content: center;
     align-items: center;
     transition: all 500ms ease;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    font-family: 'Open Sans', sans-serif;
   }
 
   .brand {
@@ -80,7 +124,8 @@
 
   .name {
     color: #fff;
-    margin-top: -0.2em;
+    margin-top: -0.35em;
+    font-family: 'Open Sans', sans-serif;
   }
 
   .link {

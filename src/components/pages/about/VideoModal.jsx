@@ -18,7 +18,7 @@ const VideoModal = ({ show, onHide }) => (
         <iframe
           src="https://www.youtube.com/embed/2KnfvwIPHLw?autoplay=1"
           frameBorder="0"
-          allowfullscreen>
+          allowFullscreen>
         </iframe>
       </div>
     </Modal.Body>

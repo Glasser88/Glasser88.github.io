@@ -6,7 +6,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Merriweather', serif;
 
   h2 {
     color: $shadow-color;
@@ -18,6 +17,7 @@
     font-size: 2em;
     margin-top: -0.9em;
     margin-left: 0.5em;
+    font-family: $highlight-font-family, serif;
   }
 
   h4 {
