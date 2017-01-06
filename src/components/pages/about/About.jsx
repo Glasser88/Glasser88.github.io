@@ -9,6 +9,8 @@ import Modal from 'react-bootstrap/lib/Modal';
 
 import STYLES from './About.scss';
 
+const resumePDF = require('../../../assets/docs/resume2017.pdf');
+
 class About extends Component {
   constructor(props) {
     super(props);
@@ -64,7 +66,7 @@ class About extends Component {
               className={STYLES.videoButton}>
               <Glyphicon className={STYLES.film} glyph='film' />&nbsp;&nbsp;HOCKEY
             </Button>
-            <a href={require('../../../assets/docs/resume2017.pdf')} target='_blank'>
+            <a href={resumePDF} target='_blank'>
               <Button
                 className={STYLES.pdfButton}>
                 <span className={STYLES.pdf}><i className="fa fa-file-pdf-o"></i></span>&nbsp;&nbsp;RESUME

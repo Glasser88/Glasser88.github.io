@@ -2,29 +2,8 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
 
 $navbar-margin-bottom: 0;
 
-@import "~bootstrap-sass/assets/stylesheets/bootstrap";
-
 @import "variables";
 
-a:hover {
-  text-decoration: none;
-}
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
 
-.navbar-default .navbar-toggle {
-  border-radius: 0px;
-  border: 1px solid #fff;
-  &:hover {
-    background-color: $highlight-button-hover-background-color;
-    transition: all 1s ease;
-  }
-  &:active {
-    background-color: $primary-color;
-  }
-  &:focus {
-    background-color: $primary-color;
-  }
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #fff;
-}
+@import "globals";

@@ -8,7 +8,7 @@ import Map from './Map';
 
 import STYLES from './GoogleMaps.scss';
 
-// https://maps.google.com/mapfiles/kml/shapes/parking_lot_maps.png
+const homeIcon = require('../../../assets/images/home.png');
 
 class GoogleMaps extends Component {
   constructor(props) {
@@ -21,7 +21,7 @@ class GoogleMaps extends Component {
           lng: -79.894853,
         },
         key: `Taiwan`,
-        icon: '../../../assets/images/home.png',
+        icon: homeIcon,
         defaultAnimation: 2,
       }],
     };

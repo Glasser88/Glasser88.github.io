@@ -1,0 +1,22 @@
+a:hover {
+  text-decoration: none;
+}
+
+.navbar-default .navbar-toggle {
+  border-radius: 0px;
+  border: 1px solid #fff;
+  &:hover {
+    background-color: $highlight-button-hover-background-color;
+    transition: all 1s ease;
+  }
+  &:active {
+    background-color: $primary-color;
+  }
+  &:focus {
+    background-color: $primary-color;
+  }
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
