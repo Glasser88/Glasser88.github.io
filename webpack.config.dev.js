@@ -66,6 +66,9 @@ module.exports = validate({
       test: /(\.css|\.scss)$/,
       loaders: ['style', 'css?sourceMap', 'postcss', 'sass?sourceMap']
     }, {
+      test: /\.pdf$/,
+      loader: 'file?name=[name].[ext]'
+    }, {
       test: /\.json$/,
       loader: "json"
     }]

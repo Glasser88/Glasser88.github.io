@@ -6,6 +6,10 @@ $navbar-margin-bottom: 0;
 
 @import "variables";
 
+a:hover {
+  text-decoration: none;
+}
+
 .navbar-default .navbar-toggle {
   border-radius: 0px;
   border: 1px solid #fff;

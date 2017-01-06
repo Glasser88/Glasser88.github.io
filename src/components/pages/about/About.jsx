@@ -64,7 +64,7 @@ class About extends Component {
               className={STYLES.videoButton}>
               <Glyphicon className={STYLES.film} glyph='film' />&nbsp;&nbsp;HOCKEY
             </Button>
-            <a href="../../../assets/docs/resume2017.pdf" target='_blank'>
+            <a href={require('../../../assets/docs/resume2017.pdf')} target='_blank'>
               <Button
                 className={STYLES.pdfButton}>
                 <span className={STYLES.pdf}><i className="fa fa-file-pdf-o"></i></span>&nbsp;&nbsp;RESUME

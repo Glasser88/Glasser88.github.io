@@ -91,6 +91,9 @@ export default validate({
         test: /(\.css|\.scss)$/,
         loader: ExtractTextPlugin.extract('css?sourceMap!postcss!sass?sourceMap')
       }, {
+        test: /\.pdf$/,
+        loader: 'file?name=[name].[ext]'
+      }, {
         test: /\.json$/,
         loader: "json"
       }]
