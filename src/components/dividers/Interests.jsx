@@ -10,6 +10,10 @@ const INTERESTS_OPTIONS = {
   responsive: true,
 }
 
+const ctx = document.getElementById("myChart");
+
+console.log('ctx', ctx);
+
 const Interests = () => (
   <div className={STYLES.Interests}>
     <div className={STYLES.insideWrapper}>
@@ -33,6 +37,7 @@ const Interests = () => (
       <div className={STYLES.graph}>
         <div>
           <RadarChart
+            id="myChart"
             className={STYLES.radar}
             data={INTERESTS_DATA}
             height="300"
