@@ -37,7 +37,6 @@ const Interests = () => (
             data={INTERESTS_DATA}
             height="300"
             width="370"
-
           />
         </div>
       </div>

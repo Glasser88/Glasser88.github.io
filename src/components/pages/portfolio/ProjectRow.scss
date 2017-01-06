@@ -32,13 +32,12 @@
   }
 
   .openIcon {
-    color: $highlight-color;
+    color: #fff;
     padding: 0.5em;
     cursor: pointer;
     float: right;
     margin-right: 1em;
     margin-top: 1em;
-    text-shadow: 3px 3px #000;
     &:hover {
       color: #c0a062;
     }
