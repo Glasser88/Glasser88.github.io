@@ -2,6 +2,7 @@
 
 :local .Skills {
   height: 60em;
+  margin-bottom: -4em;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -134,6 +135,7 @@
 
   @media (min-width: $small-devices) {
     height: 35em;
+    margin-bottom: 0em;
 
     h2 {
       font-size: 2.6em;

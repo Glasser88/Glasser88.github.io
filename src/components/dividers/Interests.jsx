@@ -7,12 +7,14 @@ const RadarChart = require("react-chartjs").Radar;
 import STYLES from './Interests.scss';
 
 const INTERESTS_OPTIONS = {
-  responsive: true,
+  scaleShowLine: true,
+  scaleLineColor: '#272727',
+  angleLineColor: '#272727',
+  scaleLineWidth: 1.4,
+  pointLabelFontFamily: 'Open Sans',
+  pointLabelFontStyle: 'lighter',
+  pointLabelFontColor: '#fff',
 }
-
-const ctx = document.getElementById("myChart");
-
-console.log('ctx', ctx);
 
 const Interests = () => (
   <div className={STYLES.Interests}>
@@ -40,6 +42,7 @@ const Interests = () => (
             id="myChart"
             className={STYLES.radar}
             data={INTERESTS_DATA}
+            options={INTERESTS_OPTIONS}
             height="300"
             width="370"
           />

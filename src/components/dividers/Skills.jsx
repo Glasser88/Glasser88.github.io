@@ -2,9 +2,17 @@ import React from 'react';
 
 const LineChart = require("react-chartjs").Line;
 
-import { SKILLS_DATA } from '../../constants/skills-data';
+import {
+  SKILLS_DATA
+} from '../../constants/skills-data';
 
 import STYLES from './Skills.scss';
+
+const SKILLS_OPTIONS = {
+  pointLabelFontFamily: 'Open Sans',
+  pointLabelFontStyle: 'lighter',
+  pointLabelFontColor: '#fff',
+}
 
 const Skills = () => (
   <div className={STYLES.Skills}>
@@ -12,6 +20,7 @@ const Skills = () => (
       <div className={STYLES.chart}>
         <LineChart
           data={SKILLS_DATA}
+          options={SKILLS_OPTIONS}
           height="300"
           width="370"
         />

@@ -7,19 +7,20 @@
   align-items: center;
 
   h2 {
-    font-family: 'Merriweather', serif;
-    color: $shadow-color;
     text-align: center;
     font-weight: bold;
     font-size: 3.2em;
+    color: $shadow-color;
+    font-weight: $shadow-font-weight;
+    font-family: $shadow-font-family, serif;
   }
 
   h3 {
-    font-family: 'Merriweather', serif;
-    color: $highlight-color;
     text-align: right;
     margin-right: 1em;
     margin-top: -0.9em;
+    color: $highlight-color;
+    font-family: $highlight-font-family, serif;
   }
 
   h4 {
@@ -87,9 +88,11 @@
       position: absolute;
       width: 8em;
       margin-left: 1em;
-      color: #c3c3c3;
       line-height: 35px;
       font-size: 1.8em;
+      color: $paragraph-color;
+      font-weight: $paragraph-font-weight;
+      font-family: $paragraph-font-family;
       display: inline-block;
     }
 
