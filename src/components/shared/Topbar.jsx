@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 
 import { Link } from 'react-router';
 
@@ -8,27 +8,78 @@ import NavItem from 'react-bootstrap/lib/NavItem';
 
 import STYLES from './Topbar.scss';
 
-const Topbar = () => (
+const NAV_LINKS = [
+  {
+    name: 'Portfolio',
+    to: 'portfolio',
+    spy: true,
+    smooth: true,
+    offset: -50,
+    duration: 1000,
+  },
+  {
+    name: 'About',
+    to: 'about',
+    spy: true,
+    smooth: true,
+    offset: 0,
+    duration: 1000,
+  },
+  {
+    name: 'Contact',
+    to: 'contact',
+    spy: true,
+    smooth: true,
+    offset: 0,
+    duration: 1000,
+  }
+]
+
+const Topbar = ({ handleSetActive }) => (
   <Navbar className={STYLES.Topbar} collapseOnSelect>
-   <Navbar.Header>
-     <Navbar.Brand>
-       <div>
-         <Link className={STYLES.brand} to="/">
-           <div className={STYLES.logo}>TG</div>
-           <span className={STYLES.name}>Trevor Glass</span>
-         </Link>
-       </div>
-     </Navbar.Brand>
-     <Navbar.Toggle />
-   </Navbar.Header>
+    <Navbar.Header>
+      <Navbar.Brand>
+        <div>
+          <Link
+            className={STYLES.brand}
+            to="splashpage"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            duration={1000}
+            onSetActive={handleSetActive}>
+            <div className={STYLES.logo}><span>TG</span></div>
+            <span className={STYLES.name}>Trevor Glass</span>
+          </Link>
+        </div>
+      </Navbar.Brand>
+      <Navbar.Toggle />
+    </Navbar.Header>
    <Navbar.Collapse>
-     <Nav pullRight className={STYLES.links}>
-       <NavItem eventKey={1} href="#"><Link to="portfolio" className={STYLES.link}>Portfolio</Link></NavItem>
-       <NavItem eventKey={2} href="#"><Link to="about" className={STYLES.link}>About</Link></NavItem>
-       <NavItem eventKey={3} href="#"><Link to="contact" className={STYLES.link}>Contact</Link></NavItem>
+     <Nav className={STYLES.links} pullRight>
+       { NAV_LINKS.map((location, i) => (
+         <NavItem
+           key={i}>
+           <Link
+             className={STYLES.link}
+             activeClass="active"
+             to={location.to}
+             spy={location.spy}
+             smooth={location.smooth}
+             offset={location.offset}
+             duration={location.duration}
+             onSetActive={handleSetActive.bind(null, portfolio.to)}>
+             {location.name}
+           </Link>
+         </NavItem>
+       ))}
      </Nav>
    </Navbar.Collapse>
  </Navbar>
 );
+
+Topbar.propTypes = {
+  handleSetActive: PropTypes.func,
+}
 
 export default Topbar;

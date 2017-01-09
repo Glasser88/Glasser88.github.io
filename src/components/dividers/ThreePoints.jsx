@@ -2,10 +2,10 @@ import React from 'react';
 
 import Glyphicon from 'react-bootstrap/lib/Glyphicon';
 
-import STYLES from './DividerOne.scss';
+import STYLES from './ThreePoints.scss';
 
-const DividerOne = () => (
-  <div className={STYLES.DividerOne}>
+const ThreePoints = () => (
+  <div className={STYLES.ThreePoints}>
     <div className={STYLES.boxHolder}>
       <div className={STYLES.box}>
         <div className={STYLES.hexagonWrapper}>
@@ -59,4 +59,4 @@ const DividerOne = () => (
   </div>
 );
 
-export default DividerOne;
+export default ThreePoints;

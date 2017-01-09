@@ -58,7 +58,7 @@
     background-size: cover;
     height: 17.5em;
     width: 17.5em;
-    left: 1em;
+    left: 1.4em;
     top: 11.1em;
     transition: all 500ms ease;
     filter: drop-shadow(5px 2px 7px rgba(255,255,255,0.4)); filter: drop-shadow(10px 10px 7px rgba(0,0,0,0.9));
@@ -82,15 +82,15 @@
   }
 
   .three {
-    right: 1.8em;
+    right: 2em;
     top: 6.4em;
   }
 
   .four {
     left: 8.6em;
-    top: 7.6em;
+    top: 7.8em;
     margin-right: 1em;
-    line-height: 30px;
+    line-height: 28px;
   }
 
   .five {
@@ -144,11 +144,6 @@
     }
   }
 
-  @media (min-width: $small-devices) {
-
-
-  }
-
   @media (min-width: $extra-small-devices) {
     height: 60em;
 
@@ -190,6 +185,7 @@
 
     .three {
       right: 1em;
+      top: 6.3em;
     }
 
     .four {
@@ -228,9 +224,9 @@
     }
 
     .hockeyImage {
-      height: 32em;
-      width: 32em;
-      left: -3em;
+      height: 31em;
+      width: 31em;
+      left: -2.8em;
       top: 10.8em;
       transition: all 500ms ease;
     }

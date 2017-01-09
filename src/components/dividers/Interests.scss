@@ -8,23 +8,25 @@
   align-items: center;
 
   h2 {
-    color: $shadow-color;
     font-size: 2.6em;
+    color: $shadow-color;
+    font-weight: $shadow-font-weight;
+    font-family: $shadow-font-family;
   }
 
   h3 {
-    color: $highlight-color;
     font-size: 2em;
     margin-top: -0.9em;
     margin-left: 0.5em;
+    color: $highlight-color;
     font-family: $highlight-font-family, serif;
   }
 
   h4 {
-    color: $subheader-color;
     margin-left: 1em;
     font-size: 1.1em;
     margin-top: 0.9em;
+    color: $subheader-color;
     font-weight: $subheader-font-weight;
     font-family: $subheader-font-family, sans-serif;
   }
@@ -136,6 +138,9 @@
     top: 100%;
     width: 0;
     border-top: 11.55px solid rgba(192,160,98,0.5);
+  }
+  @media (min-width: $tiny-devices) {
+
   }
 
   @media (min-width: $extra-small-devices) {

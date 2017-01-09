@@ -9,7 +9,7 @@ import Splashpage from '../components/pages/splashpage/Splashpage';
 import Portfolio from '../components/pages/portfolio/Portfolio';
 import About from '../components/pages/about/About';
 import Contact from '../components/pages/contact/Contact';
-import DividerOne from '../components/dividers/DividerOne';
+import ThreePoints from '../components/dividers/ThreePoints';
 import Interests from '../components/dividers/Interests';
 import Skills from '../components/dividers/Skills';
 import GoogleMaps from '../components/pages/maps/GoogleMaps';
@@ -39,13 +39,12 @@ class Wrapper extends Component {
   }
 
   componentDidMount() {
-
-    Events.scrollEvent.register('begin', function(to, element) {
-      console.log("begin", to, element);
+    Events.scrollEvent.register('begin', (to, element) => {
+      // console.log("begin", to, element);
     });
 
-    Events.scrollEvent.register('end', function() {
-      console.log("end", arguments);
+    Events.scrollEvent.register('end', () => {
+      // console.log("end", arguments);
     });
 
     scrollSpy.update();
@@ -144,7 +143,7 @@ class Wrapper extends Component {
           <Element name="splashpage">
             <Splashpage />
           </Element>
-            <DividerOne />
+            <ThreePoints />
           <Element name="portfolio">
             <Portfolio />
           </Element>
@@ -157,11 +156,11 @@ class Wrapper extends Component {
             <Contact />
           </Element>
           <GoogleMaps />
-            <a
-              className={scrollToTopVisible ? STYLES.showScroller : STYLES.hideScroller}
-              onClick={this.scrollToTop}>
-              <Glyphicon glyph='menu-up' />
-            </a>
+          <a
+            className={scrollToTopVisible ? STYLES.showScroller : STYLES.hideScroller}
+            onClick={this.scrollToTop}>
+            <Glyphicon glyph='menu-up' />
+          </a>
         </section>
         <Footer />
       </div>
